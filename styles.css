@@ -1,0 +1,353 @@
+/* sass --watch styles.scss:styles.css */
+body {
+  background-color: #001d3a;
+  font-family: "Fira Code";
+  color: #cecece;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 100vh;
+  background-image: url(https://media.geeksforgeeks.org/wp-content/uploads/space_background_for_infinite_scroll_example.png);
+}
+
+b {
+  font-weight: 800;
+  color: #FFC200;
+}
+
+a {
+  text-decoration: none;
+  color: #FFC200;
+  border-radius: 1.6vw 1.6vw 1.6vw 1.6vw;
+}
+
+h1 {
+  color: #2bd879;
+  padding: 0;
+  margin: 0;
+  font-size: 7vw;
+  font-weight: 600;
+  transform: skew(20deg, -6deg);
+  line-height: 7vw;
+  top: 2vw;
+  left: 4vw;
+}
+
+p {
+  font-size: 2.3vw;
+  transform: skew(20deg, -6deg);
+}
+
+#main {
+  height: 100vh;
+  width: 100vw;
+}
+
+#accounts {
+  height: 100vh;
+  width: 100vw;
+}
+
+#contact {
+  height: 100vh;
+  width: 100vw;
+}
+
+#projects {
+  height: 100vh;
+  width: 100vw;
+}
+
+ul {
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 4.3vw;
+  right: 3.1vw;
+  bottom: 3vw;
+  transform: skew(-20deg, 6deg);
+}
+
+#linkText {
+  background-color: #0c3f72;
+  padding: 0.6vw;
+  color: #FFC200;
+  position: relative;
+  box-shadow: -0.1vw 0.1vw 0px #072b4e, -0.2vw 0.2vw 0vw #072b4e, -0.3vw 0.3vw 0vw #072b4e, -0.4vw 0.4vw 0vw #072b4e, -0.5vw 0.5vw 0vw #072b4e, -0.6vw 0.6vw 0vw #072b4e, -0.7vw 0.7vw 0vw #072b4e, -0.8vw 0.8vw 0vw #072b4e, -0.9vw 0.9vw 0vw #072b4e;
+}
+
+#linkText:hover {
+  background-color: #FFC200;
+  box-shadow: none;
+  color: #0c3f72;
+  top: 1vw;
+  left: -1vw;
+}
+
+ul a {
+  position: relative;
+  background-color: #0c3f72;
+  z-index: 1;
+  color: #2bd879;
+  text-decoration: none;
+  padding: 0.2vw;
+  box-shadow: 0.1vw 0.1vw 0px #072b4e, 0.2vw 0.2vw 0vw #072b4e, 0.3vw 0.3vw 0vw #072b4e, 0.4vw 0.4vw 0vw #072b4e, 0.5vw 0.5vw 0vw #072b4e, 0.6vw 0.6vw 0vw #072b4e, 0.7vw 0.7vw 0vw #072b4e, 0.8vw 0.8vw 0vw #072b4e, 0.9vw 0.9vw 0vw #072b4e, 1vw 1vw 0vw #072b4e;
+}
+
+ul a:hover {
+  background-color: #2bd879;
+  color: #0c3f72;
+}
+
+.current {
+  box-shadow: none;
+  top: 1.2vw;
+  left: 1.2vw;
+}
+
+#infoNav {
+  color: #2bd879;
+}
+#infoNav:hover,
+#infoNav :not(.current) {
+  background-color: #2bd879;
+  color: #0c3f72;
+}
+#infoNav:hover:not(.current),
+#infoNav :not(.current):not(.current) {
+  box-shadow: 0.1vw 0.1vw 0px #188549, 0.2vw 0.2vw 0vw #188549, 0.3vw 0.3vw 0vw #188549, 0.4vw 0.4vw 0vw #188549, 0.5vw 0.5vw 0vw #188549, 0.6vw 0.6vw 0vw #188549, 0.7vw 0.7vw 0vw #188549, 0.8vw 0.8vw 0vw #188549, 0.9vw 0.9vw 0vw #188549, 1vw 1vw 0vw #188549, 1.1vw 1.1vw 0vw #188549, 1.2vw 1.2vw 0vw #188549;
+}
+#infoNav.current {
+  background-color: #2bd879;
+  color: #0c3f72;
+}
+
+#accountsNav {
+  color: #FFC200;
+}
+#accountsNav:hover {
+  background-color: #FFC200;
+  color: #0c3f72;
+}
+#accountsNav:hover:not(.current) {
+  box-shadow: 0.1vw 0.1vw 0px #997400, 0.2vw 0.2vw 0vw #997400, 0.3vw 0.3vw 0vw #997400, 0.4vw 0.4vw 0vw #997400, 0.5vw 0.5vw 0vw #997400, 0.6vw 0.6vw 0vw #997400, 0.7vw 0.7vw 0vw #997400, 0.8vw 0.8vw 0vw #997400, 0.9vw 0.9vw 0vw #997400, 1vw 1vw 0vw #997400, 1.1vw 1.1vw 0vw #997400, 1.2vw 1.2vw 0vw #997400;
+}
+#accountsNav.current {
+  background-color: #FFC200;
+  color: #0c3f72;
+}
+
+#contactNav {
+  color: #db6aa3;
+}
+#contactNav:hover {
+  background-color: #db6aa3;
+  color: #0c3f72;
+}
+#contactNav:hover:not(.current) {
+  box-shadow: 0.1vw 0.1vw 0px #b42b70, 0.2vw 0.2vw 0vw #b42b70, 0.3vw 0.3vw 0vw #b42b70, 0.4vw 0.4vw 0vw #b42b70, 0.5vw 0.5vw 0vw #b42b70, 0.6vw 0.6vw 0vw #b42b70, 0.7vw 0.7vw 0vw #b42b70, 0.8vw 0.8vw 0vw #b42b70, 0.9vw 0.9vw 0vw #b42b70, 1vw 1vw 0vw #b42b70, 1.1vw 1.1vw 0vw #b42b70, 1.2vw 1.2vw 0vw #b42b70;
+}
+#contactNav.current {
+  background-color: #db6aa3;
+  color: #0c3f72;
+}
+
+#projectsNav {
+  color: #00aeff;
+}
+#projectsNav:hover {
+  background-color: #00aeff;
+  color: #0c3f72;
+}
+#projectsNav:hover:not(.current) {
+  box-shadow: 0.1vw 0.1vw 0px #006899, 0.2vw 0.2vw 0vw #006899, 0.3vw 0.3vw 0vw #006899, 0.4vw 0.4vw 0vw #006899, 0.5vw 0.5vw 0vw #006899, 0.6vw 0.6vw 0vw #006899, 0.7vw 0.7vw 0vw #006899, 0.8vw 0.8vw 0vw #006899, 0.9vw 0.9vw 0vw #006899, 1vw 1vw 0vw #006899, 1.1vw 1.1vw 0vw #006899, 1.2vw 1.2vw 0vw #006899;
+}
+#projectsNav.current {
+  background-color: #00aeff;
+  color: #0c3f72;
+}
+
+#nameH1 {
+  width: 31vw;
+  padding: 0.2vw;
+  position: relative;
+}
+
+#mainText {
+  position: relative;
+  left: 10vw;
+  font-size: 3vw;
+  line-height: 6vw;
+}
+#mainText a {
+  color: #2bd879;
+}
+#mainText a:hover {
+  color: #0c3f72;
+  background-color: #2bd879;
+}
+
+#mainText2 {
+  position: relative;
+  top: 4vw;
+  left: 13vw;
+  width: 38vw;
+  font-size: 2.7vw;
+  line-height: 6vw;
+}
+
+#linkText:hover {
+  background-color: #FFC200;
+  color: #0c3f72;
+}
+
+#accountsText {
+  position: relative;
+  float: left;
+  top: -2vw;
+  left: 12vw;
+  font-size: 2.6vw;
+  transform: skew(20deg, -6deg);
+  line-height: 7vw;
+}
+#accountsText a {
+  color: #FFC200;
+}
+#accountsText a:hover {
+  color: #0c3f72;
+  background-color: #FFC200;
+}
+
+#accountsText2 {
+  position: relative;
+  top: -2.3vw;
+  left: 12vw;
+  font-size: 2.6vw;
+  transform: skew(20deg, -6deg);
+  line-height: 7vw;
+}
+#accountsText2 a {
+  color: #FFC200;
+}
+#accountsText2 a:hover {
+  color: #0c3f72;
+  background-color: #FFC200;
+}
+
+#contactText {
+  position: relative;
+  top: -1vw;
+  left: 10vw;
+  font-size: 2.7vw;
+  transform: skew(20deg, -6deg);
+  width: 50vw;
+  line-height: 7vw;
+}
+#contactText a {
+  color: #db6aa3;
+}
+#contactText a:hover {
+  color: #0c3f72;
+  background-color: #db6aa3;
+}
+
+#projectsText {
+  position: relative;
+  top: 2vw;
+  left: 8vw;
+  transform: skew(20deg, -6deg);
+  line-height: 5vw;
+  font-size: 2.8vw;
+  width: 50vw;
+}
+#projectsText a {
+  color: #00aeff;
+}
+#projectsText a:hover {
+  color: #0c3f72;
+  background-color: #00aeff;
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 19vw;
+    font-weight: 200;
+    line-height: 100%;
+    top: 25vw;
+    left: 10vw;
+  }
+
+  ul {
+    font-size: 10vw;
+    right: 7.5vw;
+    bottom: 6vw;
+  }
+
+  ul a {
+    padding: 0.4vw;
+    box-shadow: 0.1vw 0.1vw 0px #072b4e, 0.2vw 0.2vw 0vw #072b4e, 0.3vw 0.3vw 0vw #072b4e, 0.4vw 0.4vw 0vw #072b4e, 0.5vw 0.5vw 0vw #072b4e, 0.6vw 0.6vw 0vw #072b4e, 0.7vw 0.7vw 0vw #072b4e, 0.8vw 0.8vw 0vw #072b4e, 0.9vw 0.9vw 0vw #072b4e, 1vw 1vw 0vw #072b4e, 1.1vw 1.1vw 0px #072b4e, 1.2vw 1.2vw 0vw #072b4e, 1.3vw 1.3vw 0vw #072b4e, 1.4vw 1.4vw 0vw #072b4e, 1.5vw 1.5vw 0vw #072b4e, 1.6vw 1.6vw 0vw #072b4e, 1.7vw 1.7vw 0vw #072b4e, 1.8vw 1.8vw 0vw #072b4e, 1.9vw 1.9vw 0vw #072b4e, 2vw 2vw 0px #072b4e, 2.1vw 2.1vw 0vw #072b4e, 2.2vw 2.2vw 0vw #072b4e;
+  }
+
+  .current {
+    top: 2.7vw;
+    left: 2.7vw;
+  }
+
+  #nameH1 {
+    width: 10%;
+  }
+
+  #mainText {
+    left: 0vw;
+    font-size: 8.1vw;
+    width: 100%;
+    top: 25vw;
+  }
+
+  #mainText2 {
+    left: 15vw;
+    font-size: 5vw;
+    width: 100vw;
+    top: 30vw;
+  }
+
+  #accountsText {
+    top: -4vw;
+    left: 15vw;
+    font-size: 5vw;
+    line-height: 12vw;
+  }
+
+  #accountsText2 {
+    position: relative;
+    top: 74vw;
+    left: -8vw;
+    font-size: 5vw;
+    line-height: 12vw;
+  }
+
+  #contactText {
+    position: relative;
+    top: 28vw;
+    left: 9vw;
+    font-size: 4.6vw;
+    transform: skew(20deg, -6deg);
+    line-height: 10vw;
+  }
+
+  #projectsText {
+    position: relative;
+    top: 28vw;
+    left: 9vw;
+    transform: skew(20deg, -6deg);
+    line-height: 8vw;
+    font-size: 4.6vw;
+    width: 100vw;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+
+/*# sourceMappingURL=styles.css.map */

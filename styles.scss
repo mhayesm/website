@@ -1,0 +1,471 @@
+/* sass --watch styles.scss:styles.css */
+
+$blue: #0c3f72;
+$dark-blue: #072b4e;
+$grey: #cecece;
+$yellow: #FFC200;
+$green: #2bd879;
+$pink: #db6aa3;
+$pink-glow: #f088bc;
+$light-blue: #00aeff;
+
+body {
+    background-color: #001d3a;
+    font-family: "Fira Code";
+    color: $grey;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100vh;
+    background-image: url(https://media.geeksforgeeks.org/wp-content/uploads/space_background_for_infinite_scroll_example.png);
+}
+
+b {
+    font-weight: 800;
+    color: $yellow;
+}
+
+a {
+    text-decoration: none;
+    color: $yellow;
+    border-radius: 1.6vw 1.6vw 1.6vw 1.6vw;
+}
+
+h1 {
+    color: $green;
+    padding: 0;
+    margin: 0;
+    font-size: 7vw;
+    font-weight: 600;
+    transform: skew(20deg, -6deg);
+    line-height: 7vw;
+    top: 2vw;
+    left: 4vw;
+}
+
+p {
+    font-size: 2.3vw;
+    transform: skew(20deg, -6deg);
+}
+
+#main {
+    height: 100vh;
+    width: 100vw;
+}
+
+#accounts {
+    height: 100vh;
+    width: 100vw;
+}
+
+#contact {
+    height: 100vh;
+    width: 100vw;
+}
+
+#projects {
+    height: 100vh;
+    width: 100vw;
+}
+
+ul {
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 4.3vw;
+    right: 3.1vw;
+    bottom: 3vw;
+    transform: skew(-20deg, 6deg);
+}
+
+#linkText {
+    background-color: $blue;
+    padding: 0.6vw;
+    color: $yellow;
+    position: relative;
+    box-shadow: -0.1vw 0.1vw 0px $dark-blue, -0.2vw .2vw 0vw $dark-blue, -.3vw .3vw 0vw $dark-blue, -.4vw .4vw 0vw $dark-blue, -.5vw .5vw 0vw $dark-blue, -.6vw .6vw 0vw $dark-blue, -.7vw .7vw 0vw $dark-blue, -.8vw .8vw 0vw $dark-blue, -.9vw .9vw 0vw $dark-blue;
+}
+
+#linkText:hover {
+    background-color: $yellow;
+    box-shadow: none;
+    color: $blue;
+    top: 1vw;
+    left: -1vw;
+}
+
+ul a {
+    position: relative;
+    background-color: $blue;
+    z-index: 1;
+    color: $green;
+    text-decoration: none;
+    padding: .2vw;
+    box-shadow: 0.1vw 0.1vw 0px $dark-blue,
+    0.2vw .2vw 0vw $dark-blue,
+    .3vw .3vw 0vw $dark-blue,
+    .4vw .4vw 0vw $dark-blue,
+    .5vw .5vw 0vw $dark-blue,
+    .6vw .6vw 0vw $dark-blue,
+    .7vw .7vw 0vw $dark-blue,
+    .8vw .8vw 0vw $dark-blue,
+    .9vw .9vw 0vw $dark-blue,
+    1vw 1vw 0vw $dark-blue;
+}
+
+ul a:hover {
+    background-color: $green;
+    color: $blue;
+}
+
+.current {
+    box-shadow: none;
+    top: 1.2vw;
+    left: 1.2vw;
+}
+
+#infoNav {
+    color: $green;
+
+    &:hover,
+    :not(.current) {
+        background-color: $green;
+        color: $blue;
+
+        &:not(.current) {
+           box-shadow: 0.1vw 0.1vw 0px darken($green, 20%),
+           0.2vw .2vw 0vw darken($green, 20%),
+           .3vw .3vw 0vw darken($green, 20%),
+           .4vw .4vw 0vw darken($green, 20%),
+           .5vw .5vw 0vw darken($green, 20%),
+           .6vw .6vw 0vw darken($green, 20%),
+           .7vw .7vw 0vw darken($green, 20%),
+           .8vw .8vw 0vw darken($green, 20%),
+           .9vw .9vw 0vw darken($green, 20%),
+           1vw 1vw 0vw darken($green, 20%),
+           1.1vw 1.1vw 0vw darken($green, 20%),
+           1.2vw 1.2vw 0vw darken($green, 20%);
+        }
+    }
+
+    &.current {
+        background-color: $green;
+        color: $blue;
+    }
+}
+
+#accountsNav {
+    color: $yellow;
+
+    &:hover {
+        background-color: $yellow;
+        color: $blue;
+
+        &:not(.current) {
+                       box-shadow: 0.1vw 0.1vw 0px darken($yellow, 20%),
+                       0.2vw .2vw 0vw darken($yellow, 20%),
+                       .3vw .3vw 0vw darken($yellow, 20%),
+                       .4vw .4vw 0vw darken($yellow, 20%),
+                       .5vw .5vw 0vw darken($yellow, 20%),
+                       .6vw .6vw 0vw darken($yellow, 20%),
+                       .7vw .7vw 0vw darken($yellow, 20%),
+                       .8vw .8vw 0vw darken($yellow, 20%),
+                       .9vw .9vw 0vw darken($yellow, 20%),
+                       1vw 1vw 0vw darken($yellow, 20%),
+                       1.1vw 1.1vw 0vw darken($yellow, 20%),
+                       1.2vw 1.2vw 0vw darken($yellow, 20%);
+        }
+    }
+
+    &.current {
+        background-color: $yellow;
+        color: $blue;
+    }
+}
+
+#contactNav {
+    color: $pink;
+
+    &:hover {
+        background-color: $pink;
+        color: $blue;
+
+        &:not(.current) {
+                      box-shadow: 0.1vw 0.1vw 0px darken($pink, 20%),
+                      0.2vw .2vw 0vw darken($pink, 20%),
+                      .3vw .3vw 0vw darken($pink, 20%),
+                      .4vw .4vw 0vw darken($pink, 20%),
+                      .5vw .5vw 0vw darken($pink, 20%),
+                      .6vw .6vw 0vw darken($pink, 20%),
+                      .7vw .7vw 0vw darken($pink, 20%),
+                      .8vw .8vw 0vw darken($pink, 20%),
+                      .9vw .9vw 0vw darken($pink, 20%),
+                      1vw 1vw 0vw darken($pink, 20%),
+                      1.1vw 1.1vw 0vw darken($pink, 20%),
+                      1.2vw 1.2vw 0vw darken($pink, 20%);
+        }
+    }
+
+    &.current {
+        background-color: $pink;
+        color: $blue;
+    }
+}
+
+#projectsNav {
+    color: $light-blue;
+
+    &:hover {
+        background-color: $light-blue;
+        color: $blue;
+
+        &:not(.current) {
+                      box-shadow: 0.1vw 0.1vw 0px darken($light-blue, 20%),
+                      0.2vw .2vw 0vw darken($light-blue, 20%),
+                      .3vw .3vw 0vw darken($light-blue, 20%),
+                      .4vw .4vw 0vw darken($light-blue, 20%),
+                      .5vw .5vw 0vw darken($light-blue, 20%),
+                      .6vw .6vw 0vw darken($light-blue, 20%),
+                      .7vw .7vw 0vw darken($light-blue, 20%),
+                      .8vw .8vw 0vw darken($light-blue, 20%),
+                      .9vw .9vw 0vw darken($light-blue, 20%),
+                      1vw 1vw 0vw darken($light-blue, 20%),
+                      1.1vw 1.1vw 0vw darken($light-blue, 20%),
+                      1.2vw 1.2vw 0vw darken($light-blue, 20%);
+        }
+    }
+
+    &.current {
+        background-color: $light-blue;
+        color: $blue;
+    }
+}
+
+#nameH1 {
+    width: 31vw;
+    padding: 0.2vw;
+    position: relative;
+}
+
+#mainText {
+    position: relative;
+    left: 10vw;
+    font-size: 3vw;
+    line-height: 6vw;
+
+    & a {
+        color: $green;
+    }
+
+    & a:hover {
+        color: $blue;
+        background-color: $green;
+    }
+}
+
+#mainText2 {
+    position: relative;
+    top: 4vw;
+    left: 13vw;
+    width: 38vw;
+    font-size: 2.7vw;
+    line-height: 6vw;
+}
+
+#linkText:hover {
+    background-color: $yellow;
+    color: $blue;
+}
+
+#accountsText {
+    position: relative;
+    float: left;
+    top: -2vw;
+    left: 12vw;
+    font-size: 2.6vw;
+    transform: skew(20deg, -6deg);
+    line-height: 7vw;
+
+    & a {
+        color: $yellow;
+    }
+
+    & a:hover {
+        color: $blue;
+        background-color: $yellow;
+    }
+}
+
+#accountsText2 {
+    position: relative;
+    top: -2.3vw;
+    left: 12vw;
+    font-size: 2.6vw;
+    transform: skew(20deg, -6deg);
+    line-height: 7vw;
+
+    & a {
+        color: $yellow;
+    }
+
+    & a:hover {
+        color: $blue;
+        background-color: $yellow;
+    }
+}
+
+#contactText {
+    position: relative;
+    top: -1vw;
+    left: 10vw;
+    font-size: 2.7vw;
+    transform: skew(20deg, -6deg);
+    width: 50vw;
+    line-height: 7vw;
+
+    & a {
+        color: $pink;
+    }
+
+    & a:hover {
+        color: $blue;
+        background-color: $pink;
+    }
+}
+
+#projectsText {
+    position: relative;
+    top: 2vw;
+    left: 8vw;
+    transform: skew(20deg, -6deg);
+    line-height: 5vw;
+    font-size: 2.8vw;
+    width: 50vw;
+
+    & a {
+        color: $light-blue;
+    }
+
+    & a:hover {
+        color: $blue;
+        background-color: $light-blue;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+
+     h1 {
+         padding: 0;
+         margin: 0;
+         font-size: 19vw;
+         font-weight: 200;
+         line-height: 100%;
+         top: 25vw;
+         left: 10vw;
+     }
+
+     ul {
+         font-size: 10vw;
+         right: 7.5vw;
+         bottom: 6vw;
+     }
+
+
+
+     ul a {
+         padding: 0.4vw;
+             box-shadow: 0.1vw 0.1vw 0px $dark-blue,
+             0.2vw .2vw 0vw $dark-blue,
+             .3vw .3vw 0vw $dark-blue,
+             .4vw .4vw 0vw $dark-blue,
+             .5vw .5vw 0vw $dark-blue,
+             .6vw .6vw 0vw $dark-blue,
+             .7vw .7vw 0vw $dark-blue,
+             .8vw .8vw 0vw $dark-blue,
+             .9vw .9vw 0vw $dark-blue,
+             1vw 1vw 0vw $dark-blue,
+             1.1vw 1.1vw 0px $dark-blue,
+             1.2vw 1.2vw 0vw $dark-blue,
+             1.3vw 1.3vw 0vw $dark-blue,
+             1.4vw 1.4vw 0vw $dark-blue,
+             1.5vw 1.5vw 0vw $dark-blue,
+             1.6vw 1.6vw 0vw $dark-blue,
+             1.7vw 1.7vw 0vw $dark-blue,
+             1.8vw 1.8vw 0vw $dark-blue,
+             1.9vw 1.9vw 0vw $dark-blue,
+             2.0vw 2.0vw 0px $dark-blue,
+             2.1vw 2.1vw 0vw $dark-blue,
+             2.2vw 2.2vw 0vw $dark-blue;
+     }
+
+     .current {
+         top: 2.7vw;
+         left: 2.7vw;
+     }
+
+     #nameH1 {
+         width: 10%;
+     }
+
+     #mainText {
+         left: 0vw;
+         font-size: 8.1vw;
+         width: 100%;
+         top: 25vw;
+        
+     }
+
+     #mainText2 {
+         left: 15vw;
+         font-size: 5vw;
+         width: 100vw;
+         top: 30vw;
+
+     }
+
+     #accountsText {
+         top: -4vw;
+         left: 15vw;
+         font-size: 5vw;
+         line-height: 12vw;
+     }
+
+     #accountsText2 {
+         position: relative;
+         top: 74vw;
+         left: -8vw;
+         font-size: 5vw;
+         line-height: 12vw;
+     }
+
+     #contactText {
+         position: relative;
+         top: 28vw;
+         left: 9vw;
+         font-size: 4.6vw;
+         transform: skew(20deg, -6deg);
+         line-height: 10vw;
+     }
+
+     #projectsText {
+         position: relative;
+         top: 28vw;
+         left: 9vw;
+         transform: skew(20deg, -6deg);
+         line-height: 8vw;
+         font-size: 4.6vw;
+         width: 100vw;
+     }
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {}
