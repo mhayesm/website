@@ -34,12 +34,12 @@ h1 {
     color: $green;
     padding: 0;
     margin: 0;
-    font-size: 7vw;
+    font-size: 6vw;
     font-weight: 600;
     transform: skew(20deg, -6deg);
     line-height: 7vw;
-    top: 2vw;
-    left: 4vw;
+    top: 3vw;
+    left: 18vw;
 }
 
 p {
@@ -249,8 +249,8 @@ ul a:hover {
 
 #mainText {
     position: relative;
-    left: 10vw;
-    font-size: 3vw;
+    left: 16vw;
+    font-size: 3.5vw;
     line-height: 6vw;
 
     & a {
@@ -266,7 +266,7 @@ ul a:hover {
 #mainText2 {
     position: relative;
     top: 4vw;
-    left: 13vw;
+    left: 21vw;
     width: 38vw;
     font-size: 2.7vw;
     line-height: 6vw;
