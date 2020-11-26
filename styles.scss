@@ -16,8 +16,23 @@ body {
     overflow-y: hidden;
     overflow-x: hidden;
     height: 100vh;
-    background-image: url(https://media.geeksforgeeks.org/wp-content/uploads/space_background_for_infinite_scroll_example.png);
+  /*  background-image: url(https://media.geeksforgeeks.org/wp-content/uploads/space_background_for_infinite_scroll_example.png); */
+    background-image: url("icons/back.png");
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: animatedBackground 35s linear infinite alternate;
 }
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 0;
+    }
+}
+
 
 b {
     font-weight: 800;
@@ -470,3 +485,5 @@ ul a:hover {
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 992px) {}
+
+
