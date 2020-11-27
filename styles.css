@@ -32,21 +32,23 @@ a {
   border-radius: 1.6vw 1.6vw 1.6vw 1.6vw;
 }
 
+p {
+  font-size: 2.3vw;
+  transform: skew(20deg, -6deg);
+  font-family: "Fira Sans";
+}
+
 h1 {
   color: #2bd879;
   padding: 0;
   margin: 0;
+  font-family: "Fira Code";
   font-size: 5vw;
-  font-weight: 600;
+  font-weight: 300;
   transform: skew(20deg, -6deg);
   line-height: 7vw;
   top: 3vw;
   left: 14vw;
-}
-
-p {
-  font-size: 2.3vw;
-  transform: skew(20deg, -6deg);
 }
 
 #main {
@@ -86,6 +88,7 @@ ul {
   color: #FFC200;
   position: relative;
   box-shadow: -0.1vw 0.1vw 0px #072b4e, -0.2vw 0.2vw 0vw #072b4e, -0.3vw 0.3vw 0vw #072b4e, -0.4vw 0.4vw 0vw #072b4e, -0.5vw 0.5vw 0vw #072b4e, -0.6vw 0.6vw 0vw #072b4e, -0.7vw 0.7vw 0vw #072b4e, -0.8vw 0.8vw 0vw #072b4e, -0.9vw 0.9vw 0vw #072b4e;
+  font-family: "Fira Code";
 }
 
 #linkText:hover {
@@ -206,6 +209,7 @@ ul a:hover {
   width: 38vw;
   font-size: 2.7vw;
   line-height: 6vw;
+  font-family: "Fira Code";
 }
 
 #linkText:hover {
@@ -287,8 +291,8 @@ ul a:hover {
     font-size: 19vw;
     font-weight: 200;
     line-height: 100%;
-    top: 25vw;
-    left: 10vw;
+    top: 10vw;
+    left: 11vw;
   }
 
   ul {
@@ -315,47 +319,47 @@ ul a:hover {
     left: 0.4vw;
     font-size: 5.9vw;
     width: 100vw;
-    top: 25vw;
+    top: 15vw;
   }
 
   #mainText2 {
     left: 15vw;
     font-size: 5vw;
     width: 100vw;
-    top: 30vw;
+    top: 25vw;
   }
 
   #accountsText {
-    top: -4vw;
-    left: 15vw;
+    top: 20vw;
+    left: 13vw;
     font-size: 5vw;
     line-height: 12vw;
   }
 
   #accountsText2 {
     position: relative;
-    top: 74vw;
-    left: -8vw;
+    top: 23vw;
+    left: 10vw;
     font-size: 5vw;
     line-height: 12vw;
   }
 
   #contactText {
     position: relative;
-    top: 28vw;
-    left: 9vw;
-    font-size: 4.6vw;
+    top: 27vw;
+    left: 11vw;
+    font-size: 5.5vw;
     transform: skew(20deg, -6deg);
-    line-height: 10vw;
+    line-height: 11vw;
   }
 
   #projectsText {
     position: relative;
-    top: 14vw;
-    left: 13vw;
+    top: 17vw;
+    left: 14vw;
     transform: skew(20deg, -6deg);
     line-height: 8vw;
-    font-size: 4.6vw;
+    font-size: 5vw;
     width: 70vw;
   }
 }
