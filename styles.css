@@ -43,12 +43,12 @@ h1 {
   padding: 0;
   margin: 0;
   font-family: "Fira Code";
-  font-size: 5vw;
+  font-size: 3.7vw;
   font-weight: 300;
   transform: skew(20deg, -6deg);
   line-height: 7vw;
-  top: 3vw;
-  left: 14vw;
+  top: 6vw;
+  left: 24vw;
 }
 
 #main {
@@ -76,18 +76,18 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font-size: 3.6vw;
-  right: 16vw;
+  font-size: 2.9vw;
+  right: 20vw;
   bottom: 8vw;
   transform: skew(-20deg, 6deg);
 }
 
 #linkText {
   background-color: #0c3f72;
-  padding: 0.6vw;
+  padding: 0.4vw;
   color: #FFC200;
   position: relative;
-  box-shadow: -0.1vw 0.1vw 0px #072b4e, -0.2vw 0.2vw 0vw #072b4e, -0.3vw 0.3vw 0vw #072b4e, -0.4vw 0.4vw 0vw #072b4e, -0.5vw 0.5vw 0vw #072b4e, -0.6vw 0.6vw 0vw #072b4e, -0.7vw 0.7vw 0vw #072b4e, -0.8vw 0.8vw 0vw #072b4e, -0.9vw 0.9vw 0vw #072b4e;
+  box-shadow: -0.1vw 0.1vw 0px #072b4e, -0.2vw 0.2vw 0vw #072b4e, -0.3vw 0.3vw 0vw #072b4e, -0.4vw 0.4vw 0vw #072b4e, -0.5vw 0.5vw 0vw #072b4e, -0.6vw 0.6vw 0vw #072b4e;
   font-family: "Fira Code";
 }
 
@@ -106,7 +106,7 @@ ul a {
   color: #2bd879;
   text-decoration: none;
   padding: 0.2vw;
-  box-shadow: 0.1vw 0.1vw 0px #072b4e, 0.2vw 0.2vw 0vw #072b4e, 0.3vw 0.3vw 0vw #072b4e, 0.4vw 0.4vw 0vw #072b4e, 0.5vw 0.5vw 0vw #072b4e, 0.6vw 0.6vw 0vw #072b4e, 0.7vw 0.7vw 0vw #072b4e, 0.8vw 0.8vw 0vw #072b4e, 0.9vw 0.9vw 0vw #072b4e;
+  box-shadow: 0.1vw 0.1vw 0px #072b4e, 0.2vw 0.2vw 0vw #072b4e, 0.3vw 0.3vw 0vw #072b4e, 0.4vw 0.4vw 0vw #072b4e, 0.5vw 0.5vw 0vw #072b4e, 0.6vw 0.6vw 0vw #072b4e, 0.7vw 0.7vw 0vw #072b4e;
 }
 
 ul a:hover {
@@ -116,25 +116,22 @@ ul a:hover {
 
 .current {
   box-shadow: none;
-  top: 1.1vw;
-  left: 1.1vw;
+  top: 0.9vw;
+  left: 0.9vw;
 }
 
 #infoNav {
   color: #2bd879;
 }
-
 #infoNav:hover,
 #infoNav :not(.current) {
   background-color: #2bd879;
   color: #0c3f72;
 }
-
 #infoNav:hover:not(.current),
 #infoNav :not(.current):not(.current) {
-  box-shadow: 0.1vw 0.1vw 0px #188549, 0.2vw 0.2vw 0vw #188549, 0.3vw 0.3vw 0vw #188549, 0.4vw 0.4vw 0vw #188549, 0.5vw 0.5vw 0vw #188549, 0.6vw 0.6vw 0vw #188549, 0.7vw 0.7vw 0vw #188549, 0.8vw 0.8vw 0vw #188549, 0.9vw 0.9vw 0vw #188549;
+  box-shadow: 0.1vw 0.1vw 0px #188549, 0.2vw 0.2vw 0vw #188549, 0.3vw 0.3vw 0vw #188549, 0.4vw 0.4vw 0vw #188549, 0.5vw 0.5vw 0vw #188549, 0.6vw 0.6vw 0vw #188549, 0.7vw 0.7vw 0vw #188549;
 }
-
 #infoNav.current {
   background-color: #2bd879;
   color: #0c3f72;
@@ -143,16 +140,13 @@ ul a:hover {
 #accountsNav {
   color: #FFC200;
 }
-
 #accountsNav:hover {
   background-color: #FFC200;
   color: #0c3f72;
 }
-
 #accountsNav:hover:not(.current) {
-  box-shadow: 0.1vw 0.1vw 0px #997400, 0.2vw 0.2vw 0vw #997400, 0.3vw 0.3vw 0vw #997400, 0.4vw 0.4vw 0vw #997400, 0.5vw 0.5vw 0vw #997400, 0.6vw 0.6vw 0vw #997400, 0.7vw 0.7vw 0vw #997400, 0.8vw 0.8vw 0vw #997400, 0.9vw 0.9vw 0vw #997400;
+  box-shadow: 0.1vw 0.1vw 0px #997400, 0.2vw 0.2vw 0vw #997400, 0.3vw 0.3vw 0vw #997400, 0.4vw 0.4vw 0vw #997400, 0.5vw 0.5vw 0vw #997400, 0.6vw 0.6vw 0vw #997400, 0.7vw 0.7vw 0vw #997400;
 }
-
 #accountsNav.current {
   background-color: #FFC200;
   color: #0c3f72;
@@ -161,16 +155,13 @@ ul a:hover {
 #contactNav {
   color: #db6aa3;
 }
-
 #contactNav:hover {
   background-color: #db6aa3;
   color: #0c3f72;
 }
-
 #contactNav:hover:not(.current) {
-  box-shadow: 0.1vw 0.1vw 0px #b42b70, 0.2vw 0.2vw 0vw #b42b70, 0.3vw 0.3vw 0vw #b42b70, 0.4vw 0.4vw 0vw #b42b70, 0.5vw 0.5vw 0vw #b42b70, 0.6vw 0.6vw 0vw #b42b70, 0.7vw 0.7vw 0vw #b42b70, 0.8vw 0.8vw 0vw #b42b70, 0.9vw 0.9vw 0vw #b42b70;
+  box-shadow: 0.1vw 0.1vw 0px #b42b70, 0.2vw 0.2vw 0vw #b42b70, 0.3vw 0.3vw 0vw #b42b70, 0.4vw 0.4vw 0vw #b42b70, 0.5vw 0.5vw 0vw #b42b70, 0.6vw 0.6vw 0vw #b42b70, 0.7vw 0.7vw 0vw #b42b70;
 }
-
 #contactNav.current {
   background-color: #db6aa3;
   color: #0c3f72;
@@ -179,16 +170,13 @@ ul a:hover {
 #projectsNav {
   color: #00aeff;
 }
-
 #projectsNav:hover {
   background-color: #00aeff;
   color: #0c3f72;
 }
-
 #projectsNav:hover:not(.current) {
-  box-shadow: 0.1vw 0.1vw 0px #006899, 0.2vw 0.2vw 0vw #006899, 0.3vw 0.3vw 0vw #006899, 0.4vw 0.4vw 0vw #006899, 0.5vw 0.5vw 0vw #006899, 0.6vw 0.6vw 0vw #006899, 0.7vw 0.7vw 0vw #006899, 0.8vw 0.8vw 0vw #006899, 0.9vw 0.9vw 0vw #006899;
+  box-shadow: 0.1vw 0.1vw 0px #006899, 0.2vw 0.2vw 0vw #006899, 0.3vw 0.3vw 0vw #006899, 0.4vw 0.4vw 0vw #006899, 0.5vw 0.5vw 0vw #006899, 0.6vw 0.6vw 0vw #006899, 0.7vw 0.7vw 0vw #006899;
 }
-
 #projectsNav.current {
   background-color: #00aeff;
   color: #0c3f72;
@@ -201,16 +189,14 @@ ul a:hover {
 
 #mainText {
   position: relative;
-  top: 3vw;
-  left: 10vw;
-  font-size: 3.5vw;
+  top: 5vw;
+  left: 23vw;
+  font-size: 2.3vw;
   line-height: 6vw;
 }
-
 #mainText a {
   color: #2bd879;
 }
-
 #mainText a:hover {
   color: #0c3f72;
   background-color: #2bd879;
@@ -218,10 +204,10 @@ ul a:hover {
 
 #mainText2 {
   position: relative;
-  top: 5vw;
-  left: 21vw;
+  top: 7vw;
+  left: 30.5vw;
   width: 38vw;
-  font-size: 2.7vw;
+  font-size: 1.7vw;
   line-height: 6vw;
   font-family: "Fira Code";
 }
@@ -234,17 +220,15 @@ ul a:hover {
 #accountsText {
   position: relative;
   float: left;
-  top: -2vw;
-  left: 12vw;
-  font-size: 2.6vw;
+  top: 7vw;
+  left: 28vw;
+  font-size: 1.7vw;
   transform: skew(20deg, -6deg);
-  line-height: 7vw;
+  line-height: 4.5vw;
 }
-
 #accountsText a {
   color: #FFC200;
 }
-
 #accountsText a:hover {
   color: #0c3f72;
   background-color: #FFC200;
@@ -252,17 +236,15 @@ ul a:hover {
 
 #accountsText2 {
   position: relative;
-  top: -2.3vw;
-  left: 12vw;
-  font-size: 2.6vw;
+  top: 4vw;
+  left: 30vw;
+  font-size: 1.8vw;
   transform: skew(20deg, -6deg);
-  line-height: 7vw;
+  line-height: 4.5vw;
 }
-
 #accountsText2 a {
   color: #FFC200;
 }
-
 #accountsText2 a:hover {
   color: #0c3f72;
   background-color: #FFC200;
@@ -270,18 +252,16 @@ ul a:hover {
 
 #contactText {
   position: relative;
-  top: -1vw;
-  left: 10vw;
-  font-size: 2.7vw;
+  top: 8vw;
+  left: 28vw;
+  font-size: 1.8vw;
   transform: skew(20deg, -6deg);
-  width: 50vw;
-  line-height: 7vw;
+  width: 25vw;
+  line-height: 4.5vw;
 }
-
 #contactText a {
   color: #db6aa3;
 }
-
 #contactText a:hover {
   color: #0c3f72;
   background-color: #db6aa3;
@@ -289,18 +269,16 @@ ul a:hover {
 
 #projectsText {
   position: relative;
-  top: 2vw;
-  left: 8vw;
+  top: 8vw;
+  left: 28vw;
   transform: skew(20deg, -6deg);
-  line-height: 4.8vw;
-  font-size: 2.4vw;
-  width: 50vw;
+  line-height: 4vw;
+  font-size: 1.8vw;
+  width: 32vw;
 }
-
 #projectsText a {
   color: #00aeff;
 }
-
 #projectsText a:hover {
   color: #0c3f72;
   background-color: #00aeff;
@@ -387,6 +365,5 @@ ul a:hover {
 }
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
-/*# sourceMappingURL=styles.css.map */
 
 /*# sourceMappingURL=styles.css.map */
