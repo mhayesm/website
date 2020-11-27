@@ -1,22 +1,12 @@
 /* sass --watch styles.scss:styles.css */
-
-$blue: #0c3f72;
-$dark-blue: #072b4e;
-$grey: #cecece;
-$yellow: #FFC200;
-$green: #2bd879;
-$pink: #db6aa3;
-$pink-glow: #f088bc;
-$light-blue: #00aeff;
-
 body {
     background-color: #001d3a;
     font-family: "Fira Code";
-    color: $grey;
+    color: #cecece;
     overflow-y: hidden;
     overflow-x: hidden;
     height: 100vh;
-  /*  background-image: url(https://media.geeksforgeeks.org/wp-content/uploads/space_background_for_infinite_scroll_example.png); */
+    /*  background-image: url(https://media.geeksforgeeks.org/wp-content/uploads/space_background_for_infinite_scroll_example.png); */
     background-image: url("icons/back.png");
     background-position: 0px 0px;
     background-repeat: repeat-x;
@@ -33,18 +23,16 @@ body {
     }
 }
 
-
 b {
     font-weight: 800;
-    color: $yellow;
+    color: #FFC200;
 }
 
 a {
     text-decoration: none;
-    color: $yellow;
+    color: #FFC200;
     border-radius: 1.6vw 1.6vw 1.6vw 1.6vw;
 }
-
 
 p {
     font-size: 2.3vw;
@@ -53,7 +41,7 @@ p {
 }
 
 h1 {
-    color: $green;
+    color: #2bd879;
     padding: 0;
     margin: 0;
     font-family: "Fira Code";
@@ -90,178 +78,125 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    font-size: 4.3vw;
-    right: 3.1vw;
-    bottom: 3vw;
+    font-size: 3.6vw;
+    right: 16vw;
+    bottom: 8vw;
     transform: skew(-20deg, 6deg);
 }
 
 #linkText {
-    background-color: $blue;
+    background-color: #0c3f72;
     padding: 0.6vw;
-    color: $yellow;
+    color: #FFC200;
     position: relative;
-    box-shadow: -0.1vw 0.1vw 0px $dark-blue, -0.2vw .2vw 0vw $dark-blue, -.3vw .3vw 0vw $dark-blue, -.4vw .4vw 0vw $dark-blue, -.5vw .5vw 0vw $dark-blue, -.6vw .6vw 0vw $dark-blue, -.7vw .7vw 0vw $dark-blue, -.8vw .8vw 0vw $dark-blue, -.9vw .9vw 0vw $dark-blue;
+    box-shadow: -0.1vw 0.1vw 0px #072b4e, -0.2vw 0.2vw 0vw #072b4e, -0.3vw 0.3vw 0vw #072b4e, -0.4vw 0.4vw 0vw #072b4e, -0.5vw 0.5vw 0vw #072b4e, -0.6vw 0.6vw 0vw #072b4e, -0.7vw 0.7vw 0vw #072b4e, -0.8vw 0.8vw 0vw #072b4e, -0.9vw 0.9vw 0vw #072b4e;
     font-family: "Fira Code";
 }
 
 #linkText:hover {
-    background-color: $yellow;
+    background-color: #FFC200;
     box-shadow: none;
-    color: $blue;
+    color: #0c3f72;
     top: 1vw;
     left: -1vw;
 }
 
 ul a {
     position: relative;
-    background-color: $blue;
+    background-color: #0c3f72;
     z-index: 1;
-    color: $green;
+    color: #2bd879;
     text-decoration: none;
-    padding: .2vw;
-    box-shadow: 0.1vw 0.1vw 0px $dark-blue,
-    0.2vw .2vw 0vw $dark-blue,
-    .3vw .3vw 0vw $dark-blue,
-    .4vw .4vw 0vw $dark-blue,
-    .5vw .5vw 0vw $dark-blue,
-    .6vw .6vw 0vw $dark-blue,
-    .7vw .7vw 0vw $dark-blue,
-    .8vw .8vw 0vw $dark-blue,
-    .9vw .9vw 0vw $dark-blue,
-    1vw 1vw 0vw $dark-blue;
+    padding: 0.2vw;
+    box-shadow: 0.1vw 0.1vw 0px #072b4e, 0.2vw 0.2vw 0vw #072b4e, 0.3vw 0.3vw 0vw #072b4e, 0.4vw 0.4vw 0vw #072b4e, 0.5vw 0.5vw 0vw #072b4e, 0.6vw 0.6vw 0vw #072b4e, 0.7vw 0.7vw 0vw #072b4e, 0.8vw 0.8vw 0vw #072b4e, 0.9vw 0.9vw 0vw #072b4e;
 }
 
 ul a:hover {
-    background-color: $green;
-    color: $blue;
+    background-color: #2bd879;
+    color: #0c3f72;
 }
 
 .current {
     box-shadow: none;
-    top: 1.2vw;
-    left: 1.2vw;
+    top: 1.1vw;
+    left: 1.1vw;
 }
 
 #infoNav {
-    color: $green;
+    color: #2bd879;
+}
 
-    &:hover,
-    :not(.current) {
-        background-color: $green;
-        color: $blue;
+#infoNav:hover,
+#infoNav :not(.current) {
+    background-color: #2bd879;
+    color: #0c3f72;
+}
 
-        &:not(.current) {
-           box-shadow: 0.1vw 0.1vw 0px darken($green, 20%),
-           0.2vw .2vw 0vw darken($green, 20%),
-           .3vw .3vw 0vw darken($green, 20%),
-           .4vw .4vw 0vw darken($green, 20%),
-           .5vw .5vw 0vw darken($green, 20%),
-           .6vw .6vw 0vw darken($green, 20%),
-           .7vw .7vw 0vw darken($green, 20%),
-           .8vw .8vw 0vw darken($green, 20%),
-           .9vw .9vw 0vw darken($green, 20%),
-           1vw 1vw 0vw darken($green, 20%),
-           1.1vw 1.1vw 0vw darken($green, 20%),
-           1.2vw 1.2vw 0vw darken($green, 20%);
-        }
-    }
+#infoNav:hover:not(.current),
+#infoNav :not(.current):not(.current) {
+    box-shadow: 0.1vw 0.1vw 0px #188549, 0.2vw 0.2vw 0vw #188549, 0.3vw 0.3vw 0vw #188549, 0.4vw 0.4vw 0vw #188549, 0.5vw 0.5vw 0vw #188549, 0.6vw 0.6vw 0vw #188549, 0.7vw 0.7vw 0vw #188549, 0.8vw 0.8vw 0vw #188549, 0.9vw 0.9vw 0vw #188549;
+}
 
-    &.current {
-        background-color: $green;
-        color: $blue;
-    }
+#infoNav.current {
+    background-color: #2bd879;
+    color: #0c3f72;
 }
 
 #accountsNav {
-    color: $yellow;
+    color: #FFC200;
+}
 
-    &:hover {
-        background-color: $yellow;
-        color: $blue;
+#accountsNav:hover {
+    background-color: #FFC200;
+    color: #0c3f72;
+}
 
-        &:not(.current) {
-                       box-shadow: 0.1vw 0.1vw 0px darken($yellow, 20%),
-                       0.2vw .2vw 0vw darken($yellow, 20%),
-                       .3vw .3vw 0vw darken($yellow, 20%),
-                       .4vw .4vw 0vw darken($yellow, 20%),
-                       .5vw .5vw 0vw darken($yellow, 20%),
-                       .6vw .6vw 0vw darken($yellow, 20%),
-                       .7vw .7vw 0vw darken($yellow, 20%),
-                       .8vw .8vw 0vw darken($yellow, 20%),
-                       .9vw .9vw 0vw darken($yellow, 20%),
-                       1vw 1vw 0vw darken($yellow, 20%),
-                       1.1vw 1.1vw 0vw darken($yellow, 20%),
-                       1.2vw 1.2vw 0vw darken($yellow, 20%);
-        }
-    }
+#accountsNav:hover:not(.current) {
+    box-shadow: 0.1vw 0.1vw 0px #997400, 0.2vw 0.2vw 0vw #997400, 0.3vw 0.3vw 0vw #997400, 0.4vw 0.4vw 0vw #997400, 0.5vw 0.5vw 0vw #997400, 0.6vw 0.6vw 0vw #997400, 0.7vw 0.7vw 0vw #997400, 0.8vw 0.8vw 0vw #997400, 0.9vw 0.9vw 0vw #997400;
+}
 
-    &.current {
-        background-color: $yellow;
-        color: $blue;
-    }
+#accountsNav.current {
+    background-color: #FFC200;
+    color: #0c3f72;
 }
 
 #contactNav {
-    color: $pink;
+    color: #db6aa3;
+}
 
-    &:hover {
-        background-color: $pink;
-        color: $blue;
+#contactNav:hover {
+    background-color: #db6aa3;
+    color: #0c3f72;
+}
 
-        &:not(.current) {
-                      box-shadow: 0.1vw 0.1vw 0px darken($pink, 20%),
-                      0.2vw .2vw 0vw darken($pink, 20%),
-                      .3vw .3vw 0vw darken($pink, 20%),
-                      .4vw .4vw 0vw darken($pink, 20%),
-                      .5vw .5vw 0vw darken($pink, 20%),
-                      .6vw .6vw 0vw darken($pink, 20%),
-                      .7vw .7vw 0vw darken($pink, 20%),
-                      .8vw .8vw 0vw darken($pink, 20%),
-                      .9vw .9vw 0vw darken($pink, 20%),
-                      1vw 1vw 0vw darken($pink, 20%),
-                      1.1vw 1.1vw 0vw darken($pink, 20%),
-                      1.2vw 1.2vw 0vw darken($pink, 20%);
-        }
-    }
+#contactNav:hover:not(.current) {
+    box-shadow: 0.1vw 0.1vw 0px #b42b70, 0.2vw 0.2vw 0vw #b42b70, 0.3vw 0.3vw 0vw #b42b70, 0.4vw 0.4vw 0vw #b42b70, 0.5vw 0.5vw 0vw #b42b70, 0.6vw 0.6vw 0vw #b42b70, 0.7vw 0.7vw 0vw #b42b70, 0.8vw 0.8vw 0vw #b42b70, 0.9vw 0.9vw 0vw #b42b70;
+}
 
-    &.current {
-        background-color: $pink;
-        color: $blue;
-    }
+#contactNav.current {
+    background-color: #db6aa3;
+    color: #0c3f72;
 }
 
 #projectsNav {
-    color: $light-blue;
+    color: #00aeff;
+}
 
-    &:hover {
-        background-color: $light-blue;
-        color: $blue;
+#projectsNav:hover {
+    background-color: #00aeff;
+    color: #0c3f72;
+}
 
-        &:not(.current) {
-                      box-shadow: 0.1vw 0.1vw 0px darken($light-blue, 20%),
-                      0.2vw .2vw 0vw darken($light-blue, 20%),
-                      .3vw .3vw 0vw darken($light-blue, 20%),
-                      .4vw .4vw 0vw darken($light-blue, 20%),
-                      .5vw .5vw 0vw darken($light-blue, 20%),
-                      .6vw .6vw 0vw darken($light-blue, 20%),
-                      .7vw .7vw 0vw darken($light-blue, 20%),
-                      .8vw .8vw 0vw darken($light-blue, 20%),
-                      .9vw .9vw 0vw darken($light-blue, 20%),
-                      1vw 1vw 0vw darken($light-blue, 20%),
-                      1.1vw 1.1vw 0vw darken($light-blue, 20%),
-                      1.2vw 1.2vw 0vw darken($light-blue, 20%);
-        }
-    }
+#projectsNav:hover:not(.current) {
+    box-shadow: 0.1vw 0.1vw 0px #006899, 0.2vw 0.2vw 0vw #006899, 0.3vw 0.3vw 0vw #006899, 0.4vw 0.4vw 0vw #006899, 0.5vw 0.5vw 0vw #006899, 0.6vw 0.6vw 0vw #006899, 0.7vw 0.7vw 0vw #006899, 0.8vw 0.8vw 0vw #006899, 0.9vw 0.9vw 0vw #006899;
+}
 
-    &.current {
-        background-color: $light-blue;
-        color: $blue;
-    }
+#projectsNav.current {
+    background-color: #00aeff;
+    color: #0c3f72;
 }
 
 #nameH1 {
-    
     padding: 0.2vw;
     position: relative;
 }
@@ -272,15 +207,15 @@ ul a:hover {
     left: 10vw;
     font-size: 3.5vw;
     line-height: 6vw;
+}
 
-    & a {
-        color: $green;
-    }
+#mainText a {
+    color: #2bd879;
+}
 
-    & a:hover {
-        color: $blue;
-        background-color: $green;
-    }
+#mainText a:hover {
+    color: #0c3f72;
+    background-color: #2bd879;
 }
 
 #mainText2 {
@@ -294,8 +229,8 @@ ul a:hover {
 }
 
 #linkText:hover {
-    background-color: $yellow;
-    color: $blue;
+    background-color: #FFC200;
+    color: #0c3f72;
 }
 
 #accountsText {
@@ -306,15 +241,15 @@ ul a:hover {
     font-size: 2.6vw;
     transform: skew(20deg, -6deg);
     line-height: 7vw;
+}
 
-    & a {
-        color: $yellow;
-    }
+#accountsText a {
+    color: #FFC200;
+}
 
-    & a:hover {
-        color: $blue;
-        background-color: $yellow;
-    }
+#accountsText a:hover {
+    color: #0c3f72;
+    background-color: #FFC200;
 }
 
 #accountsText2 {
@@ -324,15 +259,15 @@ ul a:hover {
     font-size: 2.6vw;
     transform: skew(20deg, -6deg);
     line-height: 7vw;
+}
 
-    & a {
-        color: $yellow;
-    }
+#accountsText2 a {
+    color: #FFC200;
+}
 
-    & a:hover {
-        color: $blue;
-        background-color: $yellow;
-    }
+#accountsText2 a:hover {
+    color: #0c3f72;
+    background-color: #FFC200;
 }
 
 #contactText {
@@ -343,15 +278,15 @@ ul a:hover {
     transform: skew(20deg, -6deg);
     width: 50vw;
     line-height: 7vw;
+}
 
-    & a {
-        color: $pink;
-    }
+#contactText a {
+    color: #db6aa3;
+}
 
-    & a:hover {
-        color: $blue;
-        background-color: $pink;
-    }
+#contactText a:hover {
+    color: #0c3f72;
+    background-color: #db6aa3;
 }
 
 #projectsText {
@@ -359,136 +294,101 @@ ul a:hover {
     top: 2vw;
     left: 8vw;
     transform: skew(20deg, -6deg);
-    line-height: 5vw;
+    line-height: 4.8vw;
     font-size: 2.4vw;
     width: 50vw;
-
-    & a {
-        color: $light-blue;
-    }
-
-    & a:hover {
-        color: $blue;
-        background-color: $light-blue;
-    }
 }
 
+#projectsText a {
+    color: #00aeff;
+}
+
+#projectsText a:hover {
+    color: #0c3f72;
+    background-color: #00aeff;
+}
 
 @media only screen and (max-width: 700px) {
+    h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 19vw;
+        font-weight: 200;
+        line-height: 100%;
+        top: 10vw;
+        left: 11vw;
+    }
 
-     h1 {
-         padding: 0;
-         margin: 0;
-         font-size: 19vw;
-         font-weight: 200;
-         line-height: 100%;
-         top: 10vw;
-         left: 11vw;
-     }
+    ul {
+        font-size: 10.5vw;
+        right: 22.5vw;
+        bottom: 9.5vw;
+    }
 
-     ul {
-         font-size: 10vw;
-         right: 7.5vw;
-         bottom: 6vw;
-     }
+    ul a {
+        padding: 0.4vw;
+        box-shadow: 0.1vw 0.1vw 0px #072b4e, 0.2vw 0.2vw 0vw #072b4e, 0.3vw 0.3vw 0vw #072b4e, 0.4vw 0.4vw 0vw #072b4e, 0.5vw 0.5vw 0vw #072b4e, 0.6vw 0.6vw 0vw #072b4e, 0.7vw 0.7vw 0vw #072b4e, 0.8vw 0.8vw 0vw #072b4e, 0.9vw 0.9vw 0vw #072b4e, 1vw 1vw 0vw #072b4e, 1.1vw 1.1vw 0px #072b4e, 1.2vw 1.2vw 0vw #072b4e, 1.3vw 1.3vw 0vw #072b4e, 1.4vw 1.4vw 0vw #072b4e, 1.5vw 1.5vw 0vw #072b4e, 1.6vw 1.6vw 0vw #072b4e, 1.7vw 1.7vw 0vw #072b4e, 1.8vw 1.8vw 0vw #072b4e, 1.9vw 1.9vw 0vw #072b4e, 2vw 2vw 0px #072b4e, 2.1vw 2.1vw 0vw #072b4e, 2.2vw 2.2vw 0vw #072b4e;
+    }
 
+    .current {
+        top: 2.7vw;
+        left: 2.7vw;
+    }
 
+    #nameH1 {
+        width: 10%;
+    }
 
-     ul a {
-         padding: 0.4vw;
-             box-shadow: 0.1vw 0.1vw 0px $dark-blue,
-             0.2vw .2vw 0vw $dark-blue,
-             .3vw .3vw 0vw $dark-blue,
-             .4vw .4vw 0vw $dark-blue,
-             .5vw .5vw 0vw $dark-blue,
-             .6vw .6vw 0vw $dark-blue,
-             .7vw .7vw 0vw $dark-blue,
-             .8vw .8vw 0vw $dark-blue,
-             .9vw .9vw 0vw $dark-blue,
-             1vw 1vw 0vw $dark-blue,
-             1.1vw 1.1vw 0px $dark-blue,
-             1.2vw 1.2vw 0vw $dark-blue,
-             1.3vw 1.3vw 0vw $dark-blue,
-             1.4vw 1.4vw 0vw $dark-blue,
-             1.5vw 1.5vw 0vw $dark-blue,
-             1.6vw 1.6vw 0vw $dark-blue,
-             1.7vw 1.7vw 0vw $dark-blue,
-             1.8vw 1.8vw 0vw $dark-blue,
-             1.9vw 1.9vw 0vw $dark-blue,
-             2.0vw 2.0vw 0px $dark-blue,
-             2.1vw 2.1vw 0vw $dark-blue,
-             2.2vw 2.2vw 0vw $dark-blue;
-     }
+    #mainText {
+        left: 0.4vw;
+        font-size: 5.9vw;
+        width: 100vw;
+        top: 15vw;
+    }
 
-     .current {
-         top: 2.7vw;
-         left: 2.7vw;
-     }
+    #mainText2 {
+        left: 15vw;
+        font-size: 5vw;
+        width: 100vw;
+        top: 25vw;
+    }
 
-     #nameH1 {
-         width: 10%;
-     }
+    #accountsText {
+        top: 12vw;
+        left: 13vw;
+        font-size: 5vw;
+        line-height: 12vw;
+    }
 
-     #mainText {
-         left: 0.4vw;
-         font-size: 5.9vw;
-         width: 100vw;
-         top: 15vw;
-        
-     }
+    #accountsText2 {
+        position: relative;
+        top: 15vw;
+        left: 10vw;
+        font-size: 5vw;
+        line-height: 12vw;
+    }
 
-     #mainText2 {
-         left: 15vw;
-         font-size: 5vw;
-         width: 100vw;
-         top: 25vw;
+    #contactText {
+        position: relative;
+        top: 17vw;
+        left: 11vw;
+        font-size: 5.5vw;
+        transform: skew(20deg, -6deg);
+        line-height: 11vw;
+    }
 
-     }
-
-     #accountsText {
-         top: 20vw;
-         left: 13vw;
-         font-size: 5vw;
-         line-height: 12vw;
-     }
-
-     #accountsText2 {
-         position: relative;
-         top: 23vw;
-         left: 10vw;
-         font-size: 5vw;
-         line-height: 12vw;
-     }
-
-     #contactText {
-         position: relative;
-         top: 27vw;
-         left: 11vw;
-         font-size: 5.5vw;
-         transform: skew(20deg, -6deg);
-         line-height: 11vw;
-     }
-
-     #projectsText {
-         position: relative;
-         top: 17vw;
-         left: 14vw;
-         transform: skew(20deg, -6deg);
-         line-height: 8vw;
-         font-size: 5vw;
-         width: 70vw;
-     }
-
+    #projectsText {
+        position: relative;
+        top: 15vw;
+        left: 13vw;
+        transform: skew(20deg, -6deg);
+        line-height: 8vw;
+        font-size: 5vw;
+        width: 70vw;
+    }
 }
 
-
 /* Medium devices (landscape tablets, 768px and up) */
-
-@media only screen and (min-width: 768px) {}
-
-
 /* Large devices (laptops/desktops, 992px and up) */
 
-@media only screen and (min-width: 992px) {}
-
-
+/*# sourceMappingURL=styles.css.map */

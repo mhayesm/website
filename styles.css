@@ -76,9 +76,9 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font-size: 4.3vw;
-  right: 3.1vw;
-  bottom: 3vw;
+  font-size: 3.6vw;
+  right: 16vw;
+  bottom: 8vw;
   transform: skew(-20deg, 6deg);
 }
 
@@ -106,7 +106,7 @@ ul a {
   color: #2bd879;
   text-decoration: none;
   padding: 0.2vw;
-  box-shadow: 0.1vw 0.1vw 0px #072b4e, 0.2vw 0.2vw 0vw #072b4e, 0.3vw 0.3vw 0vw #072b4e, 0.4vw 0.4vw 0vw #072b4e, 0.5vw 0.5vw 0vw #072b4e, 0.6vw 0.6vw 0vw #072b4e, 0.7vw 0.7vw 0vw #072b4e, 0.8vw 0.8vw 0vw #072b4e, 0.9vw 0.9vw 0vw #072b4e, 1vw 1vw 0vw #072b4e;
+  box-shadow: 0.1vw 0.1vw 0px #072b4e, 0.2vw 0.2vw 0vw #072b4e, 0.3vw 0.3vw 0vw #072b4e, 0.4vw 0.4vw 0vw #072b4e, 0.5vw 0.5vw 0vw #072b4e, 0.6vw 0.6vw 0vw #072b4e, 0.7vw 0.7vw 0vw #072b4e, 0.8vw 0.8vw 0vw #072b4e, 0.9vw 0.9vw 0vw #072b4e;
 }
 
 ul a:hover {
@@ -116,22 +116,25 @@ ul a:hover {
 
 .current {
   box-shadow: none;
-  top: 1.2vw;
-  left: 1.2vw;
+  top: 1.1vw;
+  left: 1.1vw;
 }
 
 #infoNav {
   color: #2bd879;
 }
+
 #infoNav:hover,
 #infoNav :not(.current) {
   background-color: #2bd879;
   color: #0c3f72;
 }
+
 #infoNav:hover:not(.current),
 #infoNav :not(.current):not(.current) {
-  box-shadow: 0.1vw 0.1vw 0px #188549, 0.2vw 0.2vw 0vw #188549, 0.3vw 0.3vw 0vw #188549, 0.4vw 0.4vw 0vw #188549, 0.5vw 0.5vw 0vw #188549, 0.6vw 0.6vw 0vw #188549, 0.7vw 0.7vw 0vw #188549, 0.8vw 0.8vw 0vw #188549, 0.9vw 0.9vw 0vw #188549, 1vw 1vw 0vw #188549, 1.1vw 1.1vw 0vw #188549, 1.2vw 1.2vw 0vw #188549;
+  box-shadow: 0.1vw 0.1vw 0px #188549, 0.2vw 0.2vw 0vw #188549, 0.3vw 0.3vw 0vw #188549, 0.4vw 0.4vw 0vw #188549, 0.5vw 0.5vw 0vw #188549, 0.6vw 0.6vw 0vw #188549, 0.7vw 0.7vw 0vw #188549, 0.8vw 0.8vw 0vw #188549, 0.9vw 0.9vw 0vw #188549;
 }
+
 #infoNav.current {
   background-color: #2bd879;
   color: #0c3f72;
@@ -140,13 +143,16 @@ ul a:hover {
 #accountsNav {
   color: #FFC200;
 }
+
 #accountsNav:hover {
   background-color: #FFC200;
   color: #0c3f72;
 }
+
 #accountsNav:hover:not(.current) {
-  box-shadow: 0.1vw 0.1vw 0px #997400, 0.2vw 0.2vw 0vw #997400, 0.3vw 0.3vw 0vw #997400, 0.4vw 0.4vw 0vw #997400, 0.5vw 0.5vw 0vw #997400, 0.6vw 0.6vw 0vw #997400, 0.7vw 0.7vw 0vw #997400, 0.8vw 0.8vw 0vw #997400, 0.9vw 0.9vw 0vw #997400, 1vw 1vw 0vw #997400, 1.1vw 1.1vw 0vw #997400, 1.2vw 1.2vw 0vw #997400;
+  box-shadow: 0.1vw 0.1vw 0px #997400, 0.2vw 0.2vw 0vw #997400, 0.3vw 0.3vw 0vw #997400, 0.4vw 0.4vw 0vw #997400, 0.5vw 0.5vw 0vw #997400, 0.6vw 0.6vw 0vw #997400, 0.7vw 0.7vw 0vw #997400, 0.8vw 0.8vw 0vw #997400, 0.9vw 0.9vw 0vw #997400;
 }
+
 #accountsNav.current {
   background-color: #FFC200;
   color: #0c3f72;
@@ -155,13 +161,16 @@ ul a:hover {
 #contactNav {
   color: #db6aa3;
 }
+
 #contactNav:hover {
   background-color: #db6aa3;
   color: #0c3f72;
 }
+
 #contactNav:hover:not(.current) {
-  box-shadow: 0.1vw 0.1vw 0px #b42b70, 0.2vw 0.2vw 0vw #b42b70, 0.3vw 0.3vw 0vw #b42b70, 0.4vw 0.4vw 0vw #b42b70, 0.5vw 0.5vw 0vw #b42b70, 0.6vw 0.6vw 0vw #b42b70, 0.7vw 0.7vw 0vw #b42b70, 0.8vw 0.8vw 0vw #b42b70, 0.9vw 0.9vw 0vw #b42b70, 1vw 1vw 0vw #b42b70, 1.1vw 1.1vw 0vw #b42b70, 1.2vw 1.2vw 0vw #b42b70;
+  box-shadow: 0.1vw 0.1vw 0px #b42b70, 0.2vw 0.2vw 0vw #b42b70, 0.3vw 0.3vw 0vw #b42b70, 0.4vw 0.4vw 0vw #b42b70, 0.5vw 0.5vw 0vw #b42b70, 0.6vw 0.6vw 0vw #b42b70, 0.7vw 0.7vw 0vw #b42b70, 0.8vw 0.8vw 0vw #b42b70, 0.9vw 0.9vw 0vw #b42b70;
 }
+
 #contactNav.current {
   background-color: #db6aa3;
   color: #0c3f72;
@@ -170,13 +179,16 @@ ul a:hover {
 #projectsNav {
   color: #00aeff;
 }
+
 #projectsNav:hover {
   background-color: #00aeff;
   color: #0c3f72;
 }
+
 #projectsNav:hover:not(.current) {
-  box-shadow: 0.1vw 0.1vw 0px #006899, 0.2vw 0.2vw 0vw #006899, 0.3vw 0.3vw 0vw #006899, 0.4vw 0.4vw 0vw #006899, 0.5vw 0.5vw 0vw #006899, 0.6vw 0.6vw 0vw #006899, 0.7vw 0.7vw 0vw #006899, 0.8vw 0.8vw 0vw #006899, 0.9vw 0.9vw 0vw #006899, 1vw 1vw 0vw #006899, 1.1vw 1.1vw 0vw #006899, 1.2vw 1.2vw 0vw #006899;
+  box-shadow: 0.1vw 0.1vw 0px #006899, 0.2vw 0.2vw 0vw #006899, 0.3vw 0.3vw 0vw #006899, 0.4vw 0.4vw 0vw #006899, 0.5vw 0.5vw 0vw #006899, 0.6vw 0.6vw 0vw #006899, 0.7vw 0.7vw 0vw #006899, 0.8vw 0.8vw 0vw #006899, 0.9vw 0.9vw 0vw #006899;
 }
+
 #projectsNav.current {
   background-color: #00aeff;
   color: #0c3f72;
@@ -194,9 +206,11 @@ ul a:hover {
   font-size: 3.5vw;
   line-height: 6vw;
 }
+
 #mainText a {
   color: #2bd879;
 }
+
 #mainText a:hover {
   color: #0c3f72;
   background-color: #2bd879;
@@ -226,9 +240,11 @@ ul a:hover {
   transform: skew(20deg, -6deg);
   line-height: 7vw;
 }
+
 #accountsText a {
   color: #FFC200;
 }
+
 #accountsText a:hover {
   color: #0c3f72;
   background-color: #FFC200;
@@ -242,9 +258,11 @@ ul a:hover {
   transform: skew(20deg, -6deg);
   line-height: 7vw;
 }
+
 #accountsText2 a {
   color: #FFC200;
 }
+
 #accountsText2 a:hover {
   color: #0c3f72;
   background-color: #FFC200;
@@ -259,9 +277,11 @@ ul a:hover {
   width: 50vw;
   line-height: 7vw;
 }
+
 #contactText a {
   color: #db6aa3;
 }
+
 #contactText a:hover {
   color: #0c3f72;
   background-color: #db6aa3;
@@ -272,13 +292,15 @@ ul a:hover {
   top: 2vw;
   left: 8vw;
   transform: skew(20deg, -6deg);
-  line-height: 5vw;
+  line-height: 4.8vw;
   font-size: 2.4vw;
   width: 50vw;
 }
+
 #projectsText a {
   color: #00aeff;
 }
+
 #projectsText a:hover {
   color: #0c3f72;
   background-color: #00aeff;
@@ -296,9 +318,9 @@ ul a:hover {
   }
 
   ul {
-    font-size: 10vw;
-    right: 7.5vw;
-    bottom: 6vw;
+    font-size: 10.5vw;
+    right: 22.5vw;
+    bottom: 9.5vw;
   }
 
   ul a {
@@ -330,7 +352,7 @@ ul a:hover {
   }
 
   #accountsText {
-    top: 20vw;
+    top: 12vw;
     left: 13vw;
     font-size: 5vw;
     line-height: 12vw;
@@ -338,7 +360,7 @@ ul a:hover {
 
   #accountsText2 {
     position: relative;
-    top: 23vw;
+    top: 15vw;
     left: 10vw;
     font-size: 5vw;
     line-height: 12vw;
@@ -346,7 +368,7 @@ ul a:hover {
 
   #contactText {
     position: relative;
-    top: 27vw;
+    top: 17vw;
     left: 11vw;
     font-size: 5.5vw;
     transform: skew(20deg, -6deg);
@@ -355,8 +377,8 @@ ul a:hover {
 
   #projectsText {
     position: relative;
-    top: 17vw;
-    left: 14vw;
+    top: 15vw;
+    left: 13vw;
     transform: skew(20deg, -6deg);
     line-height: 8vw;
     font-size: 5vw;
@@ -365,5 +387,6 @@ ul a:hover {
 }
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
+/*# sourceMappingURL=styles.css.map */
 
 /*# sourceMappingURL=styles.css.map */
