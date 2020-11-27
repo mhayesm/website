@@ -349,6 +349,14 @@ ul a:hover {
     }
 }
 
+#errorH1 {
+    position: relative;
+    left: 24vw;
+    top: 5vw;
+
+}
+
+
 #mac {
    position: relative;
    top: 10vw;
@@ -467,6 +475,25 @@ ul a:hover {
         line-height: 8vw;
         font-size: 5vw;
         width: 70vw;
+    }
+
+    #errorH1 {
+        left: 10vw;
+        top: 50vw;
+    }
+
+    #mac {
+        width: 30vw;
+        height: 30vw;
+        top: 57vw;
+        transform: skew(20deg, -6deg);
+        left: 25vw;
+    }
+    #errorText {
+        color: $grey;
+        top: 53vw;
+        left: 34vw;
+        font-size: 5.5vw;
     }
 
 }
