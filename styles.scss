@@ -36,7 +36,6 @@ body {
 
 b {
     font-weight: 800;
-    color: $yellow;
 }
 
 a {
@@ -348,6 +347,20 @@ ul a:hover {
         color: $blue;
         background-color: $light-blue;
     }
+}
+
+#mac {
+   position: relative;
+   top: 10vw;
+   transform: skew(20deg, -6deg);
+   left: 28vw;
+}
+
+#errorText {
+    position: relative;
+    color: $grey;
+    top: 5vw;
+    left: 31.5vw;
 }
 
 

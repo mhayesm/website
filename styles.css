@@ -23,7 +23,6 @@ body {
 }
 b {
   font-weight: 800;
-  color: #FFC200;
 }
 
 a {
@@ -282,6 +281,20 @@ ul a:hover {
 #projectsText a:hover {
   color: #0c3f72;
   background-color: #00aeff;
+}
+
+#mac {
+  position: relative;
+  top: 10vw;
+  transform: skew(20deg, -6deg);
+  left: 28vw;
+}
+
+#errorText {
+  position: relative;
+  color: #cecece;
+  top: 5vw;
+  left: 31.5vw;
 }
 
 @media only screen and (max-width: 700px) {
