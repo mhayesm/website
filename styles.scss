@@ -17,10 +17,7 @@ body {
     overflow-x: hidden;
     height: 100vh;
     /*  background-image: url(https://media.geeksforgeeks.org/wp-content/uploads/space_background_for_infinite_scroll_example.png); */
-    background-image: url("icons/back.png");
-    background-position: 0px 0px;
-    background-repeat: repeat-x;
-    animation: animatedBackground 35s linear infinite alternate;
+   // background-image: url("icons/back.png");
 }
 
 @keyframes animatedBackground {
@@ -33,6 +30,14 @@ body {
     }
 }
 
+canvas {
+      position: fixed;
+      margin: 0;
+      top: 0;
+      left: 0;
+      background-color: #001d3a;
+      z-index: -1;
+}
 
 b {
     font-weight: 800;
@@ -41,14 +46,20 @@ b {
 a {
     text-decoration: none;
     color: $yellow;
-    border-radius: 1.6vw 1.6vw 1.6vw 1.6vw;
+    border-radius: 1vw 1vw 1vw 1vw;
 }
 
 
 p {
-    font-size: 2.3vw;
+    font-size: 2vw;
     transform: skew(20deg, -6deg);
     font-family: "Fira Sans";
+    text-shadow: -0.02vw 0.02vw 0px darken($grey, 40%),
+    -0.04vw 0.04vw 0px darken($grey, 40%),
+    -0.06vw 0.07vw 0px darken($grey, 40%),
+    -0.08vw 0.08vw 0px darken($grey, 40%),
+    -0.1vw 0.1vw 0px darken($grey, 40%),
+    -0.12vw 0.12vw 0px darken($grey, 40%);  
 }
 
 h1 {
@@ -56,12 +67,16 @@ h1 {
     padding: 0;
     margin: 0;
     font-family: "Fira Code";
-    font-size: 3.7vw;
+    font-size: 2.5vw;
     font-weight: 300;
     transform: skew(20deg, -6deg);
     line-height: 7vw;
-    top: 4vw;
-    left: 22vw;
+    top: 5.5vw;
+    left: 30vw;
+    text-shadow: -0.05vw 0.05vw 0px darken($green, 30%),
+    -0.1vw 0.1vw 0px darken($green, 30%),
+    -0.15vw 0.15vw 0px darken($green, 30%),
+    -0.2vw .2vw 0vw darken($green, 30%);
 }
 
 #main {
@@ -100,8 +115,14 @@ ul {
     padding: 0.4vw;
     color: $yellow;
     position: relative;
-    box-shadow: -0.1vw 0.1vw 0px $dark-blue, -0.2vw .2vw 0vw $dark-blue, -.3vw .3vw 0vw $dark-blue, -.4vw .4vw 0vw $dark-blue, -.5vw .5vw 0vw $dark-blue, -.6vw .6vw 0vw $dark-blue;
+    box-shadow: -0.1vw 0.1vw 0px $dark-blue, 
+    -0.2vw .2vw 0vw $dark-blue, 
+    -.3vw .3vw 0vw $dark-blue, 
+    -.4vw .4vw 0vw $dark-blue, 
+    -.5vw .5vw 0vw $dark-blue;
     font-family: "Fira Code";
+    border-radius: 1vw 1vw 1vw 1.2vw;
+    text-shadow: none;
 }
 
 #linkText:hover {
@@ -110,22 +131,23 @@ ul {
     color: $blue;
     top: 1vw;
     left: -1vw;
+    text-shadow: none;
 }
 
 ul a {
-    position: relative;
-    background-color: $blue;
-    z-index: 1;
-    color: $green;
-    text-decoration: none;
-    padding: .2vw;
-    box-shadow: 0.1vw 0.1vw 0px $dark-blue,
-        0.2vw .2vw 0vw $dark-blue,
-        .3vw .3vw 0vw $dark-blue,
-        .4vw .4vw 0vw $dark-blue,
-        .5vw .5vw 0vw $dark-blue,
-        .6vw .6vw 0vw $dark-blue,
-        .7vw .7vw 0vw $dark-blue;
+     position: relative;
+     background-color: $blue;
+     z-index: 1;
+     color: $green;
+     text-decoration: none;
+     padding: .2vw;
+     box-shadow: 0.1vw 0.1vw 0px $dark-blue,
+     0.2vw .2vw 0vw $dark-blue,
+     .3vw .3vw 0vw $dark-blue,
+     .4vw .4vw 0vw $dark-blue,
+     .5vw .5vw 0vw $dark-blue,
+     .6vw .6vw 0vw $dark-blue,
+     .7vw .7vw 0vw $dark-blue;
 }
 
 ul a:hover {
@@ -135,8 +157,8 @@ ul a:hover {
 
 .current {
     box-shadow: none;
-    top: 0.9vw;
-    left: 0.9vw;
+    top: 1.3vw;
+    left: 0.8vw;
 }
 
 #infoNav {
@@ -152,9 +174,7 @@ ul a:hover {
                 0.2vw .2vw 0vw darken($green, 20%),
                 .3vw .3vw 0vw darken($green, 20%),
                 .4vw .4vw 0vw darken($green, 20%),
-                .5vw .5vw 0vw darken($green, 20%),
-                .6vw .6vw 0vw darken($green, 20%),
-                .7vw .7vw 0vw darken($green, 20%);
+                .5vw .5vw 0vw darken($green, 20%);
         }
     }
 
@@ -177,8 +197,7 @@ ul a:hover {
                 .3vw .3vw 0vw darken($yellow, 20%),
                 .4vw .4vw 0vw darken($yellow, 20%),
                 .5vw .5vw 0vw darken($yellow, 20%),
-                .6vw .6vw 0vw darken($yellow, 20%),
-                .7vw .7vw 0vw darken($yellow, 20%);
+                .6vw .6vw 0vw darken($yellow, 20%);
         }
     }
 
@@ -201,8 +220,7 @@ ul a:hover {
                 .3vw .3vw 0vw darken($pink, 20%),
                 .4vw .4vw 0vw darken($pink, 20%),
                 .5vw .5vw 0vw darken($pink, 20%),
-                .6vw .6vw 0vw darken($pink, 20%),
-                .7vw .7vw 0vw darken($pink, 20%);
+                .6vw .6vw 0vw darken($pink, 20%);
         }
     }
 
@@ -225,8 +243,7 @@ ul a:hover {
                 .3vw .3vw 0vw darken($light-blue, 20%),
                 .4vw .4vw 0vw darken($light-blue, 20%),
                 .5vw .5vw 0vw darken($light-blue, 20%),
-                .6vw .6vw 0vw darken($light-blue, 20%),
-                .7vw .7vw 0vw darken($light-blue, 20%);
+                .6vw .6vw 0vw darken($light-blue, 20%);
         }
     }
 
@@ -245,8 +262,8 @@ ul a:hover {
 #mainText {
     position: relative;
     top: 3vw;
-    left: 21vw;
-    font-size: 2.3vw;
+    left: 26.5vw;
+    font-size: 2vw;
     line-height: 6vw;
 
     & a {
@@ -261,10 +278,10 @@ ul a:hover {
 
 #mainText2 {
     position: relative;
-    top: 5vw;
-    left: 28.5vw;
+    top: 3vw;
+    left: 33.5vw;
     width: 38vw;
-    font-size: 1.7vw;
+    font-size: 1.4vw;
     line-height: 6vw;
     font-family: "Fira Code";
 }
@@ -356,13 +373,18 @@ ul a:hover {
 
 }
 
-
 #mac {
    position: relative;
    top: 10vw;
    width: 13vw;
    transform: skew(20deg, -6deg);
    left: 28vw;
+   box-shadow: -0.05vw 0.05vw 0px darken($grey, 40%),
+   -0.1vw 0.1vw 0px darken($grey, 40%),
+   -0.15vw 0.15vw 0px darken($grey, 40%),
+   -0.2vw 0.2vw 0px darken($grey, 40%),
+   -0.25vw 0.25vw 0px darken($grey, 40%);
+   ;
 }
 
 #errorText {

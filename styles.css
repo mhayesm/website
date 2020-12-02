@@ -7,10 +7,6 @@ body {
   overflow-x: hidden;
   height: 100vh;
   /*  background-image: url(https://media.geeksforgeeks.org/wp-content/uploads/space_background_for_infinite_scroll_example.png); */
-  background-image: url("icons/back.png");
-  background-position: 0px 0px;
-  background-repeat: repeat-x;
-  animation: animatedBackground 35s linear infinite alternate;
 }
 
 @keyframes animatedBackground {
@@ -21,6 +17,15 @@ body {
     background-position: 100% 0;
   }
 }
+canvas {
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: 0;
+  background-color: #001d3a;
+  z-index: -1;
+}
+
 b {
   font-weight: 800;
 }
@@ -28,13 +33,14 @@ b {
 a {
   text-decoration: none;
   color: #FFC200;
-  border-radius: 1.6vw 1.6vw 1.6vw 1.6vw;
+  border-radius: 1vw 1vw 1vw 1vw;
 }
 
 p {
-  font-size: 2.3vw;
+  font-size: 2vw;
   transform: skew(20deg, -6deg);
   font-family: "Fira Sans";
+  text-shadow: -0.02vw 0.02vw 0px #686868, -0.04vw 0.04vw 0px #686868, -0.06vw 0.07vw 0px #686868, -0.08vw 0.08vw 0px #686868, -0.1vw 0.1vw 0px #686868, -0.12vw 0.12vw 0px #686868;
 }
 
 h1 {
@@ -42,12 +48,13 @@ h1 {
   padding: 0;
   margin: 0;
   font-family: "Fira Code";
-  font-size: 3.7vw;
+  font-size: 2.5vw;
   font-weight: 300;
   transform: skew(20deg, -6deg);
   line-height: 7vw;
-  top: 4vw;
-  left: 22vw;
+  top: 5.5vw;
+  left: 30vw;
+  text-shadow: -0.05vw 0.05vw 0px #105a31, -0.1vw 0.1vw 0px #105a31, -0.15vw 0.15vw 0px #105a31, -0.2vw 0.2vw 0vw #105a31;
 }
 
 #main {
@@ -86,8 +93,10 @@ ul {
   padding: 0.4vw;
   color: #FFC200;
   position: relative;
-  box-shadow: -0.1vw 0.1vw 0px #072b4e, -0.2vw 0.2vw 0vw #072b4e, -0.3vw 0.3vw 0vw #072b4e, -0.4vw 0.4vw 0vw #072b4e, -0.5vw 0.5vw 0vw #072b4e, -0.6vw 0.6vw 0vw #072b4e;
+  box-shadow: -0.1vw 0.1vw 0px #072b4e, -0.2vw 0.2vw 0vw #072b4e, -0.3vw 0.3vw 0vw #072b4e, -0.4vw 0.4vw 0vw #072b4e, -0.5vw 0.5vw 0vw #072b4e;
   font-family: "Fira Code";
+  border-radius: 1vw 1vw 1vw 1.2vw;
+  text-shadow: none;
 }
 
 #linkText:hover {
@@ -96,6 +105,7 @@ ul {
   color: #0c3f72;
   top: 1vw;
   left: -1vw;
+  text-shadow: none;
 }
 
 ul a {
@@ -115,8 +125,8 @@ ul a:hover {
 
 .current {
   box-shadow: none;
-  top: 0.9vw;
-  left: 0.9vw;
+  top: 1.3vw;
+  left: 0.8vw;
 }
 
 #infoNav {
@@ -129,7 +139,7 @@ ul a:hover {
 }
 #infoNav:hover:not(.current),
 #infoNav :not(.current):not(.current) {
-  box-shadow: 0.1vw 0.1vw 0px #188549, 0.2vw 0.2vw 0vw #188549, 0.3vw 0.3vw 0vw #188549, 0.4vw 0.4vw 0vw #188549, 0.5vw 0.5vw 0vw #188549, 0.6vw 0.6vw 0vw #188549, 0.7vw 0.7vw 0vw #188549;
+  box-shadow: 0.1vw 0.1vw 0px #188549, 0.2vw 0.2vw 0vw #188549, 0.3vw 0.3vw 0vw #188549, 0.4vw 0.4vw 0vw #188549, 0.5vw 0.5vw 0vw #188549;
 }
 #infoNav.current {
   background-color: #2bd879;
@@ -144,7 +154,7 @@ ul a:hover {
   color: #0c3f72;
 }
 #accountsNav:hover:not(.current) {
-  box-shadow: 0.1vw 0.1vw 0px #997400, 0.2vw 0.2vw 0vw #997400, 0.3vw 0.3vw 0vw #997400, 0.4vw 0.4vw 0vw #997400, 0.5vw 0.5vw 0vw #997400, 0.6vw 0.6vw 0vw #997400, 0.7vw 0.7vw 0vw #997400;
+  box-shadow: 0.1vw 0.1vw 0px #997400, 0.2vw 0.2vw 0vw #997400, 0.3vw 0.3vw 0vw #997400, 0.4vw 0.4vw 0vw #997400, 0.5vw 0.5vw 0vw #997400, 0.6vw 0.6vw 0vw #997400;
 }
 #accountsNav.current {
   background-color: #FFC200;
@@ -159,7 +169,7 @@ ul a:hover {
   color: #0c3f72;
 }
 #contactNav:hover:not(.current) {
-  box-shadow: 0.1vw 0.1vw 0px #b42b70, 0.2vw 0.2vw 0vw #b42b70, 0.3vw 0.3vw 0vw #b42b70, 0.4vw 0.4vw 0vw #b42b70, 0.5vw 0.5vw 0vw #b42b70, 0.6vw 0.6vw 0vw #b42b70, 0.7vw 0.7vw 0vw #b42b70;
+  box-shadow: 0.1vw 0.1vw 0px #b42b70, 0.2vw 0.2vw 0vw #b42b70, 0.3vw 0.3vw 0vw #b42b70, 0.4vw 0.4vw 0vw #b42b70, 0.5vw 0.5vw 0vw #b42b70, 0.6vw 0.6vw 0vw #b42b70;
 }
 #contactNav.current {
   background-color: #db6aa3;
@@ -174,7 +184,7 @@ ul a:hover {
   color: #0c3f72;
 }
 #projectsNav:hover:not(.current) {
-  box-shadow: 0.1vw 0.1vw 0px #006899, 0.2vw 0.2vw 0vw #006899, 0.3vw 0.3vw 0vw #006899, 0.4vw 0.4vw 0vw #006899, 0.5vw 0.5vw 0vw #006899, 0.6vw 0.6vw 0vw #006899, 0.7vw 0.7vw 0vw #006899;
+  box-shadow: 0.1vw 0.1vw 0px #006899, 0.2vw 0.2vw 0vw #006899, 0.3vw 0.3vw 0vw #006899, 0.4vw 0.4vw 0vw #006899, 0.5vw 0.5vw 0vw #006899, 0.6vw 0.6vw 0vw #006899;
 }
 #projectsNav.current {
   background-color: #00aeff;
@@ -189,8 +199,8 @@ ul a:hover {
 #mainText {
   position: relative;
   top: 3vw;
-  left: 21vw;
-  font-size: 2.3vw;
+  left: 26.5vw;
+  font-size: 2vw;
   line-height: 6vw;
 }
 #mainText a {
@@ -203,10 +213,10 @@ ul a:hover {
 
 #mainText2 {
   position: relative;
-  top: 5vw;
-  left: 28.5vw;
+  top: 3vw;
+  left: 33.5vw;
   width: 38vw;
-  font-size: 1.7vw;
+  font-size: 1.4vw;
   line-height: 6vw;
   font-family: "Fira Code";
 }
@@ -295,6 +305,7 @@ ul a:hover {
   width: 13vw;
   transform: skew(20deg, -6deg);
   left: 28vw;
+  box-shadow: -0.05vw 0.05vw 0px #686868, -0.1vw 0.1vw 0px #686868, -0.15vw 0.15vw 0px #686868, -0.2vw 0.2vw 0px #686868, -0.25vw 0.25vw 0px #686868;
 }
 
 #errorText {
