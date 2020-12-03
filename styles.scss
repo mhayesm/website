@@ -59,7 +59,8 @@ p {
     -0.06vw 0.07vw 0px darken($grey, 40%),
     -0.08vw 0.08vw 0px darken($grey, 40%),
     -0.1vw 0.1vw 0px darken($grey, 40%),
-    -0.12vw 0.12vw 0px darken($grey, 40%);  
+    -0.12vw 0.12vw 0px darken($grey, 40%),
+    -0.14vw 0.14vw 0px darken($grey, 40%);
 }
 
 h1 {
@@ -67,12 +68,12 @@ h1 {
     padding: 0;
     margin: 0;
     font-family: "Fira Code";
-    font-size: 2.5vw;
+    font-size: 2.7vw;
     font-weight: 300;
     transform: skew(20deg, -6deg);
     line-height: 7vw;
     top: 5.5vw;
-    left: 30vw;
+    left: 36vw;
     text-shadow: -0.05vw 0.05vw 0px darken($green, 30%),
     -0.1vw 0.1vw 0px darken($green, 30%),
     -0.15vw 0.15vw 0px darken($green, 30%),
@@ -104,9 +105,9 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    font-size: 2.9vw;
-    right: 21.5vw;
-    bottom: 8vw;
+    font-size: 2.3vw;
+    right: 44vw;
+    bottom: 4vw;
     transform: skew(-20deg, 6deg);
 }
 
@@ -118,10 +119,9 @@ ul {
     box-shadow: -0.1vw 0.1vw 0px $dark-blue, 
     -0.2vw .2vw 0vw $dark-blue, 
     -.3vw .3vw 0vw $dark-blue, 
-    -.4vw .4vw 0vw $dark-blue, 
-    -.5vw .5vw 0vw $dark-blue;
+    -.4vw .4vw 0vw $dark-blue;
     font-family: "Fira Code";
-    border-radius: 1vw 1vw 1vw 1.2vw;
+    border-radius: 1vw 1vw 1vw 1vw;
     text-shadow: none;
 }
 
@@ -157,7 +157,7 @@ ul a:hover {
 
 .current {
     box-shadow: none;
-    top: 1.3vw;
+    top: 0.8vw;
     left: 0.8vw;
 }
 
@@ -169,12 +169,14 @@ ul a:hover {
         background-color: $green;
         color: $blue;
 
-        &:not(.current) {
+         &:not(.current) {
             box-shadow: 0.1vw 0.1vw 0px darken($green, 20%),
                 0.2vw .2vw 0vw darken($green, 20%),
                 .3vw .3vw 0vw darken($green, 20%),
                 .4vw .4vw 0vw darken($green, 20%),
-                .5vw .5vw 0vw darken($green, 20%);
+                .5vw .5vw 0vw darken($green, 20%),
+                .6vw .6vw 0vw darken($green, 20%),
+                .7vw .7vw 0vw darken($green, 20%);
         }
     }
 
@@ -197,7 +199,8 @@ ul a:hover {
                 .3vw .3vw 0vw darken($yellow, 20%),
                 .4vw .4vw 0vw darken($yellow, 20%),
                 .5vw .5vw 0vw darken($yellow, 20%),
-                .6vw .6vw 0vw darken($yellow, 20%);
+                .6vw .6vw 0vw darken($yellow, 20%),
+                .7vw .7vw 0vw darken($yellow, 20%);
         }
     }
 
@@ -220,7 +223,8 @@ ul a:hover {
                 .3vw .3vw 0vw darken($pink, 20%),
                 .4vw .4vw 0vw darken($pink, 20%),
                 .5vw .5vw 0vw darken($pink, 20%),
-                .6vw .6vw 0vw darken($pink, 20%);
+                .6vw .6vw 0vw darken($pink, 20%),
+                .7vw .7vw 0vw darken($pink, 20%);
         }
     }
 
@@ -262,8 +266,8 @@ ul a:hover {
 #mainText {
     position: relative;
     top: 3vw;
-    left: 26.5vw;
-    font-size: 2vw;
+    left: 34vw;
+    font-size: 1.8vw;
     line-height: 6vw;
 
     & a {
@@ -278,8 +282,8 @@ ul a:hover {
 
 #mainText2 {
     position: relative;
-    top: 3vw;
-    left: 33.5vw;
+    top: 3.5vw;
+    left: 39.1vw;
     width: 38vw;
     font-size: 1.4vw;
     line-height: 6vw;
@@ -294,11 +298,11 @@ ul a:hover {
 #accountsText {
     position: relative;
     float: left;
-    top: 3.5vw;
-    left: 31vw;
-    font-size: 1.7vw;
+    top: 5vw;
+    left: 38vw;
+    font-size: 1.2vw;
     transform: skew(20deg, -6deg);
-    line-height: 4.5vw;
+    line-height: 3.5vw;
 
     & a {
         color: $yellow;
@@ -312,11 +316,11 @@ ul a:hover {
 
 #accountsText2 {
     position: relative;
-    top: 1vw;
-    left: 33vw;
-    font-size: 1.8vw;
+    top: 1.1vw;
+    left: 41vw;
+    font-size: 1.2vw;
     transform: skew(20deg, -6deg);
-    line-height: 4.5vw;
+    line-height: 3.5vw;
 
     & a {
         color: $yellow;
@@ -330,13 +334,12 @@ ul a:hover {
 
 #contactText {
     position: relative;
-    top: 4.3vw;
-    left: 31vw;
-    font-size: 1.8vw;
+    top: 5.5vw;
+    left: 39vw;
+    font-size: 1.2vw;
     transform: skew(20deg, -6deg);
     width: 25vw;
-    line-height: 4.5vw;
-
+    line-height: 3.5vw;
     & a {
         color: $pink;
     }
@@ -349,11 +352,11 @@ ul a:hover {
 
 #projectsText {
     position: relative;
-    top: 5vw;
-    left: 28vw;
+    top: 9vw;
+    left: 38vw;
     transform: skew(20deg, -6deg);
     line-height: 4vw;
-    font-size: 1.8vw;
+    font-size: 1.2vw;
     width: 32vw;
 
     & a {
@@ -368,30 +371,31 @@ ul a:hover {
 
 #errorH1 {
     position: relative;
-    left: 24vw;
+    left: 36vw;
     top: 5vw;
 
 }
 
 #mac {
    position: relative;
-   top: 10vw;
+   top: 9vw;
    width: 13vw;
    transform: skew(20deg, -6deg);
-   left: 28vw;
+   left: 40vw;
    box-shadow: -0.05vw 0.05vw 0px darken($grey, 40%),
    -0.1vw 0.1vw 0px darken($grey, 40%),
    -0.15vw 0.15vw 0px darken($grey, 40%),
    -0.2vw 0.2vw 0px darken($grey, 40%),
-   -0.25vw 0.25vw 0px darken($grey, 40%);
+   -0.25vw 0.25vw 0px darken($grey, 40%),
+    -0.3vw 0.3vw 0px darken($grey, 40%);
    ;
 }
 
 #errorText {
     position: relative;
     color: $grey;
-    top: 5vw;
-    left: 31.4vw;
+    top: 4.5vw;
+    left: 43.5vw;
 }
 
 
@@ -405,6 +409,10 @@ ul a:hover {
         line-height: 100%;
         top: 10vw;
         left: 11vw;
+            text-shadow: -0.05vw 0.05vw 0px darken($green, 30%),
+            -0.1vw 0.1vw 0px darken($green, 30%),
+            -0.15vw 0.15vw 0px darken($green, 30%),
+            -0.2vw .2vw 0vw darken($green, 30%);
     }
 
     ul {
