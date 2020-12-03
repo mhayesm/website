@@ -72,8 +72,8 @@ h1 {
     font-weight: 300;
     transform: skew(20deg, -6deg);
     line-height: 7vw;
-    top: 5.5vw;
-    left: 36vw;
+    top: 6vw;
+    left: 34vw;
     text-shadow: -0.05vw 0.05vw 0px darken($green, 30%),
     -0.1vw 0.1vw 0px darken($green, 30%),
     -0.15vw 0.15vw 0px darken($green, 30%),
@@ -105,15 +105,15 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    font-size: 2.3vw;
-    right: 44vw;
-    bottom: 4vw;
+    font-size: 2vw;
+    right: 45vw;
+    bottom: 7vw;
     transform: skew(-20deg, 6deg);
 }
 
 #linkText {
     background-color: $blue;
-    padding: 0.4vw;
+    padding: 0.28vw;
     color: $yellow;
     position: relative;
     box-shadow: -0.1vw 0.1vw 0px $dark-blue, 
@@ -129,8 +129,8 @@ ul {
     background-color: $yellow;
     box-shadow: none;
     color: $blue;
-    top: 1vw;
-    left: -1vw;
+    top: 0.6vw;
+    left: -.6vw;
     text-shadow: none;
 }
 
@@ -145,9 +145,7 @@ ul a {
      0.2vw .2vw 0vw $dark-blue,
      .3vw .3vw 0vw $dark-blue,
      .4vw .4vw 0vw $dark-blue,
-     .5vw .5vw 0vw $dark-blue,
-     .6vw .6vw 0vw $dark-blue,
-     .7vw .7vw 0vw $dark-blue;
+     .5vw .5vw 0vw $dark-blue;
 }
 
 ul a:hover {
@@ -157,8 +155,8 @@ ul a:hover {
 
 .current {
     box-shadow: none;
-    top: 0.8vw;
-    left: 0.8vw;
+    top: 0.7vw;
+    left: 0.5vw;
 }
 
 #infoNav {
@@ -174,9 +172,7 @@ ul a:hover {
                 0.2vw .2vw 0vw darken($green, 20%),
                 .3vw .3vw 0vw darken($green, 20%),
                 .4vw .4vw 0vw darken($green, 20%),
-                .5vw .5vw 0vw darken($green, 20%),
-                .6vw .6vw 0vw darken($green, 20%),
-                .7vw .7vw 0vw darken($green, 20%);
+                .5vw .5vw 0vw darken($green, 20%);
         }
     }
 
@@ -198,9 +194,7 @@ ul a:hover {
                 0.2vw .2vw 0vw darken($yellow, 20%),
                 .3vw .3vw 0vw darken($yellow, 20%),
                 .4vw .4vw 0vw darken($yellow, 20%),
-                .5vw .5vw 0vw darken($yellow, 20%),
-                .6vw .6vw 0vw darken($yellow, 20%),
-                .7vw .7vw 0vw darken($yellow, 20%);
+                .5vw .5vw 0vw darken($yellow, 20%);
         }
     }
 
@@ -222,9 +216,7 @@ ul a:hover {
                 0.2vw .2vw 0vw darken($pink, 20%),
                 .3vw .3vw 0vw darken($pink, 20%),
                 .4vw .4vw 0vw darken($pink, 20%),
-                .5vw .5vw 0vw darken($pink, 20%),
-                .6vw .6vw 0vw darken($pink, 20%),
-                .7vw .7vw 0vw darken($pink, 20%);
+                .5vw .5vw 0vw darken($pink, 20%);
         }
     }
 
@@ -246,8 +238,7 @@ ul a:hover {
                 0.2vw .2vw 0vw darken($light-blue, 20%),
                 .3vw .3vw 0vw darken($light-blue, 20%),
                 .4vw .4vw 0vw darken($light-blue, 20%),
-                .5vw .5vw 0vw darken($light-blue, 20%),
-                .6vw .6vw 0vw darken($light-blue, 20%);
+                .5vw .5vw 0vw darken($light-blue, 20%);
         }
     }
 
@@ -266,7 +257,7 @@ ul a:hover {
 #mainText {
     position: relative;
     top: 3vw;
-    left: 34vw;
+    left: 32.4vw;
     font-size: 1.8vw;
     line-height: 6vw;
 
@@ -282,8 +273,8 @@ ul a:hover {
 
 #mainText2 {
     position: relative;
-    top: 3.5vw;
-    left: 39.1vw;
+    top: 3.4vw;
+    left: 37.7vw;
     width: 38vw;
     font-size: 1.4vw;
     line-height: 6vw;
@@ -298,8 +289,8 @@ ul a:hover {
 #accountsText {
     position: relative;
     float: left;
-    top: 5vw;
-    left: 38vw;
+    top: 4.5vw;
+    left: 36vw;
     font-size: 1.2vw;
     transform: skew(20deg, -6deg);
     line-height: 3.5vw;
@@ -316,8 +307,8 @@ ul a:hover {
 
 #accountsText2 {
     position: relative;
-    top: 1.1vw;
-    left: 41vw;
+    top: 1vw;
+    left: 40vw;
     font-size: 1.2vw;
     transform: skew(20deg, -6deg);
     line-height: 3.5vw;
@@ -334,8 +325,8 @@ ul a:hover {
 
 #contactText {
     position: relative;
-    top: 5.5vw;
-    left: 39vw;
+    top: 5vw;
+    left: 38vw;
     font-size: 1.2vw;
     transform: skew(20deg, -6deg);
     width: 25vw;
@@ -352,8 +343,8 @@ ul a:hover {
 
 #projectsText {
     position: relative;
-    top: 9vw;
-    left: 38vw;
+    top: 6vw;
+    left: 36vw;
     transform: skew(20deg, -6deg);
     line-height: 4vw;
     font-size: 1.2vw;
@@ -399,27 +390,48 @@ ul a:hover {
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
 
     h1 {
         padding: 0;
         margin: 0;
-        font-size: 19vw;
+        font-size: 20vw;
         font-weight: 200;
         line-height: 100%;
-        top: 10vw;
-        left: 11vw;
-            text-shadow: -0.05vw 0.05vw 0px darken($green, 30%),
-            -0.1vw 0.1vw 0px darken($green, 30%),
-            -0.15vw 0.15vw 0px darken($green, 30%),
-            -0.2vw .2vw 0vw darken($green, 30%);
+        top: 20vw;
+        left: 8vw;
+        transform: skew(2deg, 0deg);
+        text-shadow: -0.1vw 0.1vw 0px darken($green, 30%),
+        -0.2vw 0.2vw 0px darken($green, 30%),
+        -0.3vw 0.3vw 0px darken($green, 30%),
+        -0.4vw .4vw 0vw darken($green, 30%),
+        -0.5vw 0.5vw 0px darken($green, 30%),
+        -0.6vw 0.6vw 0px darken($green, 30%),
+        -0.7vw .7vw 0vw darken($green, 30%),
+        -0.8vw 0.8vw 0px darken($green, 30%),
+        -0.9vw 0.9vw 0px darken($green, 30%),
+        -1vw 1vw 0vw darken($green, 30%),
+        -1.1vw 1.1vw 0vw darken($green, 30%),
+        -1.2vw 1.2vw 0vw darken($green, 30%),
+        -1.3vw 1.3vw 0vw darken($green, 30%),
+        -1.4vw 1.4vw 0vw darken($green, 30%),
+    }
+
+    p {
+                text-shadow: -0.1vw 0.1vw 0px darken($grey, 30%),
+                -0.2vw 0.2vw 0px darken($grey, 30%),
+                -0.3vw 0.3vw 0px darken($grey, 30%),
+                -0.4vw .4vw 0vw darken($grey, 30%);
     }
 
     ul {
-        font-size: 10.5vw;
-        right: 22.5vw;
-        bottom: 9.5vw;
+        font-size: 12vw;
+        right: 21vw;
+        bottom: 12vw;
+        transform: skew(-6deg, 0deg);
     }
+
+
 
 
 
@@ -449,6 +461,26 @@ ul a:hover {
             2.2vw 2.2vw 0vw $dark-blue;
     }
 
+    #linkText {
+                box-shadow: -0.1vw 0.1vw 0px $dark-blue,
+                    -0.2vw .2vw 0vw $dark-blue,
+                    -.3vw .3vw 0vw $dark-blue,
+                    -.4vw .4vw 0vw $dark-blue,
+                    -.5vw .5vw 0vw $dark-blue,
+                    -.6vw .6vw 0vw $dark-blue,
+                    -.7vw .7vw 0vw $dark-blue,
+                    -.8vw .8vw 0vw $dark-blue,
+                    -.9vw .9vw 0vw $dark-blue,
+                    -1vw 1vw 0vw $dark-blue,
+                    -1.1vw 1.1vw 0px $dark-blue,
+                    -1.2vw 1.2vw 0vw $dark-blue,
+                    -1.3vw 1.3vw 0vw $dark-blue,
+                    -1.4vw 1.4vw 0vw $dark-blue,
+                    -1.5vw 1.5vw 0vw $dark-blue,
+                    -1.6vw 1.6vw 0vw $dark-blue,
+                    -1.7vw 1.7vw 0vw $dark-blue;
+    }
+
     .current {
         top: 2.7vw;
         left: 2.7vw;
@@ -459,53 +491,55 @@ ul a:hover {
     }
 
     #mainText {
-        left: 0.4vw;
+        left: 1vw;
         font-size: 5.9vw;
         width: 100vw;
-        top: 15vw;
-
+        top: 33vw;
+         transform: skew(2deg, 0deg);
     }
 
     #mainText2 {
-        left: 15vw;
+        left: 12vw;
         font-size: 5vw;
         width: 100vw;
-        top: 25vw;
-
+        top: 47vw;
+        transform: skew(2deg, 0deg);
     }
 
     #accountsText {
-        top: 12vw;
-        left: 13vw;
-        font-size: 5vw;
+        top: 30vw;
+        left: 6vw;
+        font-size: 5.8vw;
         line-height: 12vw;
+         transform: skew(2deg, 0deg);
     }
 
     #accountsText2 {
         position: relative;
-        top: 15vw;
-        left: 10vw;
-        font-size: 5vw;
+        top: 35.5vw;
+        left: 9vw;
+        font-size: 5.8vw;
         line-height: 12vw;
+         transform: skew(2deg, 0deg);
     }
 
     #contactText {
         position: relative;
-        top: 17vw;
-        left: 11vw;
-        font-size: 5.5vw;
-        transform: skew(20deg, -6deg);
+        top: 38vw;
+        left: 6vw;
+        font-size: 5.8vw;
+        transform: skew(2deg, 0deg);
         line-height: 11vw;
     }
 
     #projectsText {
         position: relative;
-        top: 15vw;
-        left: 13vw;
-        transform: skew(20deg, -6deg);
-        line-height: 8vw;
-        font-size: 5vw;
-        width: 70vw;
+        top: 40vw;
+        left: 2vw;
+        transform: skew(2deg, 0deg);
+        line-height: 11vw;
+        font-size: 5.5vw;
+        width: 100vw;
     }
 
     #errorH1 {
@@ -514,17 +548,18 @@ ul a:hover {
     }
 
     #mac {
-        width: 30vw;
-        height: 30vw;
+        width: 40vw;
+        height: 40vw;
         top: 57vw;
-        transform: skew(20deg, -6deg);
-        left: 25vw;
+        transform: skew(2deg, 0deg);
+        left: 14vw;
     }
     #errorText {
         color: $grey;
-        top: 53vw;
-        left: 34vw;
-        font-size: 5.5vw;
+        top: 57vw;
+        left: 15vw;
+        transform: skew(2deg, 0deg);
+        font-size: 5.8vw;
     }
 
 }
