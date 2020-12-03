@@ -395,10 +395,10 @@ ul a:hover {
     h1 {
         padding: 0;
         margin: 0;
-        font-size: 20vw;
+        font-size: 19vw;
         font-weight: 200;
         line-height: 100%;
-        top: 20vw;
+        top: 7vw;
         left: 8vw;
         transform: skew(2deg, 0deg);
         text-shadow: -0.1vw 0.1vw 0px darken($green, 30%),
@@ -425,8 +425,8 @@ ul a:hover {
     }
 
     ul {
-        font-size: 12vw;
-        right: 21vw;
+        font-size: 11vw;
+        right: 25vw;
         bottom: 12vw;
         transform: skew(-6deg, 0deg);
     }
@@ -494,21 +494,21 @@ ul a:hover {
         left: 1vw;
         font-size: 5.9vw;
         width: 100vw;
-        top: 33vw;
+        top: 14vw;
          transform: skew(2deg, 0deg);
     }
 
     #mainText2 {
-        left: 12vw;
+        left: 11vw;
         font-size: 5vw;
         width: 100vw;
-        top: 47vw;
+        top: 21vw;
         transform: skew(2deg, 0deg);
     }
 
     #accountsText {
-        top: 30vw;
-        left: 6vw;
+        top: 9vw;
+        left: 7.5vw;
         font-size: 5.8vw;
         line-height: 12vw;
          transform: skew(2deg, 0deg);
@@ -516,8 +516,8 @@ ul a:hover {
 
     #accountsText2 {
         position: relative;
-        top: 35.5vw;
-        left: 9vw;
+        top: 14.5vw;
+        left: 10vw;
         font-size: 5.8vw;
         line-height: 12vw;
          transform: skew(2deg, 0deg);
@@ -525,7 +525,7 @@ ul a:hover {
 
     #contactText {
         position: relative;
-        top: 38vw;
+        top: 14.5vw;
         left: 6vw;
         font-size: 5.8vw;
         transform: skew(2deg, 0deg);
@@ -534,7 +534,7 @@ ul a:hover {
 
     #projectsText {
         position: relative;
-        top: 40vw;
+        top: 20vw;
         left: 2vw;
         transform: skew(2deg, 0deg);
         line-height: 11vw;
