@@ -52,8 +52,8 @@ h1 {
   font-weight: 300;
   transform: skew(10deg, -4deg);
   line-height: 7vw;
-  top: 6vw;
-  left: 35.2vw;
+  top: 5.5vw;
+  left: 37.1vw;
   text-shadow: -0.05vw 0.05vw 0px #105a31, -0.1vw 0.1vw 0px #105a31, -0.15vw 0.15vw 0px #105a31, -0.2vw 0.2vw 0vw #105a31;
 }
 
@@ -84,7 +84,7 @@ ul {
   padding: 0;
   font-size: 2vw;
   bottom: 8.5vw;
-  right: 44.5vw;
+  right: 42.5vw;
   transform: skew(10deg, -4deg);
 }
 
@@ -198,8 +198,8 @@ ul a:hover {
 
 #mainText {
   position: relative;
-  top: 3.5vw;
-  left: 33vw;
+  top: 3.2vw;
+  left: 35vw;
   font-size: 1.8vw;
   line-height: 6vw;
 }
@@ -213,8 +213,8 @@ ul a:hover {
 
 #mainText2 {
   position: relative;
-  top: 3.4vw;
-  left: 38vw;
+  top: 3.2vw;
+  left: 40vw;
   width: 38vw;
   font-size: 1.4vw;
   line-height: 6vw;
@@ -230,7 +230,7 @@ ul a:hover {
   position: relative;
   float: left;
   top: 4.5vw;
-  left: 35.5vw;
+  left: 37vw;
   font-size: 1.2vw;
   line-height: 3.5vw;
 }
@@ -245,7 +245,7 @@ ul a:hover {
 #accountsText2 {
   position: relative;
   top: 2.4vw;
-  left: 39vw;
+  left: 41vw;
   font-size: 1.2vw;
   line-height: 3.5vw;
 }
@@ -260,7 +260,7 @@ ul a:hover {
 #contactText {
   position: relative;
   top: 5.2vw;
-  left: 35.5vw;
+  left: 37.5vw;
   font-size: 1.2vw;
   width: 25vw;
   line-height: 3.5vw;
@@ -276,7 +276,7 @@ ul a:hover {
 #projectsText {
   position: relative;
   top: 5vw;
-  left: 34.9vw;
+  left: 36.9vw;
   line-height: 3.5vw;
   font-size: 1.2vw;
   width: 32vw;
@@ -292,7 +292,7 @@ ul a:hover {
 #websiteText {
   position: relative;
   top: 6vw;
-  left: 36.6vw;
+  left: 37.6vw;
   line-height: 2.5vw;
   font-size: 1.2vw;
   width: 30vw;
@@ -432,6 +432,7 @@ ul a:hover {
     top: 57vw;
     transform: skew(2deg, 0deg);
     left: 14vw;
+    box-shadow: -0.1vw 0.1vw 0px #686868, -0.2vw 0.2vw 0vw #686868, -0.3vw 0.3vw 0vw #686868, -0.4vw 0.4vw 0vw #686868, -0.5vw 0.5vw 0vw #686868, -0.6vw 0.6vw 0vw #686868, -0.7vw 0.7vw 0vw #686868, -0.8vw 0.8vw 0vw #686868, -0.9vw 0.9vw 0vw #686868, -1vw 1vw 0vw #686868, -1.1vw 1.1vw 0px #686868, -1.2vw 1.2vw 0vw #686868;
   }
 
   #errorText {
