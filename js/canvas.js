@@ -83,7 +83,7 @@ var c = canvas.getContext('2d');
 
         circleArray = [];
         
-         for (var c = 0; c < (innerWidth / 2.9); c++) {
+         for (var c = 0; c < (innerWidth / 4.5); c++) {
             var radius = Math.random() * (innerWidth / innerWidth * 0.7) + 1;
             var x = Math.random() * (innerWidth - radius) + radius;
             var y = Math.random() * (innerHeight - radius) + radius;
