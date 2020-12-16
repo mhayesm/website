@@ -1,8 +1,8 @@
 /* sass --watch styles.scss:styles.css */
 
-$blue: #0c3f72;
-$dark-blue: #072b4e;
-$grey: #cecece;
+$blue: #093158;
+$dark-blue: #082544;
+$grey: #afa4a4;
 $yellow: #FFC200;
 $green: #2bd879;
 $pink: #db6aa3;
@@ -16,8 +16,6 @@ body {
     overflow-y: hidden;
     overflow-x: hidden;
     height: 100vh;
-    /*  background-image: url(https://media.geeksforgeeks.org/wp-content/uploads/space_background_for_infinite_scroll_example.png); */
-   // background-image: url("icons/back.png");
 }
 
 @keyframes animatedBackground {
@@ -35,7 +33,7 @@ canvas {
       margin: 0;
       top: 0;
       left: 0;
-      background-color: #001d3a;
+      background-color: #061729;
       z-index: -1;
 }
 
@@ -53,6 +51,7 @@ a {
 p {
     font-size: 2vw;
     transform: skew(10deg, -4deg);
+    font-weight: 500;
     font-family: "Fira Sans";
     text-shadow: -0.02vw 0.02vw 0px darken($grey, 40%),
     -0.04vw 0.04vw 0px darken($grey, 40%),
@@ -121,17 +120,23 @@ ul {
     -.3vw .3vw 0vw $dark-blue, 
     -.4vw .4vw 0vw $dark-blue;
     font-family: "Fira Code";
-    border-radius: 1vw 1vw 1vw 1vw;
+    border-radius: .9vw .9vw .9vw .9vw;
     text-shadow: none;
+    font-weight: 500;
 }
 
 #linkText:hover {
-    background-color: $yellow;
-    box-shadow: none;
-    color: $blue;
-    top: 0.6vw;
-    left: -.6vw;
-    text-shadow: none;
+     background-color: $yellow;
+     box-shadow: none;
+     color: $blue;
+     top: 0.6vw;
+     left: -.6vw;
+     text-shadow: none;
+}
+
+#linkText:active {
+     top: 0.6vw;
+     left: -.6vw;
 }
 
 ul a {
@@ -139,6 +144,7 @@ ul a {
      background-color: $blue;
      z-index: 1;
      color: $green;
+     font-weight: 350;
      text-decoration: none;
      padding: .2vw;
      box-shadow: -0.1vw 0.1vw 0px $dark-blue,
@@ -164,7 +170,7 @@ ul a:hover {
 
     &:hover,
     :not(.current) {
-        background-color: $green;
+       background-color: $green;
         color: $blue;
 
          &:not(.current) {
@@ -173,6 +179,7 @@ ul a:hover {
                 -.3vw .3vw 0vw darken($green, 20%),
                 -.4vw .4vw 0vw darken($green, 20%),
                 -.5vw .5vw 0vw darken($green, 20%);
+                
         }
     }
 
@@ -256,8 +263,8 @@ ul a:hover {
 
 #mainText {
     position: relative;
-    top: 8.2vw;
-    left: 46.5vw;
+    top: 8.1vw;
+    left: 46.8vw;
     font-size: 1.8vw;
     line-height: 6vw;
 
@@ -266,15 +273,15 @@ ul a:hover {
     }
 
     & a:hover {
-        color: $blue;
-        background-color: $green;
+       color: $blue;
+       background-color: $green;
     }
 }
 
 #mainText2 {
     position: relative;
     top: 7.8vw;
-    left: 47.3vw;
+    left: 47.5vw;
     width: 38vw;
     font-size: 1.4vw;
     line-height: 6vw;
