@@ -6,7 +6,6 @@ body {
   overflow-y: hidden;
   overflow-x: hidden;
   height: 100vh;
-  width: 100vw;
 }
 
 @keyframes animatedBackground {
@@ -53,17 +52,14 @@ h1 {
   font-weight: 300;
   transform: skew(10deg, -4deg);
   line-height: 7vw;
-  top: 10vw;
+  top: 11vw;
   left: 45.7vw;
   text-shadow: -0.05vw 0.05vw 0px #105a31, -0.1vw 0.1vw 0px #105a31, -0.15vw 0.15vw 0px #105a31, -0.2vw 0.2vw 0vw #105a31;
 }
 
 #main {
-  position: relative;
-  transform: skew(10deg, -4deg);
-  height: 20vw;
-  top: 16vw;
-  left: 47.5vw;
+  height: 100vh;
+  width: 100vw;
 }
 
 #accounts {
@@ -87,7 +83,7 @@ ul {
   margin: 0;
   padding: 0;
   font-size: 1.7vw;
-  top: 20.3vw;
+  top: 20.2vw;
   left: 33vw;
   transform: skew(10deg, -4deg);
 }
@@ -205,18 +201,14 @@ ul a:hover {
 #nameH1 {
   padding: 0.2vw;
   position: relative;
-  top: 0vw;
-  left: 0vw;
-  line-height: 0;
-  transform: skew(0deg, 0deg);
 }
 
 #mainText {
   position: relative;
-  top: 1vw;
-  left: 0vw;
-  transform: skew(0deg, 0deg);
+  top: 8.1vw;
+  left: 46.8vw;
   font-size: 1.8vw;
+  line-height: 6vw;
 }
 #mainText a {
   color: #2bd879;
@@ -228,11 +220,11 @@ ul a:hover {
 
 #mainText2 {
   position: relative;
-  top: 1.2vw;
-  left: 0vw;
+  top: 7.8vw;
+  left: 47.5vw;
   width: 38vw;
   font-size: 1.4vw;
-  transform: skew(0deg, 0deg);
+  line-height: 6vw;
   font-family: "Fira Code";
 }
 
@@ -304,19 +296,10 @@ ul a:hover {
   background-color: #00aeff;
 }
 
-#websiteContent {
-  position: relative;
-  left: 0vw;
-  top: 0.5vw;
-  height: 40vw;
-  transform: skew(0deg, 0deg);
-}
-
 #websiteText {
   position: relative;
-  top: 0vw;
-  left: 0vw;
-  transform: skew(0deg, 0deg);
+  top: 11vw;
+  left: 47vw;
   line-height: 2.5vw;
   font-size: 1.2vw;
   width: 30vw;
@@ -329,28 +312,19 @@ ul a:hover {
   background-color: #00aeff;
 }
 
-#progress1 {
-  top: 0vw;
-  width: 20vw;
-  left: 0vw;
-}
-
 #errorH1 {
   position: relative;
   left: 36vw;
   top: 5vw;
 }
 
-.picture {
-  position: relative;
-  box-shadow: -0.05vw 0.05vw 0px #483f3f, -0.1vw 0.1vw 0px #483f3f, -0.15vw 0.15vw 0px #483f3f, -0.2vw 0.2vw 0px #483f3f, -0.25vw 0.25vw 0px #483f3f, -0.3vw 0.3vw 0px #483f3f;
-}
-
 #mac {
+  position: relative;
   top: 8vw;
-  transform: skew(10deg, -4deg);
   width: 13vw;
+  transform: skew(10deg, -4deg);
   left: 38vw;
+  box-shadow: -0.05vw 0.05vw 0px #483f3f, -0.1vw 0.1vw 0px #483f3f, -0.15vw 0.15vw 0px #483f3f, -0.2vw 0.2vw 0px #483f3f, -0.25vw 0.25vw 0px #483f3f, -0.3vw 0.3vw 0px #483f3f;
 }
 
 #errorText {
@@ -373,27 +347,20 @@ ul a:hover {
     text-shadow: -0.1vw 0.1vw 0px #105a31, -0.2vw 0.2vw 0px #105a31, -0.3vw 0.3vw 0px #105a31, -0.4vw 0.4vw 0vw #105a31, -0.5vw 0.5vw 0px #105a31, -0.6vw 0.6vw 0px #105a31, -0.7vw 0.7vw 0vw #105a31, -0.8vw 0.8vw 0px #105a31, -0.9vw 0.9vw 0px #105a31, -1vw 1vw 0vw #105a31, -1.1vw 1.1vw 0vw #105a31, -1.2vw 1.2vw 0vw #105a31, -1.3vw 1.3vw 0vw #105a31, -1.4vw 1.4vw 0vw #105a31;
   }
 
-  #main {
-    position: relative;
-    transform: skew(0deg, 0deg);
-    height: 20vw;
-    top: 2vw;
-    left: 0vw;
-  }
-
   p {
     text-shadow: -0.1vw 0.1vw 0px #635757, -0.2vw 0.2vw 0px #635757, -0.3vw 0.3vw 0px #635757, -0.4vw 0.4vw 0vw #635757;
   }
 
   ul {
     font-size: 11vw;
-    left: 20vw;
-    top: 118vw;
+    left: 25vw;
+    top: 145vw;
+    transform: skew(-6deg, 0deg);
   }
 
   ul a {
     padding: 0.4vw;
-    box-shadow: -0.1vw 0.1vw 0px #082544, -0.2vw 0.2vw 0vw #082544, -0.3vw 0.3vw 0vw #082544, -0.4vw 0.4vw 0vw #082544, -0.5vw 0.5vw 0vw #082544, -0.6vw 0.6vw 0vw #082544, -0.7vw 0.7vw 0vw #082544, -0.8vw 0.8vw 0vw #082544, -0.9vw 0.9vw 0vw #082544, -1vw 1vw 0vw #082544, -1.1vw 1.1vw 0px #082544, -1.2vw 1.2vw 0vw #082544, -1.3vw 1.3vw 0vw #082544, -1.4vw 1.4vw 0vw #082544, -1.5vw 1.5vw 0vw #082544, -1.6vw 1.6vw 0vw #082544, -1.7vw 1.7vw 0vw #082544, -1.8vw 1.8vw 0vw #082544, -1.9vw 1.9vw 0vw #082544, -2vw 2vw 0px #082544, -2.1vw 2.1vw 0vw #082544, -2.2vw 2.2vw 0vw #082544;
+    box-shadow: 0.1vw 0.1vw 0px #082544, 0.2vw 0.2vw 0vw #082544, 0.3vw 0.3vw 0vw #082544, 0.4vw 0.4vw 0vw #082544, 0.5vw 0.5vw 0vw #082544, 0.6vw 0.6vw 0vw #082544, 0.7vw 0.7vw 0vw #082544, 0.8vw 0.8vw 0vw #082544, 0.9vw 0.9vw 0vw #082544, 1vw 1vw 0vw #082544, 1.1vw 1.1vw 0px #082544, 1.2vw 1.2vw 0vw #082544, 1.3vw 1.3vw 0vw #082544, 1.4vw 1.4vw 0vw #082544, 1.5vw 1.5vw 0vw #082544, 1.6vw 1.6vw 0vw #082544, 1.7vw 1.7vw 0vw #082544, 1.8vw 1.8vw 0vw #082544, 1.9vw 1.9vw 0vw #082544, 2vw 2vw 0px #082544, 2.1vw 2.1vw 0vw #082544, 2.2vw 2.2vw 0vw #082544;
   }
 
   #linkText {
@@ -402,21 +369,18 @@ ul a:hover {
 
   .current {
     top: 2.7vw;
-    left: -2.7vw;
+    left: 2.7vw;
   }
 
   #nameH1 {
     width: 10%;
-    top: 10vw;
-    left: 8vw;
-    line-height: 20vw;
   }
 
   #mainText {
-    left: 2.3vw;
-    font-size: 6.1vw;
+    left: 2vw;
+    font-size: 5.9vw;
     width: 100vw;
-    top: 17vw;
+    top: 14vw;
     transform: skew(2deg, 0deg);
   }
 
@@ -424,7 +388,7 @@ ul a:hover {
     left: 0vw;
     font-size: 5vw;
     width: 100vw;
-    top: 24vw;
+    top: 21vw;
     transform: skew(2deg, 0deg);
   }
 
@@ -489,4 +453,4 @@ ul a:hover {
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.css%23.map */
