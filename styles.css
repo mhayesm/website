@@ -48,12 +48,12 @@ h1 {
   padding: 0;
   margin: 0;
   font-family: "Fira Code";
-  font-size: 2.7vw;
+  font-size: 2.8vw;
   font-weight: 300;
   transform: skew(10deg, -4deg);
   line-height: 7vw;
-  top: 5.5vw;
-  left: 37.1vw;
+  top: 11vw;
+  left: 45.7vw;
   text-shadow: -0.05vw 0.05vw 0px #105a31, -0.1vw 0.1vw 0px #105a31, -0.15vw 0.15vw 0px #105a31, -0.2vw 0.2vw 0vw #105a31;
 }
 
@@ -82,9 +82,9 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font-size: 2vw;
-  bottom: 8.5vw;
-  right: 42.5vw;
+  font-size: 1.8vw;
+  top: 20.2vw;
+  left: 33vw;
   transform: skew(10deg, -4deg);
 }
 
@@ -198,8 +198,8 @@ ul a:hover {
 
 #mainText {
   position: relative;
-  top: 3.2vw;
-  left: 35vw;
+  top: 8.2vw;
+  left: 46.5vw;
   font-size: 1.8vw;
   line-height: 6vw;
 }
@@ -213,8 +213,8 @@ ul a:hover {
 
 #mainText2 {
   position: relative;
-  top: 3.2vw;
-  left: 40vw;
+  top: 7.8vw;
+  left: 47.3vw;
   width: 38vw;
   font-size: 1.4vw;
   line-height: 6vw;
@@ -229,8 +229,8 @@ ul a:hover {
 #accountsText {
   position: relative;
   float: left;
-  top: 4.5vw;
-  left: 37vw;
+  top: 10.8vw;
+  left: 48vw;
   font-size: 1.2vw;
   line-height: 3.5vw;
 }
@@ -244,8 +244,8 @@ ul a:hover {
 
 #accountsText2 {
   position: relative;
-  top: 2.4vw;
-  left: 41vw;
+  top: 8.6vw;
+  left: 50vw;
   font-size: 1.2vw;
   line-height: 3.5vw;
 }
@@ -259,8 +259,8 @@ ul a:hover {
 
 #contactText {
   position: relative;
-  top: 5.2vw;
-  left: 37.5vw;
+  top: 11.5vw;
+  left: 48vw;
   font-size: 1.2vw;
   width: 25vw;
   line-height: 3.5vw;
@@ -275,8 +275,8 @@ ul a:hover {
 
 #projectsText {
   position: relative;
-  top: 5vw;
-  left: 36.9vw;
+  top: 11.3vw;
+  left: 47.4vw;
   line-height: 3.5vw;
   font-size: 1.2vw;
   width: 32vw;
@@ -291,8 +291,8 @@ ul a:hover {
 
 #websiteText {
   position: relative;
-  top: 6vw;
-  left: 37.6vw;
+  top: 11vw;
+  left: 47vw;
   line-height: 2.5vw;
   font-size: 1.2vw;
   width: 30vw;

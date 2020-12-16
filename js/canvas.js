@@ -5,18 +5,6 @@ var canvas = document.querySelector('canvas');
 
 var c = canvas.getContext('2d');
 
-// for (var i = 0; i < 3; i++) {
-
-//     var x = Math.random() * window.innerWidth;
-
-//     var y = Math.random() * window.innerHeight;
-
-//     c.beginPath();
-//     c.arc(x, y, 30, 0, Math.PI * 2,false)
-//     c.strokeStyle = 'blue';
-//     c.stroke();
-// }
-
     var mouse = {
         x: undefined,
         y: undefined
@@ -32,7 +20,6 @@ var c = canvas.getContext('2d');
         '#db6aa3',
         '#2bd879',
         '#00aeff'
-
     ]
 
 
@@ -49,8 +36,6 @@ var c = canvas.getContext('2d');
         init();
         
     })
-
-    window.onload
 
     function Circle(x, y, dx, dy, radius) {
         this.x = x;
@@ -98,7 +83,7 @@ var c = canvas.getContext('2d');
 
         circleArray = [];
         
-         for (var i = 0; i < (innerWidth / 2.9); i++) {
+         for (var c = 0; c < (innerWidth / 2.9); c++) {
             var radius = Math.random() * (innerWidth / innerWidth * 0.7) + 1;
             var x = Math.random() * (innerWidth - radius) + radius;
             var y = Math.random() * (innerHeight - radius) + radius;
