@@ -356,9 +356,9 @@ ul a:hover {
 
 #projectsText {
     position: relative;
-    top: 11.3vw;
+    top: 16.1vw;
     left: 47.4vw;
-    line-height: 3.5vw;
+    line-height: 3vw;
     font-size: 1.2vw;
     width: 32vw;
 
@@ -381,9 +381,18 @@ ul a:hover {
     transform: skew(0deg, 0deg);
 }
 
+#websiteH1 {
+        padding: 0.2vw;
+        position: relative;
+        top: -8vw;
+        left: 0vw;
+        line-height: 0;
+        transform: skew(0deg, 0deg);
+}
+
 #websiteText {
     position: relative;
-    top: 0vw;
+    top: -8vw;
     left: 0vw;
     transform: skew(0deg, 0deg);
     line-height: 2.5vw;
@@ -401,7 +410,7 @@ ul a:hover {
 }
 
 #progress1 {
-       top: 0vw;
+       top: -8vw;
        width: 20vw;
        left: 0vw;
 }
