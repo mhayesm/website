@@ -62,18 +62,26 @@ h1 {
   position: relative;
   transform: skew(10deg, -4deg);
   height: 20vw;
-  top: 16vw;
+  top: 15.9vw;
   left: 47.5vw;
 }
 
 #accounts {
-  height: 100vh;
-  width: 100vw;
+  position: relative;
+  transform: skew(10deg, -4deg);
+  height: 15vw;
+  top: 13vw;
+  left: 47.5vw;
+  width: 30vw;
 }
 
 #contact {
-  height: 100vh;
-  width: 100vw;
+  position: relative;
+  transform: skew(10deg, -4deg);
+  height: 15vw;
+  top: 13vw;
+  left: 47.5vw;
+  width: 30vw;
 }
 
 #projects {
@@ -205,7 +213,7 @@ ul a:hover {
 #nameH1 {
   padding: 0.2vw;
   position: relative;
-  top: 0.5vw;
+  top: 0.8vw;
   left: 0vw;
   line-height: 0;
   transform: skew(0deg, 0deg);
@@ -228,7 +236,7 @@ ul a:hover {
 
 #mainText2 {
   position: relative;
-  top: 1vw;
+  top: 0.8vw;
   left: 0vw;
   width: 38vw;
   font-size: 1.4vw;
@@ -243,11 +251,12 @@ ul a:hover {
 
 #accountsText {
   position: relative;
+  top: 0vw;
   float: left;
-  top: 13.5vw;
-  left: 47.7vw;
+  left: 0vw;
   font-size: 1.2vw;
   line-height: 3vw;
+  transform: skew(0deg, 0deg);
 }
 #accountsText a {
   color: #FFC200;
@@ -259,11 +268,12 @@ ul a:hover {
 
 #accountsText2 {
   position: relative;
+  top: 0vw;
+  left: 2vw;
   float: left;
-  top: 12.5vw;
-  left: 48.3vw;
   font-size: 1.2vw;
   line-height: 3vw;
+  transform: skew(0deg, 0deg);
 }
 #accountsText2 a {
   color: #FFC200;
@@ -275,11 +285,13 @@ ul a:hover {
 
 #contactText {
   position: relative;
-  top: 13.4vw;
-  left: 47.7vw;
+  top: 0vw;
+  left: 0vw;
+  float: left;
   font-size: 1.2vw;
   width: 25vw;
   line-height: 3vw;
+  transform: skew(0deg, 0deg);
 }
 #contactText a {
   color: #db6aa3;
@@ -391,6 +403,27 @@ ul a:hover {
     left: 0vw;
   }
 
+  #accounts {
+    position: relative;
+    height: 100vw;
+    width: 100vw;
+    top: 0vw;
+    left: 0;
+    width: 30vw;
+    transform: skew(0deg, 0deg);
+  }
+
+  #contact {
+    position: relative;
+    transform: skew(10deg, -4deg);
+    height: 100vw;
+    width: 100vw;
+    top: 0vw;
+    left: 0;
+    width: 30vw;
+    transform: skew(0deg, 0deg);
+  }
+
   p {
     text-shadow: -0.1vw 0.1vw 0px #635757, -0.2vw 0.2vw 0px #635757, -0.3vw 0.3vw 0px #635757, -0.4vw 0.4vw 0vw #635757;
   }
@@ -444,21 +477,23 @@ ul a:hover {
     font-size: 5.8vw;
     line-height: 14vw;
     transform: skew(2deg, 0deg);
+    float: none;
   }
 
   #accountsText2 {
     position: relative;
-    top: 0.5vw;
-    left: 10vw;
+    top: -104vw;
+    left: 50vw;
     font-size: 5.8vw;
     line-height: 14vw;
+    float: none;
     transform: skew(2deg, 0deg);
   }
 
   #contactText {
     position: relative;
-    top: 2vw;
-    left: 3.5vw;
+    top: -2vw;
+    left: 3.2vw;
     font-size: 5.8vw;
     transform: skew(2deg, 0deg);
     line-height: 14vw;
