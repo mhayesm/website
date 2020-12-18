@@ -87,8 +87,8 @@ ul {
   margin: 0;
   padding: 0;
   font-size: 1.7vw;
-  top: 20.3vw;
-  left: 33vw;
+  top: 20vw;
+  left: 35vw;
   transform: skew(10deg, -4deg);
 }
 
@@ -324,7 +324,7 @@ ul a:hover {
 
 #websiteText {
   position: relative;
-  top: -8vw;
+  top: -8.5vw;
   left: 0vw;
   transform: skew(0deg, 0deg);
   line-height: 2.5vw;
@@ -387,7 +387,7 @@ ul a:hover {
     position: relative;
     transform: skew(0deg, 0deg);
     height: 20vw;
-    top: 2vw;
+    top: -4vw;
     left: 0vw;
   }
 
@@ -439,7 +439,7 @@ ul a:hover {
   }
 
   #accountsText {
-    top: 9vw;
+    top: 0vw;
     left: 3.5vw;
     font-size: 5.8vw;
     line-height: 14vw;
@@ -448,7 +448,7 @@ ul a:hover {
 
   #accountsText2 {
     position: relative;
-    top: 14.5vw;
+    top: 0.5vw;
     left: 10vw;
     font-size: 5.8vw;
     line-height: 14vw;
@@ -457,8 +457,8 @@ ul a:hover {
 
   #contactText {
     position: relative;
-    top: 14.5vw;
-    left: 3vw;
+    top: 2vw;
+    left: 3.5vw;
     font-size: 5.8vw;
     transform: skew(2deg, 0deg);
     line-height: 14vw;
@@ -466,7 +466,7 @@ ul a:hover {
 
   #projectsText {
     position: relative;
-    top: 14.5vw;
+    top: 21vw;
     left: 2vw;
     transform: skew(2deg, 0deg);
     line-height: 14vw;
