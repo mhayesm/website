@@ -58,35 +58,41 @@ h1 {
   text-shadow: -0.05vw 0.05vw 0px #105a31, -0.1vw 0.1vw 0px #105a31, -0.15vw 0.15vw 0px #105a31, -0.2vw 0.2vw 0vw #105a31;
 }
 
-#main {
+#navHeading {
   position: relative;
   transform: skew(10deg, -4deg);
-  height: 20vw;
-  top: 15.9vw;
-  left: 47.5vw;
+  height: 10vw;
+  top: 7vw;
+  left: 32vw;
+}
+
+#main {
+  position: relative;
+  left: 12vw;
 }
 
 #accounts {
   position: relative;
-  transform: skew(10deg, -4deg);
   height: 15vw;
-  top: 13vw;
-  left: 47.5vw;
+  top: 1vw;
+  left: 12.5vw;
   width: 30vw;
 }
 
 #contact {
   position: relative;
-  transform: skew(10deg, -4deg);
   height: 15vw;
-  top: 13vw;
-  left: 47.5vw;
+  top: 1vw;
+  left: 12.5vw;
   width: 30vw;
 }
 
 #projects {
-  height: 100vh;
-  width: 100vw;
+  position: relative;
+  height: 15vw;
+  top: 1vw;
+  left: 12.5vw;
+  width: 30vw;
 }
 
 ul {
@@ -95,9 +101,6 @@ ul {
   margin: 0;
   padding: 0;
   font-size: 1.7vw;
-  top: 20vw;
-  left: 35vw;
-  transform: skew(10deg, -4deg);
 }
 
 #linkText {
@@ -269,7 +272,7 @@ ul a:hover {
 #accountsText2 {
   position: relative;
   top: 0vw;
-  left: 2vw;
+  left: 3vw;
   float: left;
   font-size: 1.2vw;
   line-height: 3vw;
@@ -303,11 +306,13 @@ ul a:hover {
 
 #projectsText {
   position: relative;
-  top: 16.1vw;
-  left: 47.4vw;
+  top: 0vw;
+  float: left;
+  left: 0vw;
   line-height: 3vw;
   font-size: 1.2vw;
   width: 32vw;
+  transform: skew(0deg, 0deg);
 }
 #projectsText a {
   color: #00aeff;
