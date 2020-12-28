@@ -68,7 +68,7 @@ h1 {
     padding: 0;
     margin: 0;
     font-family: "Fira Code";
-    font-size: 2.8vw;
+    font-size: 2.5vw;
     font-weight: 300;
     transform: skew(10deg, -4deg);
     line-height: 7vw;
@@ -84,16 +84,16 @@ h1 {
     position: relative; 
     transform: skew(10deg, -4deg);
     height: 20vw;
-    top: 15.9vw;
-    left: 47.5vw;
+    top: 17vw;
+    left: 46vw;
 }
 
 #accounts {
      position: relative;
      transform: skew(10deg, -4deg);
      height: 15vw;
-     top: 13vw;
-     left: 47.5vw;
+     top: 13.7vw;
+     left: 45vw;
      width: 30vw;
 }
 
@@ -101,14 +101,18 @@ h1 {
      position: relative;
      transform: skew(10deg, -4deg);
      height: 15vw;
-     top: 13vw;
-     left: 47.5vw;
+     top: 13.7vw;
+     left: 45vw;
      width: 30vw;
 }
 
 #projects {
-    height: 100vh;
-    width: 100vw;
+      position: relative;
+      transform: skew(10deg, -4deg);
+      height: 15vw;
+      top: 13.7vw;
+      left: 45vw;
+      width: 30vw;
 }
 
 ul {
@@ -116,7 +120,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    font-size: 1.7vw;
+    font-size: 1.4vw;
     top: 20vw;
     left: 35vw;
     transform: skew(10deg, -4deg);
@@ -129,10 +133,10 @@ ul {
     position: relative;
     box-shadow: -0.1vw 0.1vw 0px $dark-blue, 
     -0.2vw .2vw 0vw $dark-blue, 
-    -.3vw .3vw 0vw $dark-blue, 
-    -.4vw .4vw 0vw $dark-blue;
+    -.3vw .3vw 0vw $dark-blue,
+     -.4vw .4vw 0vw $dark-blue;
     font-family: "Fira Code";
-    border-radius: .9vw .9vw .9vw .9vw;
+    border-radius: .7vw .7vw .7vw .7vw;
     text-shadow: none;
     font-weight: 500;
 }
@@ -158,12 +162,12 @@ ul a {
      color: $green;
      font-weight: 350;
      text-decoration: none;
+      border-radius: .9vw .9vw .9vw .9vw;
      padding: .2vw;
      box-shadow: -0.1vw 0.1vw 0px $dark-blue,
       -0.2vw .2vw 0vw $dark-blue,
      -.3vw .3vw 0vw $dark-blue,
-     -.4vw .4vw 0vw $dark-blue,
-     -.5vw .5vw 0vw $dark-blue;
+     -.4vw .4vw 0vw $dark-blue;
 }
 
 ul a:hover {
@@ -173,8 +177,8 @@ ul a:hover {
 
 .current {
     box-shadow: none;
-    top: 0.8vw;
-    left: -0.7vw;
+    top: 0.7vw;
+    left: -0.5vw;
 }
 
 #infoNav {
@@ -189,8 +193,7 @@ ul a:hover {
             box-shadow: -0.1vw 0.1vw 0px darken($green, 20%),
                 -0.2vw .2vw 0vw darken($green, 20%),
                 -.3vw .3vw 0vw darken($green, 20%),
-                -.4vw .4vw 0vw darken($green, 20%),
-                -.5vw .5vw 0vw darken($green, 20%);
+                -.4vw .4vw 0vw darken($green, 20%);
                 
         }
     }
@@ -212,8 +215,7 @@ ul a:hover {
             box-shadow: -0.1vw 0.1vw 0px darken($yellow, 20%),
                 -0.2vw .2vw 0vw darken($yellow, 20%),
                 -.3vw .3vw 0vw darken($yellow, 20%),
-                -.4vw .4vw 0vw darken($yellow, 20%),
-                -.5vw .5vw 0vw darken($yellow, 20%);
+                -.4vw .4vw 0vw darken($yellow, 20%);
         }
     }
 
@@ -234,8 +236,7 @@ ul a:hover {
             box-shadow: -0.1vw 0.1vw 0px darken($pink, 20%),
                 -0.2vw .2vw 0vw darken($pink, 20%),
                 -.3vw .3vw 0vw darken($pink, 20%),
-                -.4vw .4vw 0vw darken($pink, 20%),
-                -.5vw .5vw 0vw darken($pink, 20%);
+                -.4vw .4vw 0vw darken($pink, 20%);
         }
     }
 
@@ -256,8 +257,7 @@ ul a:hover {
             box-shadow: -0.1vw 0.1vw 0px darken($light-blue, 20%),
                 -0.2vw .2vw 0vw darken($light-blue, 20%),
                 -.3vw .3vw 0vw darken($light-blue, 20%),
-                -.4vw .4vw 0vw darken($light-blue, 20%),
-                -.5vw .5vw 0vw darken($light-blue, 20%);
+                -.4vw .4vw 0vw darken($light-blue, 20%);
         }
     }
 
@@ -268,10 +268,9 @@ ul a:hover {
 }
 
 #nameH1 {
-
     padding: 0.2vw;
     position: relative;
-    top: 0.8vw;
+    top: 0vw;
     left: 0vw;
     line-height: 0;
     transform: skew(0deg, 0deg);
@@ -279,10 +278,10 @@ ul a:hover {
 
 #mainText {
     position: relative;
-    top: 1.2vw;
+    top: 0.7vw;
     left: 0vw;
     transform: skew(0deg, 0deg);
-    font-size: 1.8vw;
+    font-size: 1.3vw;
 
     & a {
         color: $green;
@@ -296,10 +295,10 @@ ul a:hover {
 
 #mainText2 {
     position: relative;
-    top: 0.8vw;
+    top: 0.7vw;
     left: 0vw;
     width: 38vw;
-    font-size: 1.4vw;
+    font-size: 1vw;
     transform: skew(0deg, 0deg);
     font-family: "Fira Code";
 }
@@ -314,8 +313,8 @@ ul a:hover {
     top: 0vw;
     float: left;
     left: 0vw;
-    font-size: 1.2vw;
-    line-height: 3vw;
+    font-size: 1.1vw;
+    line-height: 2.7vw;
      transform: skew(0deg, 0deg);
 
     & a {
@@ -333,8 +332,8 @@ ul a:hover {
     top: 0vw;
     left: 2vw;
     float: left;
-    font-size: 1.2vw;
-    line-height: 3vw;
+    font-size: 1.1vw;
+    line-height: 2.7vw;
      transform: skew(0deg, 0deg);
 
     & a {
@@ -352,9 +351,9 @@ ul a:hover {
     top: 0vw;
     left: 0vw;
     float: left;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     width: 25vw;
-    line-height: 3vw;
+    line-height: 2.7vw;
     transform: skew(0deg, 0deg);
     & a {
         color: $pink;
@@ -368,10 +367,12 @@ ul a:hover {
 
 #projectsText {
     position: relative;
-    top: 16.1vw;
-    left: 47.4vw;
-    line-height: 3vw;
-    font-size: 1.2vw;
+    top: 0vw;
+    left: 0vw; 
+    line-height: 2.7vw;
+    font-size: 1.1vw;
+    float: left;
+    transform: skew(0deg, 0deg);
     width: 32vw;
 
     & a {
@@ -510,6 +511,17 @@ ul a:hover {
         width: 100vw;
         top: 0vw;
         left: 0;
+        width: 30vw;
+        transform: skew(0deg, 0deg);
+    }
+
+    #projects {
+        position: relative;
+        transform: skew(10deg, -4deg);
+        height: 100vw;
+        width: 100vw;
+        top: -23vw;
+        left: 1vw;
         width: 30vw;
         transform: skew(0deg, 0deg);
     }
