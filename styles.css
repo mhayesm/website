@@ -9,14 +9,6 @@ body {
   width: 100vw;
 }
 
-@keyframes animatedBackground {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 100% 0;
-  }
-}
 canvas {
   position: fixed;
   margin: 0;
@@ -63,7 +55,7 @@ h1 {
   transform: skew(10deg, -4deg);
   height: 20vw;
   top: 17vw;
-  left: 46vw;
+  left: 47vw;
 }
 
 #accounts {
@@ -71,7 +63,7 @@ h1 {
   transform: skew(10deg, -4deg);
   height: 15vw;
   top: 13.7vw;
-  left: 45vw;
+  left: 46vw;
   width: 30vw;
 }
 
@@ -80,7 +72,7 @@ h1 {
   transform: skew(10deg, -4deg);
   height: 15vw;
   top: 13.7vw;
-  left: 45vw;
+  left: 46vw;
   width: 30vw;
 }
 
@@ -89,7 +81,7 @@ h1 {
   transform: skew(10deg, -4deg);
   height: 15vw;
   top: 13.7vw;
-  left: 45vw;
+  left: 46vw;
   width: 30vw;
 }
 
