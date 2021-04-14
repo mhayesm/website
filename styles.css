@@ -2,7 +2,7 @@
 body {
   background-color: #001d3a;
   font-family: "Fira Code";
-  color: #afa4a4;
+  color: #ccc5c5;
   overflow-y: hidden;
   overflow-x: hidden;
   height: 100vh;
@@ -14,7 +14,7 @@ canvas {
   margin: 0;
   top: 0;
   left: 0;
-  background-color: #061729;
+  background-color: #030911;
   z-index: -1;
 }
 
@@ -24,16 +24,12 @@ b {
 
 a {
   text-decoration: none;
-  color: #FFC200;
-  border-radius: 1vw 1vw 1vw 1vw;
 }
 
 p {
   font-size: 2vw;
-  transform: skew(10deg, -4deg);
   font-weight: 500;
   font-family: "Fira Sans";
-  text-shadow: -0.02vw 0.02vw 0px #483f3f, -0.04vw 0.04vw 0px #483f3f, -0.06vw 0.07vw 0px #483f3f, -0.08vw 0.08vw 0px #483f3f, -0.1vw 0.1vw 0px #483f3f, -0.12vw 0.12vw 0px #483f3f, -0.14vw 0.14vw 0px #483f3f;
 }
 
 h1 {
@@ -43,192 +39,132 @@ h1 {
   font-family: "Fira Code";
   font-size: 2.5vw;
   font-weight: 300;
-  transform: skew(10deg, -4deg);
   line-height: 7vw;
-  top: 10vw;
-  left: 45.7vw;
-  text-shadow: -0.05vw 0.05vw 0px #105a31, -0.1vw 0.1vw 0px #105a31, -0.15vw 0.15vw 0px #105a31, -0.2vw 0.2vw 0vw #105a31;
+  text-shadow: 0.05vw 0.05vw 0px #105a31, 0.1vw 0.1vw 0px #105a31, 0.15vw 0.15vw 0px #105a31, 0.2vw 0.2vw 0vw #105a31, 0.25vw 0.25vw 0px #105a31;
 }
 
-#main {
+#nav {
   position: relative;
-  transform: skew(10deg, -4deg);
-  height: 20vw;
-  top: 17vw;
-  left: 47vw;
+  top: 0.3vw;
+  height: 6vw;
+  left: 0.3vw;
+  width: 25vw;
+  transform: skew(0deg, -8deg);
 }
 
-#accounts {
+#container {
   position: relative;
-  transform: skew(10deg, -4deg);
   height: 15vw;
-  top: 13.7vw;
-  left: 46vw;
-  width: 30vw;
-}
-
-#contact {
-  position: relative;
-  transform: skew(10deg, -4deg);
-  height: 15vw;
-  top: 13.7vw;
-  left: 46vw;
-  width: 30vw;
-}
-
-#projects {
-  position: relative;
-  transform: skew(10deg, -4deg);
-  height: 15vw;
-  top: 13.7vw;
-  left: 46vw;
-  width: 30vw;
+  top: 2vw;
+  left: 25vw;
+  width: 60vw;
 }
 
 ul {
-  position: fixed;
+  position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font-size: 1.4vw;
-  top: 20vw;
-  left: 35vw;
-  transform: skew(10deg, -4deg);
+  left: 0.3vw;
+  top: 2.5vw;
+  font-size: 1.2vw;
 }
 
 #linkText {
-  background-color: #093158;
-  padding: 0.35vw;
-  color: #FFC200;
   position: relative;
-  box-shadow: -0.1vw 0.1vw 0px #082544, -0.2vw 0.2vw 0vw #082544, -0.3vw 0.3vw 0vw #082544, -0.4vw 0.4vw 0vw #082544;
   font-family: "Fira Code";
-  border-radius: 0.7vw 0.7vw 0.7vw 0.7vw;
   text-shadow: none;
-  font-weight: 500;
-}
-
-#linkText:hover {
-  background-color: #FFC200;
-  box-shadow: none;
-  color: #093158;
-  top: 0.6vw;
-  left: -0.6vw;
-  text-shadow: none;
-}
-
-#linkText:active {
-  top: 0.6vw;
-  left: -0.6vw;
 }
 
 ul a {
   position: relative;
-  background-color: #093158;
   z-index: 1;
   color: #2bd879;
   font-weight: 350;
   text-decoration: none;
-  border-radius: 0.9vw 0.9vw 0.9vw 0.9vw;
-  padding: 0.2vw;
-  box-shadow: -0.1vw 0.1vw 0px #082544, -0.2vw 0.2vw 0vw #082544, -0.3vw 0.3vw 0vw #082544, -0.4vw 0.4vw 0vw #082544;
+  border-radius: 0.6vw 0.6vw 0.6vw 0.6vw;
+  padding-right: 1vw;
 }
 
-ul a:hover {
-  background-color: #2bd879;
-  color: #093158;
+ul li {
+  display: inline;
+  float: left;
 }
 
-.current {
-  box-shadow: none;
-  top: 0.7vw;
-  left: -0.5vw;
-}
-
-#infoNav {
+#indexNav {
   color: #2bd879;
 }
-#infoNav:hover,
-#infoNav :not(.current) {
-  background-color: #2bd879;
-  color: #093158;
+#indexNav:hover {
+  color: #97ecbd;
+  text-shadow: 0.05vw 0.05vw 0px #105a31, 0.1vw 0.1vw 0px #105a31, 0.15vw 0.15vw 0px #105a31, 0.2vw 0.2vw 0vw #105a31, 0.25vw 0.25vw 0vw #105a31;
 }
-#infoNav:hover:not(.current),
-#infoNav :not(.current):not(.current) {
-  box-shadow: -0.1vw 0.1vw 0px #188549, -0.2vw 0.2vw 0vw #188549, -0.3vw 0.3vw 0vw #188549, -0.4vw 0.4vw 0vw #188549;
+#indexNav.current {
+  text-shadow: 0.05vw 0.05vw 0px #105a31, 0.1vw 0.1vw 0px #105a31, 0.15vw 0.15vw 0px #105a31, 0.2vw 0.2vw 0vw #105a31, 0.25vw 0.25vw 0px #105a31;
 }
-#infoNav.current {
-  background-color: #2bd879;
-  color: #093158;
+
+#blogNav {
+  color: #db6aa3;
+}
+#blogNav:hover:not(.current) {
+  text-shadow: 0.05vw 0.05vw 0px #8b2156, 0.1vw 0.1vw 0px #8b2156, 0.15vw 0.15vw 0px #8b2156, 0.2vw 0.2vw 0vw #8b2156, 0.25vw 0.25vw 0px #8b2156;
+}
+#blogNav.current {
+  text-shadow: 0.05vw 0.05vw 0px #8b2156, 0.1vw 0.1vw 0px #8b2156, 0.15vw 0.15vw 0px #8b2156, 0.2vw 0.2vw 0vw #8b2156, 0.25vw 0.25vw 0px #8b2156;
 }
 
 #accountsNav {
   color: #FFC200;
 }
-#accountsNav:hover {
-  background-color: #FFC200;
-  color: #093158;
-}
 #accountsNav:hover:not(.current) {
-  box-shadow: -0.1vw 0.1vw 0px #997400, -0.2vw 0.2vw 0vw #997400, -0.3vw 0.3vw 0vw #997400, -0.4vw 0.4vw 0vw #997400;
+  text-shadow: 0.05vw 0.05vw 0px #664e00, 0.1vw 0.1vw 0px #664e00, 0.15vw 0.15vw 0px #664e00, 0.2vw 0.2vw 0vw #664e00, 0.25vw 0.25vw 0px #664e00;
 }
 #accountsNav.current {
-  background-color: #FFC200;
-  color: #093158;
+  text-shadow: 0.05vw 0.05vw 0px #664e00, 0.1vw 0.1vw 0px #664e00, 0.15vw 0.15vw 0px #664e00, 0.2vw 0.2vw 0vw #664e00, 0.25vw 0.25vw 0px #664e00;
 }
 
 #contactNav {
   color: #db6aa3;
 }
-#contactNav:hover {
-  background-color: #db6aa3;
-  color: #093158;
-}
 #contactNav:hover:not(.current) {
-  box-shadow: -0.1vw 0.1vw 0px #b42b70, -0.2vw 0.2vw 0vw #b42b70, -0.3vw 0.3vw 0vw #b42b70, -0.4vw 0.4vw 0vw #b42b70;
+  text-shadow: 0.05vw 0.05vw 0px #664e00, 0.1vw 0.1vw 0px #664e00, 0.15vw 0.15vw 0px #664e00, 0.2vw 0.2vw 0vw #664e00, 0.25vw 0.25vw 0px #664e00;
 }
 #contactNav.current {
-  background-color: #db6aa3;
-  color: #093158;
+  text-shadow: 0.05vw 0.05vw 0px #664e00, 0.1vw 0.1vw 0px #664e00, 0.15vw 0.15vw 0px #664e00, 0.2vw 0.2vw 0vw #664e00, 0.25vw 0.25vw 0px #664e00;
 }
 
 #projectsNav {
   color: #00aeff;
 }
-#projectsNav:hover {
-  background-color: #00aeff;
-  color: #093158;
-}
 #projectsNav:hover:not(.current) {
-  box-shadow: -0.1vw 0.1vw 0px #006899, -0.2vw 0.2vw 0vw #006899, -0.3vw 0.3vw 0vw #006899, -0.4vw 0.4vw 0vw #006899;
+  text-shadow: 0.05vw 0.05vw 0px #004666, 0.1vw 0.1vw 0px #004666, 0.15vw 0.15vw 0px #004666, 0.2vw 0.2vw 0vw #004666, 0.25vw 0.25vw 0px #004666;
 }
 #projectsNav.current {
-  background-color: #00aeff;
-  color: #093158;
+  text-shadow: 0.05vw 0.05vw 0px #004666, 0.1vw 0.1vw 0px #004666, 0.15vw 0.15vw 0px #004666, 0.2vw 0.2vw 0vw #004666, 0.25vw 0.25vw 0px #004666;
 }
 
 #nameH1 {
   padding: 0.2vw;
   position: relative;
-  top: 0vw;
+  top: 1vw;
   left: 0vw;
+  font-size: 2vw;
   line-height: 0;
-  transform: skew(0deg, 0deg);
 }
 
 #mainText {
   position: relative;
   top: 0.7vw;
   left: 0vw;
-  transform: skew(0deg, 0deg);
-  font-size: 1.3vw;
+  font-size: 1.4vw;
+  font-weight: 800;
+  width: 40vw;
+  font-weight: bold;
 }
 #mainText a {
   color: #2bd879;
 }
 #mainText a:hover {
-  color: #093158;
-  background-color: #2bd879;
+  text-shadow: -0.05vw 0.05vw 0px #105a31, -0.1vw 0.1vw 0px #105a31, -0.15vw 0.15vw 0px #105a31, -0.2vw 0.2vw 0vw #105a31;
 }
 
 #mainText2 {
@@ -241,9 +177,21 @@ ul a:hover {
   font-family: "Fira Code";
 }
 
-#linkText:hover {
-  background-color: #FFC200;
-  color: #093158;
+#accountsText,
+#accountsText2 {
+  position: relative;
+  font-size: 1.2vw;
+  line-height: 2.7vw;
+}
+#accountsText a,
+#accountsText2 a {
+  color: #FFC200;
+  font-size: 1.4vw;
+  font-weight: bold;
+}
+#accountsText a:hover,
+#accountsText2 a:hover {
+  text-shadow: -0.05vw 0.05vw 0px #664e00, -0.1vw 0.1vw 0px #664e00, -0.15vw 0.15vw 0px #664e00, -0.2vw 0.2vw 0vw #664e00;
 }
 
 #accountsText {
@@ -251,33 +199,13 @@ ul a:hover {
   top: 0vw;
   float: left;
   left: 0vw;
-  font-size: 1.1vw;
-  line-height: 2.7vw;
-  transform: skew(0deg, 0deg);
-}
-#accountsText a {
-  color: #FFC200;
-}
-#accountsText a:hover {
-  color: #093158;
-  background-color: #FFC200;
 }
 
 #accountsText2 {
   position: relative;
   top: 0vw;
-  left: 2vw;
+  left: 9vw;
   float: left;
-  font-size: 1.1vw;
-  line-height: 2.7vw;
-  transform: skew(0deg, 0deg);
-}
-#accountsText2 a {
-  color: #FFC200;
-}
-#accountsText2 a:hover {
-  color: #093158;
-  background-color: #FFC200;
 }
 
 #contactText {
@@ -285,7 +213,7 @@ ul a:hover {
   top: 0vw;
   left: 0vw;
   float: left;
-  font-size: 1.1vw;
+  font-size: 1.2vw;
   width: 25vw;
   line-height: 2.7vw;
   transform: skew(0deg, 0deg);
@@ -298,22 +226,32 @@ ul a:hover {
   background-color: #db6aa3;
 }
 
-#projectsText {
+#projectsText, #projectsText2 {
   position: relative;
-  top: 0vw;
-  left: 0vw;
   line-height: 2.7vw;
-  font-size: 1.1vw;
-  float: left;
-  transform: skew(0deg, 0deg);
+  font-size: 1.2vw;
   width: 32vw;
 }
-#projectsText a {
+#projectsText a, #projectsText2 a {
   color: #00aeff;
+  font-size: 1.4vw;
+  font-weight: bold;
 }
-#projectsText a:hover {
-  color: #093158;
-  background-color: #00aeff;
+#projectsText a:hover, #projectsText2 a:hover {
+  text-shadow: -0.05vw 0.05vw 0px #004666, -0.1vw 0.1vw 0px #004666, -0.15vw 0.15vw 0px #004666, -0.2vw 0.2vw 0vw #004666;
+}
+
+#projectsText {
+  top: 0vw;
+  left: 0vw;
+  float: left;
+}
+
+#projectsText2 {
+  position: relative;
+  float: right;
+  left: 3vw;
+  top: -18.8vw;
 }
 
 #websiteContent {
@@ -350,12 +288,6 @@ ul a:hover {
   background-color: #00aeff;
 }
 
-#progress1 {
-  top: -8vw;
-  width: 20vw;
-  left: 0vw;
-}
-
 #errorH1 {
   position: relative;
   left: 36vw;
@@ -364,7 +296,7 @@ ul a:hover {
 
 .picture {
   position: relative;
-  box-shadow: -0.05vw 0.05vw 0px #483f3f, -0.1vw 0.1vw 0px #483f3f, -0.15vw 0.15vw 0px #483f3f, -0.2vw 0.2vw 0px #483f3f, -0.25vw 0.25vw 0px #483f3f;
+  box-shadow: -0.05vw 0.05vw 0px #695c5c, -0.1vw 0.1vw 0px #695c5c, -0.15vw 0.15vw 0px #695c5c, -0.2vw 0.2vw 0px #695c5c, -0.25vw 0.25vw 0px #695c5c;
 }
 
 #mac {
@@ -376,7 +308,7 @@ ul a:hover {
 
 #errorText {
   position: relative;
-  color: #afa4a4;
+  color: #ccc5c5;
   top: 5.5vw;
   left: 39.5vw;
 }
@@ -388,17 +320,14 @@ ul a:hover {
     font-size: 19vw;
     font-weight: 200;
     line-height: 100%;
-    top: 7vw;
-    left: 8vw;
-    transform: skew(2deg, 0deg);
-    text-shadow: -0.1vw 0.1vw 0px #105a31, -0.2vw 0.2vw 0px #105a31, -0.3vw 0.3vw 0px #105a31, -0.4vw 0.4vw 0vw #105a31, -0.5vw 0.5vw 0px #105a31, -0.6vw 0.6vw 0px #105a31, -0.7vw 0.7vw 0vw #105a31, -0.8vw 0.8vw 0px #105a31, -0.9vw 0.9vw 0px #105a31, -1vw 1vw 0vw #105a31, -1.1vw 1.1vw 0vw #105a31, -1.2vw 1.2vw 0vw #105a31, -1.3vw 1.3vw 0vw #105a31, -1.4vw 1.4vw 0vw #105a31;
+    top: 0vw;
+    left: 0vw;
   }
 
   #main {
     position: relative;
-    transform: skew(0deg, 0deg);
     height: 20vw;
-    top: -4vw;
+    top: 0w;
     left: 0vw;
   }
 
@@ -409,60 +338,49 @@ ul a:hover {
     top: 0vw;
     left: 0;
     width: 30vw;
-    transform: skew(0deg, 0deg);
   }
 
   #contact {
     position: relative;
-    transform: skew(10deg, -4deg);
     height: 100vw;
     width: 100vw;
     top: 0vw;
     left: 0;
     width: 30vw;
-    transform: skew(0deg, 0deg);
   }
 
   #projects {
     position: relative;
-    transform: skew(10deg, -4deg);
     height: 100vw;
     width: 100vw;
     top: -23vw;
     left: 1vw;
     width: 30vw;
-    transform: skew(0deg, 0deg);
   }
 
   p {
-    text-shadow: -0.1vw 0.1vw 0px #635757, -0.2vw 0.2vw 0px #635757, -0.3vw 0.3vw 0px #635757, -0.4vw 0.4vw 0vw #635757;
+    text-shadow: -0.1vw 0.1vw 0px #847474, -0.2vw 0.2vw 0px #847474, -0.3vw 0.3vw 0px #847474, -0.4vw 0.4vw 0vw #847474;
   }
 
   ul {
     font-size: 11vw;
-    left: 20vw;
-    top: 102vw;
+    left: 0vw;
+    top: 100vw;
+  }
+
+  ul li {
+    display: inline;
   }
 
   ul a {
     padding: 0.4vw;
-    box-shadow: -0.1vw 0.1vw 0px #082544, -0.2vw 0.2vw 0vw #082544, -0.3vw 0.3vw 0vw #082544, -0.4vw 0.4vw 0vw #082544, -0.5vw 0.5vw 0vw #082544, -0.6vw 0.6vw 0vw #082544, -0.7vw 0.7vw 0vw #082544, -0.8vw 0.8vw 0vw #082544, -0.9vw 0.9vw 0vw #082544, -1vw 1vw 0vw #082544, -1.1vw 1.1vw 0px #082544, -1.2vw 1.2vw 0vw #082544, -1.3vw 1.3vw 0vw #082544, -1.4vw 1.4vw 0vw #082544, -1.5vw 1.5vw 0vw #082544, -1.6vw 1.6vw 0vw #082544, -1.7vw 1.7vw 0vw #082544, -1.8vw 1.8vw 0vw #082544, -1.9vw 1.9vw 0vw #082544, -2vw 2vw 0px #082544, -2.1vw 2.1vw 0vw #082544, -2.2vw 2.2vw 0vw #082544;
-  }
-
-  #linkText {
-    box-shadow: -0.1vw 0.1vw 0px #082544, -0.2vw 0.2vw 0vw #082544, -0.3vw 0.3vw 0vw #082544, -0.4vw 0.4vw 0vw #082544, -0.5vw 0.5vw 0vw #082544, -0.6vw 0.6vw 0vw #082544, -0.7vw 0.7vw 0vw #082544, -0.8vw 0.8vw 0vw #082544, -0.9vw 0.9vw 0vw #082544, -1vw 1vw 0vw #082544, -1.1vw 1.1vw 0px #082544, -1.2vw 1.2vw 0vw #082544, -1.3vw 1.3vw 0vw #082544, -1.4vw 1.4vw 0vw #082544, -1.5vw 1.5vw 0vw #082544, -1.6vw 1.6vw 0vw #082544, -1.7vw 1.7vw 0vw #082544;
-  }
-
-  .current {
-    top: 2.7vw;
-    left: -2.7vw;
   }
 
   #nameH1 {
-    width: 10%;
+    width: 60vw;
+    font-size: 6vw;
     top: 10vw;
-    left: 8vw;
-    line-height: 20vw;
+    left: 0vw;
   }
 
   #mainText {
@@ -470,7 +388,6 @@ ul a:hover {
     font-size: 6.1vw;
     width: 100vw;
     top: 17vw;
-    transform: skew(2deg, 0deg);
   }
 
   #mainText2 {
@@ -478,15 +395,13 @@ ul a:hover {
     font-size: 5vw;
     width: 100vw;
     top: 24vw;
-    transform: skew(2deg, 0deg);
   }
 
   #accountsText {
     top: 0vw;
     left: 3.5vw;
-    font-size: 5.8vw;
+    font-size: 8vw;
     line-height: 14vw;
-    transform: skew(2deg, 0deg);
     float: none;
   }
 
@@ -497,26 +412,23 @@ ul a:hover {
     font-size: 5.8vw;
     line-height: 14vw;
     float: none;
-    transform: skew(2deg, 0deg);
   }
 
   #contactText {
     position: relative;
     top: -2vw;
     left: 3.2vw;
-    font-size: 5.8vw;
-    transform: skew(2deg, 0deg);
+    font-size: 8.8vw;
     line-height: 14vw;
   }
 
   #projectsText {
     position: relative;
-    top: 21vw;
-    left: 2vw;
-    transform: skew(2deg, 0deg);
-    line-height: 14vw;
-    font-size: 5.5vw;
+    top: 0vw;
+    left: 0vw;
+    line-height: 4vw;
     width: 100vw;
+    font-size: 4vw;
   }
 
   #errorH1 {
@@ -530,14 +442,12 @@ ul a:hover {
     top: 57vw;
     transform: skew(2deg, 0deg);
     left: 14vw;
-    box-shadow: -0.1vw 0.1vw 0px #483f3f, -0.2vw 0.2vw 0vw #483f3f, -0.3vw 0.3vw 0vw #483f3f, -0.4vw 0.4vw 0vw #483f3f, -0.5vw 0.5vw 0vw #483f3f, -0.6vw 0.6vw 0vw #483f3f, -0.7vw 0.7vw 0vw #483f3f, -0.8vw 0.8vw 0vw #483f3f, -0.9vw 0.9vw 0vw #483f3f, -1vw 1vw 0vw #483f3f, -1.1vw 1.1vw 0px #483f3f, -1.2vw 1.2vw 0vw #483f3f;
   }
 
   #errorText {
-    color: #afa4a4;
+    color: #ccc5c5;
     top: 57vw;
     left: 15vw;
-    transform: skew(2deg, 0deg);
     font-size: 5.8vw;
   }
 }

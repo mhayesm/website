@@ -2,7 +2,7 @@
 
 $blue: #093158;
 $dark-blue: #082544;
-$grey: #afa4a4;
+$grey: #ccc5c5;
 $yellow: #FFC200;
 $green: #2bd879;
 $pink: #db6aa3;
@@ -24,7 +24,7 @@ canvas {
       margin: 0;
       top: 0;
       left: 0;
-      background-color: #061729;
+      background-color: #030911;
       z-index: -1;
 }
 
@@ -34,23 +34,13 @@ b {
 
 a {
     text-decoration: none;
-    color: $yellow;
-    border-radius: 1vw 1vw 1vw 1vw;
 }
 
 
 p {
     font-size: 2vw;
-    transform: skew(10deg, -4deg);
     font-weight: 500;
     font-family: "Fira Sans";
-    text-shadow: -0.02vw 0.02vw 0px darken($grey, 40%),
-    -0.04vw 0.04vw 0px darken($grey, 40%),
-    -0.06vw 0.07vw 0px darken($grey, 40%),
-    -0.08vw 0.08vw 0px darken($grey, 40%),
-    -0.1vw 0.1vw 0px darken($grey, 40%),
-    -0.12vw 0.12vw 0px darken($grey, 40%),
-    -0.14vw 0.14vw 0px darken($grey, 40%);
 }
 
 h1 {
@@ -60,179 +50,145 @@ h1 {
     font-family: "Fira Code";
     font-size: 2.5vw;
     font-weight: 300;
-    transform: skew(10deg, -4deg);
     line-height: 7vw;
-    top: 10vw;
-    left: 45.7vw;
-    text-shadow: -0.05vw 0.05vw 0px darken($green, 30%),
-    -0.1vw 0.1vw 0px darken($green, 30%),
-    -0.15vw 0.15vw 0px darken($green, 30%),
-    -0.2vw .2vw 0vw darken($green, 30%);
+    text-shadow: 0.05vw 0.05vw 0px darken($green, 30%),
+    0.1vw 0.1vw 0px darken($green, 30%),
+    0.15vw 0.15vw 0px darken($green, 30%),
+    0.2vw .2vw 0vw darken($green, 30%),
+    0.25vw 0.25vw 0px darken($green, 30%);
 }
 
-#main {
-    position: relative; 
-    transform: skew(10deg, -4deg);
-    height: 20vw;
-    top: 17vw;
-    left: 47vw;
+#nav {
+    position: relative;
+    top: 0.3vw;
+    height: 6vw;
+    left: 0.3vw;
+    width: 25vw;
+    transform: skew(0deg, -8deg);
 }
 
-#accounts {
-     position: relative;
-     transform: skew(10deg, -4deg);
-     height: 15vw;
-     top: 13.7vw;
-     left: 46vw;
-     width: 30vw;
-}
-
-#contact {
-     position: relative;
-     transform: skew(10deg, -4deg);
-     height: 15vw;
-     top: 13.7vw;
-     left: 46vw;
-     width: 30vw;
-}
-
-#projects {
-      position: relative;
-      transform: skew(10deg, -4deg);
-      height: 15vw;
-      top: 13.7vw;
-      left: 46vw;
-      width: 30vw;
+#container {
+    position: relative;
+    height: 15vw;
+    top: 2vw;
+    left: 25vw;
+    width: 60vw;
 }
 
 ul {
-    position: fixed;
+    position: relative;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    font-size: 1.4vw;
-    top: 20vw;
-    left: 35vw;
-    transform: skew(10deg, -4deg);
+    left: 0.3vw;
+    top: 2.5vw;
+    font-size: 1.2vw;
 }
 
 #linkText {
-    background-color: $blue;
-    padding: 0.35vw;
-    color: $yellow;
     position: relative;
-    box-shadow: -0.1vw 0.1vw 0px $dark-blue, 
-    -0.2vw .2vw 0vw $dark-blue, 
-    -.3vw .3vw 0vw $dark-blue,
-     -.4vw .4vw 0vw $dark-blue;
     font-family: "Fira Code";
-    border-radius: .7vw .7vw .7vw .7vw;
     text-shadow: none;
-    font-weight: 500;
-}
-
-#linkText:hover {
-     background-color: $yellow;
-     box-shadow: none;
-     color: $blue;
-     top: 0.6vw;
-     left: -.6vw;
-     text-shadow: none;
-}
-
-#linkText:active {
-     top: 0.6vw;
-     left: -.6vw;
 }
 
 ul a {
      position: relative;
-     background-color: $blue;
      z-index: 1;
      color: $green;
      font-weight: 350;
      text-decoration: none;
-      border-radius: .9vw .9vw .9vw .9vw;
-     padding: .2vw;
-     box-shadow: -0.1vw 0.1vw 0px $dark-blue,
-      -0.2vw .2vw 0vw $dark-blue,
-     -.3vw .3vw 0vw $dark-blue,
-     -.4vw .4vw 0vw $dark-blue;
+      border-radius: .6vw .6vw .6vw .6vw;
+     padding-right: 1vw;
 }
 
-ul a:hover {
-    background-color: $green;
-    color: $blue;
+ul li {
+    display: inline;
+    float: left;
 }
 
-.current {
-    box-shadow: none;
-    top: 0.7vw;
-    left: -0.5vw;
-}
-
-#infoNav {
+#indexNav {
     color: $green;
 
-    &:hover,
-    :not(.current) {
-       background-color: $green;
-        color: $blue;
+    &:hover {
+            color: lighten($green, 25%);
+            text-shadow: 0.05vw 0.05vw 0px darken($green, 30%),
+            0.1vw 0.1vw 0px darken($green, 30%),
+            0.15vw 0.15vw 0px darken($green, 30%),
+            0.2vw .2vw 0vw darken($green, 30%),
+            0.25vw .25vw 0vw darken($green, 30%),
+        }
+    &.current {
+            text-shadow: 0.05vw 0.05vw 0px darken($green, 30%),
+            0.1vw 0.1vw 0px darken($green, 30%),
+            0.15vw 0.15vw 0px darken($green, 30%),
+            0.2vw .2vw 0vw darken($green, 30%),
+            0.25vw 0.25vw 0px darken($green, 30%);
+    }
+}
 
-         &:not(.current) {
-            box-shadow: -0.1vw 0.1vw 0px darken($green, 20%),
-                -0.2vw .2vw 0vw darken($green, 20%),
-                -.3vw .3vw 0vw darken($green, 20%),
-                -.4vw .4vw 0vw darken($green, 20%);
-                
+#blogNav {
+    color: $pink;
+
+    &:hover {
+        &:not(.current) {
+            text-shadow: 0.05vw 0.05vw 0px darken($pink, 30%),
+                0.1vw 0.1vw 0px darken($pink, 30%),
+                0.15vw 0.15vw 0px darken($pink, 30%),
+                0.2vw .2vw 0vw darken($pink, 30%),
+                0.25vw 0.25vw 0px darken($pink, 30%);
         }
     }
 
     &.current {
-        background-color: $green;
-        color: $blue;
+        text-shadow: 0.05vw 0.05vw 0px darken($pink, 30%),
+            0.1vw 0.1vw 0px darken($pink, 30%),
+            0.15vw 0.15vw 0px darken($pink, 30%),
+            0.2vw .2vw 0vw darken($pink, 30%),
+            0.25vw 0.25vw 0px darken($pink, 30%);
     }
 }
 
 #accountsNav {
     color: $yellow;
 
-    &:hover {
-        background-color: $yellow;
-        color: $blue;
+ &:hover {
+     &:not(.current) {
+         text-shadow: 0.05vw 0.05vw 0px darken($yellow, 30%),
+             0.1vw 0.1vw 0px darken($yellow, 30%),
+             0.15vw 0.15vw 0px darken($yellow, 30%),
+             0.2vw .2vw 0vw darken($yellow, 30%),
+             0.25vw 0.25vw 0px darken($yellow, 30%);
+     }
+ }
 
-        &:not(.current) {
-            box-shadow: -0.1vw 0.1vw 0px darken($yellow, 20%),
-                -0.2vw .2vw 0vw darken($yellow, 20%),
-                -.3vw .3vw 0vw darken($yellow, 20%),
-                -.4vw .4vw 0vw darken($yellow, 20%);
-        }
-    }
-
-    &.current {
-        background-color: $yellow;
-        color: $blue;
-    }
-}
+ &.current {
+     text-shadow: 0.05vw 0.05vw 0px darken($yellow, 30%),
+         0.1vw 0.1vw 0px darken($yellow, 30%),
+         0.15vw 0.15vw 0px darken($yellow, 30%),
+         0.2vw .2vw 0vw darken($yellow, 30%),
+         0.25vw 0.25vw 0px darken($yellow, 30%);
+ }
+ }
 
 #contactNav {
     color: $pink;
 
-    &:hover {
-        background-color: $pink;
-        color: $blue;
-
-        &:not(.current) {
-            box-shadow: -0.1vw 0.1vw 0px darken($pink, 20%),
-                -0.2vw .2vw 0vw darken($pink, 20%),
-                -.3vw .3vw 0vw darken($pink, 20%),
-                -.4vw .4vw 0vw darken($pink, 20%);
-        }
-    }
+ &:hover {
+     &:not(.current) {
+         text-shadow: 0.05vw 0.05vw 0px darken($yellow, 30%),
+             0.1vw 0.1vw 0px darken($yellow, 30%),
+             0.15vw 0.15vw 0px darken($yellow, 30%),
+             0.2vw .2vw 0vw darken($yellow, 30%),
+             0.25vw 0.25vw 0px darken($yellow, 30%);
+     }
+ }
 
     &.current {
-        background-color: $pink;
-        color: $blue;
+        text-shadow: 0.05vw 0.05vw 0px darken($yellow, 30%),
+        0.1vw 0.1vw 0px darken($yellow, 30%),
+        0.15vw 0.15vw 0px darken($yellow, 30%),
+        0.2vw .2vw 0vw darken($yellow, 30%),
+        0.25vw 0.25vw 0px darken($yellow, 30%);
     }
 }
 
@@ -240,46 +196,52 @@ ul a:hover {
     color: $light-blue;
 
     &:hover {
-        background-color: $light-blue;
-        color: $blue;
 
         &:not(.current) {
-            box-shadow: -0.1vw 0.1vw 0px darken($light-blue, 20%),
-                -0.2vw .2vw 0vw darken($light-blue, 20%),
-                -.3vw .3vw 0vw darken($light-blue, 20%),
-                -.4vw .4vw 0vw darken($light-blue, 20%);
+            text-shadow: 0.05vw 0.05vw 0px darken($light-blue, 30%),
+            0.1vw 0.1vw 0px darken($light-blue, 30%),
+            0.15vw 0.15vw 0px darken($light-blue, 30%),
+            0.2vw .2vw 0vw darken($light-blue, 30%),
+            0.25vw 0.25vw 0px darken($light-blue, 30%);
         }
     }
 
     &.current {
-        background-color: $light-blue;
-        color: $blue;
+       text-shadow: 0.05vw 0.05vw 0px darken($light-blue, 30%),
+       0.1vw 0.1vw 0px darken($light-blue, 30%),
+       0.15vw 0.15vw 0px darken($light-blue, 30%),
+       0.2vw .2vw 0vw darken($light-blue, 30%),
+       0.25vw 0.25vw 0px darken($light-blue, 30%);
     }
 }
 
 #nameH1 {
     padding: 0.2vw;
     position: relative;
-    top: 0vw;
+    top: 1vw;
     left: 0vw;
+    font-size: 2vw;
     line-height: 0;
-    transform: skew(0deg, 0deg);
 }
 
 #mainText {
     position: relative;
     top: 0.7vw;
     left: 0vw;
-    transform: skew(0deg, 0deg);
-    font-size: 1.3vw;
+    font-size: 1.4vw;
+    font-weight: 800;
+    width: 40vw;
+    font-weight: bold;
 
     & a {
         color: $green;
     }
 
     & a:hover {
-       color: $blue;
-       background-color: $green;
+        text-shadow: -0.05vw 0.05vw 0px darken($green, 30%),
+        -0.1vw 0.1vw 0px darken($green, 30%),
+        -0.15vw 0.15vw 0px darken($green, 30%),
+        -0.2vw .2vw 0vw darken($green, 30%);
     }
 }
 
@@ -293,9 +255,23 @@ ul a:hover {
     font-family: "Fira Code";
 }
 
-#linkText:hover {
-    background-color: $yellow;
-    color: $blue;
+#accountsText,
+#accountsText2 {
+        position: relative;
+        font-size: 1.2vw;
+        line-height: 2.7vw;
+        & a {
+            color: $yellow;
+            font-size: 1.4vw;
+            font-weight: bold;
+        }
+
+        & a:hover {
+            text-shadow: -0.05vw 0.05vw 0px darken($yellow, 30%),
+                -0.1vw 0.1vw 0px darken($yellow, 30%),
+                -0.15vw 0.15vw 0px darken($yellow, 30%),
+                -0.2vw .2vw 0vw darken($yellow, 30%);
+        }
 }
 
 #accountsText {
@@ -303,37 +279,13 @@ ul a:hover {
     top: 0vw;
     float: left;
     left: 0vw;
-    font-size: 1.1vw;
-    line-height: 2.7vw;
-     transform: skew(0deg, 0deg);
-
-    & a {
-        color: $yellow;
-    }
-
-    & a:hover {
-        color: $blue;
-        background-color: $yellow;
-    }
 }
 
 #accountsText2 {
     position: relative;
     top: 0vw;
-    left: 2vw;
+    left: 9vw;
     float: left;
-    font-size: 1.1vw;
-    line-height: 2.7vw;
-     transform: skew(0deg, 0deg);
-
-    & a {
-        color: $yellow;
-    }
-
-    & a:hover {
-        color: $blue;
-        background-color: $yellow;
-    }
 }
 
 #contactText {
@@ -341,7 +293,7 @@ ul a:hover {
     top: 0vw;
     left: 0vw;
     float: left;
-    font-size: 1.1vw;
+    font-size: 1.2vw;
     width: 25vw;
     line-height: 2.7vw;
     transform: skew(0deg, 0deg);
@@ -355,24 +307,36 @@ ul a:hover {
     }
 }
 
+#projectsText, #projectsText2 {
+  position: relative;
+  line-height: 2.7vw;
+  font-size: 1.2vw;
+  width: 32vw;
+        & a {
+            color: $light-blue;
+            font-size: 1.4vw;
+            font-weight: bold;
+        }
+
+        & a:hover {
+            text-shadow: -0.05vw 0.05vw 0px darken($light-blue, 30%),
+                -0.1vw 0.1vw 0px darken($light-blue, 30%),
+                -0.15vw 0.15vw 0px darken($light-blue, 30%),
+                -0.2vw .2vw 0vw darken($light-blue, 30%);
+        }
+}
+
 #projectsText {
-    position: relative;
     top: 0vw;
     left: 0vw; 
-    line-height: 2.7vw;
-    font-size: 1.1vw;
     float: left;
-    transform: skew(0deg, 0deg);
-    width: 32vw;
+}
 
-    & a {
-        color: $light-blue;
-    }
-
-    & a:hover {
-        color: $blue;
-        background-color: $light-blue;
-    }
+#projectsText2 {
+    position: relative;
+    float: right;
+    left: 3vw;
+    top: -18.8vw;
 }
 
 
@@ -410,12 +374,6 @@ ul a:hover {
         color: $blue;
         background-color: $light-blue;
     }
-}
-
-#progress1 {
-       top: -8vw;
-       width: 20vw;
-       left: 0vw;
 }
 
 #errorH1 {
@@ -457,30 +415,14 @@ ul a:hover {
         font-size: 19vw;
         font-weight: 200;
         line-height: 100%;
-        top: 7vw;
-        left: 8vw;
-        transform: skew(2deg, 0deg);
-        text-shadow: -0.1vw 0.1vw 0px darken($green, 30%),
-        -0.2vw 0.2vw 0px darken($green, 30%),
-        -0.3vw 0.3vw 0px darken($green, 30%),
-        -0.4vw .4vw 0vw darken($green, 30%),
-        -0.5vw 0.5vw 0px darken($green, 30%),
-        -0.6vw 0.6vw 0px darken($green, 30%),
-        -0.7vw .7vw 0vw darken($green, 30%),
-        -0.8vw 0.8vw 0px darken($green, 30%),
-        -0.9vw 0.9vw 0px darken($green, 30%),
-        -1vw 1vw 0vw darken($green, 30%),
-        -1.1vw 1.1vw 0vw darken($green, 30%),
-        -1.2vw 1.2vw 0vw darken($green, 30%),
-        -1.3vw 1.3vw 0vw darken($green, 30%),
-        -1.4vw 1.4vw 0vw darken($green, 30%),
+        top: 0vw;
+        left: 0vw;
     }
 
     #main {
         position: relative;
-        transform: skew(0deg, 0deg);
         height: 20vw;
-        top: -4vw;
+        top: 0w;
         left: 0vw;
     }
 
@@ -491,29 +433,24 @@ ul a:hover {
         top: 0vw;
         left: 0;
         width: 30vw;
-        transform: skew(0deg, 0deg);
     }
 
     #contact {
         position: relative;
-        transform: skew(10deg, -4deg);
         height: 100vw;
         width: 100vw;
         top: 0vw;
         left: 0;
         width: 30vw;
-        transform: skew(0deg, 0deg);
     }
 
     #projects {
         position: relative;
-        transform: skew(10deg, -4deg);
         height: 100vw;
         width: 100vw;
         top: -23vw;
         left: 1vw;
         width: 30vw;
-        transform: skew(0deg, 0deg);
     }
 
     p {
@@ -525,67 +462,33 @@ ul a:hover {
 
     ul {
         font-size: 11vw;
-        left: 20vw;
-        top: 102vw;
+        left: 0vw;
+        top: 100vw;
 
+    }
+
+    ul li {
+        display: inline;
+    
     }
 
     ul a {
         padding: 0.4vw;
-        box-shadow: -0.1vw 0.1vw 0px $dark-blue,
-            -0.2vw .2vw 0vw $dark-blue,
-            -.3vw .3vw 0vw $dark-blue,
-            -.4vw .4vw 0vw $dark-blue,
-           - .5vw .5vw 0vw $dark-blue,
-            -.6vw .6vw 0vw $dark-blue,
-            -.7vw .7vw 0vw $dark-blue,
-            -.8vw .8vw 0vw $dark-blue,
-            -.9vw .9vw 0vw $dark-blue,
-            -1vw 1vw 0vw $dark-blue,
-            -1.1vw 1.1vw 0px $dark-blue,
-            -1.2vw 1.2vw 0vw $dark-blue,
-            -1.3vw 1.3vw 0vw $dark-blue,
-            -1.4vw 1.4vw 0vw $dark-blue,
-            -1.5vw 1.5vw 0vw $dark-blue,
-            -1.6vw 1.6vw 0vw $dark-blue,
-            -1.7vw 1.7vw 0vw $dark-blue,
-            -1.8vw 1.8vw 0vw $dark-blue,
-            -1.9vw 1.9vw 0vw $dark-blue,
-            -2.0vw 2.0vw 0px $dark-blue,
-            -2.1vw 2.1vw 0vw $dark-blue,
-            -2.2vw 2.2vw 0vw $dark-blue;
     }
 
     #linkText {
-                box-shadow: -0.1vw 0.1vw 0px $dark-blue,
-                    -0.2vw .2vw 0vw $dark-blue,
-                    -.3vw .3vw 0vw $dark-blue,
-                    -.4vw .4vw 0vw $dark-blue,
-                    -.5vw .5vw 0vw $dark-blue,
-                    -.6vw .6vw 0vw $dark-blue,
-                    -.7vw .7vw 0vw $dark-blue,
-                    -.8vw .8vw 0vw $dark-blue,
-                    -.9vw .9vw 0vw $dark-blue,
-                    -1vw 1vw 0vw $dark-blue,
-                    -1.1vw 1.1vw 0px $dark-blue,
-                    -1.2vw 1.2vw 0vw $dark-blue,
-                    -1.3vw 1.3vw 0vw $dark-blue,
-                    -1.4vw 1.4vw 0vw $dark-blue,
-                    -1.5vw 1.5vw 0vw $dark-blue,
-                    -1.6vw 1.6vw 0vw $dark-blue,
-                    -1.7vw 1.7vw 0vw $dark-blue;
+
     }
 
     .current {
-        top: 2.7vw;
-        left: -2.7vw;
+
     }
 
     #nameH1 {
-        width: 10%;
+        width: 60vw;
+        font-size: 6vw;
         top: 10vw;
-        left: 8vw;
-        line-height: 20vw;
+        left: 0vw;
     }
 
     #mainText {
@@ -593,7 +496,6 @@ ul a:hover {
         font-size: 6.1vw;
         width: 100vw;
         top: 17vw;
-         transform: skew(2deg, 0deg);
     }
 
     #mainText2 {
@@ -601,15 +503,13 @@ ul a:hover {
         font-size: 5vw;
         width: 100vw;
         top: 24vw;
-        transform: skew(2deg, 0deg);
     }
 
     #accountsText {
         top: 0vw;
         left: 3.5vw;
-        font-size: 5.8vw;
+        font-size: 8vw;
         line-height: 14vw;
-        transform: skew(2deg, 0deg);
         float: none;
     }
 
@@ -620,27 +520,28 @@ ul a:hover {
         font-size: 5.8vw;
         line-height: 14vw;
         float: none;
-         transform: skew(2deg, 0deg);
     }
 
     #contactText {
         position: relative;
         top: -2vw;
         left: 3.2vw;
-        font-size: 5.8vw;
-        transform: skew(2deg, 0deg);
+        font-size: 8.8vw;
         line-height: 14vw;
     }
 
     #projectsText {
         position: relative;
-        top: 21vw;
-        left: 2vw;
-        transform: skew(2deg, 0deg);
-        line-height: 14vw;
-        font-size: 5.5vw;
+        top: 0vw;
+        left: 0vw;
+        line-height: 4vw;
         width: 100vw;
+        font-size: 4vw;
     }
+
+    #projectsText2 {
+            
+        }
 
     #errorH1 {
         left: 10vw;
@@ -653,24 +554,11 @@ ul a:hover {
         top: 57vw;
         transform: skew(2deg, 0deg);
         left: 14vw;
-           box-shadow: -0.1vw 0.1vw 0px darken($grey, 40%),
-           -0.2vw .2vw 0vw darken($grey, 40%),
-           -.3vw .3vw 0vw darken($grey, 40%),
-           -.4vw .4vw 0vw darken($grey, 40%),
-           -.5vw .5vw 0vw darken($grey, 40%),
-           -.6vw .6vw 0vw darken($grey, 40%),
-           -.7vw .7vw 0vw darken($grey, 40%),
-           -.8vw .8vw 0vw darken($grey, 40%),
-           -.9vw .9vw 0vw darken($grey, 40%),
-          -1vw 1vw 0vw darken($grey, 40%),
-          -1.1vw 1.1vw 0px darken($grey, 40%),
-          -1.2vw 1.2vw 0vw darken($grey, 40%);
     }
     #errorText {
         color: $grey;
         top: 57vw;
         left: 15vw;
-        transform: skew(2deg, 0deg);
         font-size: 5.8vw;
     }
 
@@ -679,7 +567,8 @@ ul a:hover {
 
 /* Medium devices (landscape tablets, 768px and up) */
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (max-width: 800px) {
+}
 
 
 /* Large devices (laptops/desktops, 992px and up) */
