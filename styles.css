@@ -1,6 +1,6 @@
 /* sass --watch styles.scss:styles.css */
 body {
-  background-color: #001d3a;
+  background-color: #010407;
   font-family: "Fira Code";
   color: #ccc5c5;
   overflow-y: hidden;
@@ -14,7 +14,7 @@ canvas {
   margin: 0;
   top: 0;
   left: 0;
-  background-color: #030911;
+  background-color: #010305;
   z-index: -1;
 }
 
