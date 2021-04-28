@@ -2,12 +2,12 @@
 
 $blue: #093158;
 $dark-blue: #082544;
-$grey: #ccc5c5;
-$yellow: #FFC200;
-$green: #2bd879;
-$pink: #db6aa3;
+$grey: #ccc5c5e0;
+$yellow: #ffc400c5;
+$green: #2bd879bd;
+$pink: #db6aa3d2;
 $pink-glow: #f088bc;
-$light-blue: #00aeff;
+$light-blue: #00aeffd0;
 
 body {
     background-color: #010407;
@@ -24,7 +24,7 @@ canvas {
       margin: 0;
       top: 0;
       left: 0;
-      background-color: #010305;
+      background-color: #040404;
       z-index: -1;
 }
 
@@ -60,19 +60,20 @@ h1 {
 
 #nav {
     position: relative;
-    top: 0.3vw;
+    top: 8vw;
     height: 6vw;
-    left: 0.3vw;
+    left: 28vw;
     width: 25vw;
-    transform: skew(0deg, -8deg);
+    transform: skew(0deg, -8deg); 
 }
 
 #container {
     position: relative;
     height: 15vw;
-    top: 2vw;
-    left: 25vw;
+    top: 7vw;
+    left: 39vw;
     width: 60vw;
+   /* transform: skew(0deg, 2deg); */
 }
 
 ul {
@@ -81,7 +82,7 @@ ul {
     margin: 0;
     padding: 0;
     left: 0.3vw;
-    top: 2.5vw;
+    top: 2.2vw;
     font-size: 1.2vw;
 }
 
@@ -226,7 +227,7 @@ ul li {
 
 #mainText {
     position: relative;
-    top: 0.7vw;
+    top: 0.2vw;
     left: 0vw;
     font-size: 1.4vw;
     font-weight: 800;
@@ -247,7 +248,7 @@ ul li {
 
 #mainText2 {
     position: relative;
-    top: 0.7vw;
+    top: 0vw;
     left: 0vw;
     width: 38vw;
     font-size: 1vw;
@@ -335,7 +336,7 @@ ul li {
 #projectsText2 {
     position: relative;
     float: right;
-    left: 3vw;
+    left: -4vw;
     top: -18.8vw;
 }
 

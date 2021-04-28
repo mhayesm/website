@@ -10,16 +10,17 @@ var c = canvas.getContext('2d');
         y: undefined
     }
 
-    var maxRadius = 10;
-    var minRadius = 3;
-    var maxDx = 3;
-    var maxDy = 3;
+    var maxRadius = 4;
+    var minRadius = 2;
+    var maxDx = 2;
+    var maxDy = 2;
 
     var colourArray = [
-        '#ffaa33',
-        '#db6aa3',
-        '#2bd879',
-        '#00aeff'
+       // '#ffaa33',
+       // '#db6aa3',
+       // '#2bd879',
+       // '#00aeff',
+        '#ccc5c5af'
     ]
 
 
@@ -68,10 +69,10 @@ var c = canvas.getContext('2d');
         
            if (mouse.x - this.x < 35 && mouse.x - this.x > -35 && mouse.y - this.y < 35 && mouse.y - this.y > -35) {
                if (this.radius < maxRadius) {
-                 this.radius += 0.1;
+                 this.radius += 0.04;
                }
            } else if (this.radius > minRadius) {
-               this.radius -= 0.1;
+               this.radius -= 0.04;
            }
             this.draw();
         }
@@ -83,12 +84,12 @@ var c = canvas.getContext('2d');
 
         circleArray = [];
         
-         for (var c = 0; c < (innerWidth / 10); c++) {
-            var radius = Math.random() * (innerWidth / innerWidth * 0.7) + 1;
+         for (var c = 0; c < (innerWidth / 4); c++) {
+            var radius = Math.random() * (innerWidth / innerWidth * 0.1) + 1;
             var x = Math.random() * (innerWidth - radius) + radius;
             var y = Math.random() * (innerHeight - radius) + radius;
-            var dx = (Math.random() - 0.5) * (innerWidth / 850);
-            var dy = (Math.random() - 0.5) * (innerWidth / 850);
+            var dx = (Math.random() - 0.5) * (innerWidth / 3000);
+            var dy = (Math.random() - 0.5) * (innerWidth / 3000);
             circleArray.push(new Circle(x, y, dx, dy, radius));
     }
 

@@ -2,7 +2,7 @@
 body {
   background-color: #010407;
   font-family: "Fira Code";
-  color: #ccc5c5;
+  color: #ccc5c5e0;
   overflow-y: hidden;
   overflow-x: hidden;
   height: 100vh;
@@ -14,7 +14,7 @@ canvas {
   margin: 0;
   top: 0;
   left: 0;
-  background-color: #010305;
+  background-color: #040404;
   z-index: -1;
 }
 
@@ -33,21 +33,21 @@ p {
 }
 
 h1 {
-  color: #2bd879;
+  color: #2bd879bd;
   padding: 0;
   margin: 0;
   font-family: "Fira Code";
   font-size: 2.5vw;
   font-weight: 300;
   line-height: 7vw;
-  text-shadow: 0.05vw 0.05vw 0px #105a31, 0.1vw 0.1vw 0px #105a31, 0.15vw 0.15vw 0px #105a31, 0.2vw 0.2vw 0vw #105a31, 0.25vw 0.25vw 0px #105a31;
+  text-shadow: 0.05vw 0.05vw 0px rgba(16, 90, 49, 0.7411764706), 0.1vw 0.1vw 0px rgba(16, 90, 49, 0.7411764706), 0.15vw 0.15vw 0px rgba(16, 90, 49, 0.7411764706), 0.2vw 0.2vw 0vw rgba(16, 90, 49, 0.7411764706), 0.25vw 0.25vw 0px rgba(16, 90, 49, 0.7411764706);
 }
 
 #nav {
   position: relative;
-  top: 0.3vw;
+  top: 8vw;
   height: 6vw;
-  left: 0.3vw;
+  left: 28vw;
   width: 25vw;
   transform: skew(0deg, -8deg);
 }
@@ -55,9 +55,10 @@ h1 {
 #container {
   position: relative;
   height: 15vw;
-  top: 2vw;
-  left: 25vw;
+  top: 7vw;
+  left: 39vw;
   width: 60vw;
+  /* transform: skew(0deg, 2deg); */
 }
 
 ul {
@@ -66,7 +67,7 @@ ul {
   margin: 0;
   padding: 0;
   left: 0.3vw;
-  top: 2.5vw;
+  top: 2.2vw;
   font-size: 1.2vw;
 }
 
@@ -79,7 +80,7 @@ ul {
 ul a {
   position: relative;
   z-index: 1;
-  color: #2bd879;
+  color: #2bd879bd;
   font-weight: 350;
   text-decoration: none;
   border-radius: 0.6vw 0.6vw 0.6vw 0.6vw;
@@ -92,54 +93,54 @@ ul li {
 }
 
 #indexNav {
-  color: #2bd879;
+  color: #2bd879bd;
 }
 #indexNav:hover {
-  color: #97ecbd;
-  text-shadow: 0.05vw 0.05vw 0px #105a31, 0.1vw 0.1vw 0px #105a31, 0.15vw 0.15vw 0px #105a31, 0.2vw 0.2vw 0vw #105a31, 0.25vw 0.25vw 0vw #105a31;
+  color: rgba(151, 236, 189, 0.7411764706);
+  text-shadow: 0.05vw 0.05vw 0px rgba(16, 90, 49, 0.7411764706), 0.1vw 0.1vw 0px rgba(16, 90, 49, 0.7411764706), 0.15vw 0.15vw 0px rgba(16, 90, 49, 0.7411764706), 0.2vw 0.2vw 0vw rgba(16, 90, 49, 0.7411764706), 0.25vw 0.25vw 0vw rgba(16, 90, 49, 0.7411764706);
 }
 #indexNav.current {
-  text-shadow: 0.05vw 0.05vw 0px #105a31, 0.1vw 0.1vw 0px #105a31, 0.15vw 0.15vw 0px #105a31, 0.2vw 0.2vw 0vw #105a31, 0.25vw 0.25vw 0px #105a31;
+  text-shadow: 0.05vw 0.05vw 0px rgba(16, 90, 49, 0.7411764706), 0.1vw 0.1vw 0px rgba(16, 90, 49, 0.7411764706), 0.15vw 0.15vw 0px rgba(16, 90, 49, 0.7411764706), 0.2vw 0.2vw 0vw rgba(16, 90, 49, 0.7411764706), 0.25vw 0.25vw 0px rgba(16, 90, 49, 0.7411764706);
 }
 
 #blogNav {
-  color: #db6aa3;
+  color: #db6aa3d2;
 }
 #blogNav:hover:not(.current) {
-  text-shadow: 0.05vw 0.05vw 0px #8b2156, 0.1vw 0.1vw 0px #8b2156, 0.15vw 0.15vw 0px #8b2156, 0.2vw 0.2vw 0vw #8b2156, 0.25vw 0.25vw 0px #8b2156;
+  text-shadow: 0.05vw 0.05vw 0px rgba(139, 33, 86, 0.8235294118), 0.1vw 0.1vw 0px rgba(139, 33, 86, 0.8235294118), 0.15vw 0.15vw 0px rgba(139, 33, 86, 0.8235294118), 0.2vw 0.2vw 0vw rgba(139, 33, 86, 0.8235294118), 0.25vw 0.25vw 0px rgba(139, 33, 86, 0.8235294118);
 }
 #blogNav.current {
-  text-shadow: 0.05vw 0.05vw 0px #8b2156, 0.1vw 0.1vw 0px #8b2156, 0.15vw 0.15vw 0px #8b2156, 0.2vw 0.2vw 0vw #8b2156, 0.25vw 0.25vw 0px #8b2156;
+  text-shadow: 0.05vw 0.05vw 0px rgba(139, 33, 86, 0.8235294118), 0.1vw 0.1vw 0px rgba(139, 33, 86, 0.8235294118), 0.15vw 0.15vw 0px rgba(139, 33, 86, 0.8235294118), 0.2vw 0.2vw 0vw rgba(139, 33, 86, 0.8235294118), 0.25vw 0.25vw 0px rgba(139, 33, 86, 0.8235294118);
 }
 
 #accountsNav {
-  color: #FFC200;
+  color: #ffc400c5;
 }
 #accountsNav:hover:not(.current) {
-  text-shadow: 0.05vw 0.05vw 0px #664e00, 0.1vw 0.1vw 0px #664e00, 0.15vw 0.15vw 0px #664e00, 0.2vw 0.2vw 0vw #664e00, 0.25vw 0.25vw 0px #664e00;
+  text-shadow: 0.05vw 0.05vw 0px rgba(102, 78, 0, 0.7725490196), 0.1vw 0.1vw 0px rgba(102, 78, 0, 0.7725490196), 0.15vw 0.15vw 0px rgba(102, 78, 0, 0.7725490196), 0.2vw 0.2vw 0vw rgba(102, 78, 0, 0.7725490196), 0.25vw 0.25vw 0px rgba(102, 78, 0, 0.7725490196);
 }
 #accountsNav.current {
-  text-shadow: 0.05vw 0.05vw 0px #664e00, 0.1vw 0.1vw 0px #664e00, 0.15vw 0.15vw 0px #664e00, 0.2vw 0.2vw 0vw #664e00, 0.25vw 0.25vw 0px #664e00;
+  text-shadow: 0.05vw 0.05vw 0px rgba(102, 78, 0, 0.7725490196), 0.1vw 0.1vw 0px rgba(102, 78, 0, 0.7725490196), 0.15vw 0.15vw 0px rgba(102, 78, 0, 0.7725490196), 0.2vw 0.2vw 0vw rgba(102, 78, 0, 0.7725490196), 0.25vw 0.25vw 0px rgba(102, 78, 0, 0.7725490196);
 }
 
 #contactNav {
-  color: #db6aa3;
+  color: #db6aa3d2;
 }
 #contactNav:hover:not(.current) {
-  text-shadow: 0.05vw 0.05vw 0px #664e00, 0.1vw 0.1vw 0px #664e00, 0.15vw 0.15vw 0px #664e00, 0.2vw 0.2vw 0vw #664e00, 0.25vw 0.25vw 0px #664e00;
+  text-shadow: 0.05vw 0.05vw 0px rgba(102, 78, 0, 0.7725490196), 0.1vw 0.1vw 0px rgba(102, 78, 0, 0.7725490196), 0.15vw 0.15vw 0px rgba(102, 78, 0, 0.7725490196), 0.2vw 0.2vw 0vw rgba(102, 78, 0, 0.7725490196), 0.25vw 0.25vw 0px rgba(102, 78, 0, 0.7725490196);
 }
 #contactNav.current {
-  text-shadow: 0.05vw 0.05vw 0px #664e00, 0.1vw 0.1vw 0px #664e00, 0.15vw 0.15vw 0px #664e00, 0.2vw 0.2vw 0vw #664e00, 0.25vw 0.25vw 0px #664e00;
+  text-shadow: 0.05vw 0.05vw 0px rgba(102, 78, 0, 0.7725490196), 0.1vw 0.1vw 0px rgba(102, 78, 0, 0.7725490196), 0.15vw 0.15vw 0px rgba(102, 78, 0, 0.7725490196), 0.2vw 0.2vw 0vw rgba(102, 78, 0, 0.7725490196), 0.25vw 0.25vw 0px rgba(102, 78, 0, 0.7725490196);
 }
 
 #projectsNav {
-  color: #00aeff;
+  color: #00aeffd0;
 }
 #projectsNav:hover:not(.current) {
-  text-shadow: 0.05vw 0.05vw 0px #004666, 0.1vw 0.1vw 0px #004666, 0.15vw 0.15vw 0px #004666, 0.2vw 0.2vw 0vw #004666, 0.25vw 0.25vw 0px #004666;
+  text-shadow: 0.05vw 0.05vw 0px rgba(0, 70, 102, 0.8156862745), 0.1vw 0.1vw 0px rgba(0, 70, 102, 0.8156862745), 0.15vw 0.15vw 0px rgba(0, 70, 102, 0.8156862745), 0.2vw 0.2vw 0vw rgba(0, 70, 102, 0.8156862745), 0.25vw 0.25vw 0px rgba(0, 70, 102, 0.8156862745);
 }
 #projectsNav.current {
-  text-shadow: 0.05vw 0.05vw 0px #004666, 0.1vw 0.1vw 0px #004666, 0.15vw 0.15vw 0px #004666, 0.2vw 0.2vw 0vw #004666, 0.25vw 0.25vw 0px #004666;
+  text-shadow: 0.05vw 0.05vw 0px rgba(0, 70, 102, 0.8156862745), 0.1vw 0.1vw 0px rgba(0, 70, 102, 0.8156862745), 0.15vw 0.15vw 0px rgba(0, 70, 102, 0.8156862745), 0.2vw 0.2vw 0vw rgba(0, 70, 102, 0.8156862745), 0.25vw 0.25vw 0px rgba(0, 70, 102, 0.8156862745);
 }
 
 #nameH1 {
@@ -153,7 +154,7 @@ ul li {
 
 #mainText {
   position: relative;
-  top: 0.7vw;
+  top: 0.2vw;
   left: 0vw;
   font-size: 1.4vw;
   font-weight: 800;
@@ -161,15 +162,15 @@ ul li {
   font-weight: bold;
 }
 #mainText a {
-  color: #2bd879;
+  color: #2bd879bd;
 }
 #mainText a:hover {
-  text-shadow: -0.05vw 0.05vw 0px #105a31, -0.1vw 0.1vw 0px #105a31, -0.15vw 0.15vw 0px #105a31, -0.2vw 0.2vw 0vw #105a31;
+  text-shadow: -0.05vw 0.05vw 0px rgba(16, 90, 49, 0.7411764706), -0.1vw 0.1vw 0px rgba(16, 90, 49, 0.7411764706), -0.15vw 0.15vw 0px rgba(16, 90, 49, 0.7411764706), -0.2vw 0.2vw 0vw rgba(16, 90, 49, 0.7411764706);
 }
 
 #mainText2 {
   position: relative;
-  top: 0.7vw;
+  top: 0vw;
   left: 0vw;
   width: 38vw;
   font-size: 1vw;
@@ -185,13 +186,13 @@ ul li {
 }
 #accountsText a,
 #accountsText2 a {
-  color: #FFC200;
+  color: #ffc400c5;
   font-size: 1.4vw;
   font-weight: bold;
 }
 #accountsText a:hover,
 #accountsText2 a:hover {
-  text-shadow: -0.05vw 0.05vw 0px #664e00, -0.1vw 0.1vw 0px #664e00, -0.15vw 0.15vw 0px #664e00, -0.2vw 0.2vw 0vw #664e00;
+  text-shadow: -0.05vw 0.05vw 0px rgba(102, 78, 0, 0.7725490196), -0.1vw 0.1vw 0px rgba(102, 78, 0, 0.7725490196), -0.15vw 0.15vw 0px rgba(102, 78, 0, 0.7725490196), -0.2vw 0.2vw 0vw rgba(102, 78, 0, 0.7725490196);
 }
 
 #accountsText {
@@ -219,11 +220,11 @@ ul li {
   transform: skew(0deg, 0deg);
 }
 #contactText a {
-  color: #db6aa3;
+  color: #db6aa3d2;
 }
 #contactText a:hover {
   color: #093158;
-  background-color: #db6aa3;
+  background-color: #db6aa3d2;
 }
 
 #projectsText, #projectsText2 {
@@ -233,12 +234,12 @@ ul li {
   width: 32vw;
 }
 #projectsText a, #projectsText2 a {
-  color: #00aeff;
+  color: #00aeffd0;
   font-size: 1.4vw;
   font-weight: bold;
 }
 #projectsText a:hover, #projectsText2 a:hover {
-  text-shadow: -0.05vw 0.05vw 0px #004666, -0.1vw 0.1vw 0px #004666, -0.15vw 0.15vw 0px #004666, -0.2vw 0.2vw 0vw #004666;
+  text-shadow: -0.05vw 0.05vw 0px rgba(0, 70, 102, 0.8156862745), -0.1vw 0.1vw 0px rgba(0, 70, 102, 0.8156862745), -0.15vw 0.15vw 0px rgba(0, 70, 102, 0.8156862745), -0.2vw 0.2vw 0vw rgba(0, 70, 102, 0.8156862745);
 }
 
 #projectsText {
@@ -250,7 +251,7 @@ ul li {
 #projectsText2 {
   position: relative;
   float: right;
-  left: 3vw;
+  left: -4vw;
   top: -18.8vw;
 }
 
@@ -281,11 +282,11 @@ ul li {
   width: 30vw;
 }
 #websiteText a {
-  color: #00aeff;
+  color: #00aeffd0;
 }
 #websiteText a:hover {
   color: #093158;
-  background-color: #00aeff;
+  background-color: #00aeffd0;
 }
 
 #errorH1 {
@@ -296,7 +297,7 @@ ul li {
 
 .picture {
   position: relative;
-  box-shadow: -0.05vw 0.05vw 0px #695c5c, -0.1vw 0.1vw 0px #695c5c, -0.15vw 0.15vw 0px #695c5c, -0.2vw 0.2vw 0px #695c5c, -0.25vw 0.25vw 0px #695c5c;
+  box-shadow: -0.05vw 0.05vw 0px rgba(105, 92, 92, 0.8784313725), -0.1vw 0.1vw 0px rgba(105, 92, 92, 0.8784313725), -0.15vw 0.15vw 0px rgba(105, 92, 92, 0.8784313725), -0.2vw 0.2vw 0px rgba(105, 92, 92, 0.8784313725), -0.25vw 0.25vw 0px rgba(105, 92, 92, 0.8784313725);
 }
 
 #mac {
@@ -308,7 +309,7 @@ ul li {
 
 #errorText {
   position: relative;
-  color: #ccc5c5;
+  color: #ccc5c5e0;
   top: 5.5vw;
   left: 39.5vw;
 }
@@ -359,7 +360,7 @@ ul li {
   }
 
   p {
-    text-shadow: -0.1vw 0.1vw 0px #847474, -0.2vw 0.2vw 0px #847474, -0.3vw 0.3vw 0px #847474, -0.4vw 0.4vw 0vw #847474;
+    text-shadow: -0.1vw 0.1vw 0px rgba(132, 116, 116, 0.8784313725), -0.2vw 0.2vw 0px rgba(132, 116, 116, 0.8784313725), -0.3vw 0.3vw 0px rgba(132, 116, 116, 0.8784313725), -0.4vw 0.4vw 0vw rgba(132, 116, 116, 0.8784313725);
   }
 
   ul {
@@ -445,7 +446,7 @@ ul li {
   }
 
   #errorText {
-    color: #ccc5c5;
+    color: #ccc5c5e0;
     top: 57vw;
     left: 15vw;
     font-size: 5.8vw;
