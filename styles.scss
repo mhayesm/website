@@ -3,14 +3,18 @@
 $blue: #093158;
 $dark-blue: #082544;
 $grey: #ccc5c5e0;
-$yellow: #ffc400c5;
-$green: #2bd879bd;
-$pink: #db6aa3d2;
-$pink-glow: #f088bc;
-$light-blue: #00aeffd0;
+$yellow: #ffc40091;
+$green: #2bd8798a;
+$pink: #db6aa388;
+$light-blue: #00aeff80;
+$grey: #ccc5c5a2;
+$yellowglow: #ffc400;
+$greenglow: #2bd879;
+$pinkglow: #db6aa3;
+$light-blueglow: #00aeff;
 
 body {
-    background-color: #010407;
+    background-color: #000000;
     font-family: "Fira Code";
     color: $grey;
     overflow-y: hidden;
@@ -19,14 +23,16 @@ body {
     width: 100vw;
 }
 
+/*
 canvas {
       position: fixed;
       margin: 0;
       top: 0;
       left: 0;
-      background-color: #040404;
+      background-color: #050505;
       z-index: -1;
 }
+*/
 
 b {
     font-weight: 800;
@@ -60,7 +66,7 @@ h1 {
 
 #nav {
     position: relative;
-    top: 8vw;
+    top: 0vw;
     height: 6vw;
     left: 28vw;
     width: 25vw;
@@ -70,8 +76,8 @@ h1 {
 #container {
     position: relative;
     height: 15vw;
-    top: 7vw;
-    left: 39vw;
+    top: -1vw;
+    left: 37vw;
     width: 60vw;
    /* transform: skew(0deg, 2deg); */
 }
@@ -111,7 +117,7 @@ ul li {
     color: $green;
 
     &:hover {
-            color: lighten($green, 25%);
+            color: $greenglow;
             text-shadow: 0.05vw 0.05vw 0px darken($green, 30%),
             0.1vw 0.1vw 0px darken($green, 30%),
             0.15vw 0.15vw 0px darken($green, 30%),
@@ -119,6 +125,7 @@ ul li {
             0.25vw .25vw 0vw darken($green, 30%),
         }
     &.current {
+            color: $greenglow;
             text-shadow: 0.05vw 0.05vw 0px darken($green, 30%),
             0.1vw 0.1vw 0px darken($green, 30%),
             0.15vw 0.15vw 0px darken($green, 30%),
@@ -132,6 +139,7 @@ ul li {
 
     &:hover {
         &:not(.current) {
+            color: $pinkglow;
             text-shadow: 0.05vw 0.05vw 0px darken($pink, 30%),
                 0.1vw 0.1vw 0px darken($pink, 30%),
                 0.15vw 0.15vw 0px darken($pink, 30%),
@@ -141,6 +149,7 @@ ul li {
     }
 
     &.current {
+        color: $pinkglow;
         text-shadow: 0.05vw 0.05vw 0px darken($pink, 30%),
             0.1vw 0.1vw 0px darken($pink, 30%),
             0.15vw 0.15vw 0px darken($pink, 30%),
@@ -154,6 +163,7 @@ ul li {
 
  &:hover {
      &:not(.current) {
+         color: $yellowglow;
          text-shadow: 0.05vw 0.05vw 0px darken($yellow, 30%),
              0.1vw 0.1vw 0px darken($yellow, 30%),
              0.15vw 0.15vw 0px darken($yellow, 30%),
@@ -163,6 +173,7 @@ ul li {
  }
 
  &.current {
+     color: $yellowglow;
      text-shadow: 0.05vw 0.05vw 0px darken($yellow, 30%),
          0.1vw 0.1vw 0px darken($yellow, 30%),
          0.15vw 0.15vw 0px darken($yellow, 30%),
@@ -199,6 +210,7 @@ ul li {
     &:hover {
 
         &:not(.current) {
+            color: $light-blueglow;
             text-shadow: 0.05vw 0.05vw 0px darken($light-blue, 30%),
             0.1vw 0.1vw 0px darken($light-blue, 30%),
             0.15vw 0.15vw 0px darken($light-blue, 30%),
@@ -208,6 +220,7 @@ ul li {
     }
 
     &.current {
+        color: $light-blueglow;
        text-shadow: 0.05vw 0.05vw 0px darken($light-blue, 30%),
        0.1vw 0.1vw 0px darken($light-blue, 30%),
        0.15vw 0.15vw 0px darken($light-blue, 30%),
@@ -239,6 +252,7 @@ ul li {
     }
 
     & a:hover {
+        color: $greenglow;
         text-shadow: -0.05vw 0.05vw 0px darken($green, 30%),
         -0.1vw 0.1vw 0px darken($green, 30%),
         -0.15vw 0.15vw 0px darken($green, 30%),
@@ -268,6 +282,7 @@ ul li {
         }
 
         & a:hover {
+            color: $yellowglow;
             text-shadow: -0.05vw 0.05vw 0px darken($yellow, 30%),
                 -0.1vw 0.1vw 0px darken($yellow, 30%),
                 -0.15vw 0.15vw 0px darken($yellow, 30%),
@@ -320,6 +335,7 @@ ul li {
         }
 
         & a:hover {
+            color: $light-blueglow;
             text-shadow: -0.05vw 0.05vw 0px darken($light-blue, 30%),
                 -0.1vw 0.1vw 0px darken($light-blue, 30%),
                 -0.15vw 0.15vw 0px darken($light-blue, 30%),
