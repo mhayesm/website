@@ -3,10 +3,10 @@
 $blue: #093158;
 $dark-blue: #082544;
 $grey: #ccc5c5e0;
-$yellow: #ffc40081;
-$green: #2bd8797a;
-$pink: #db6aa377;
-$light-blue: #00aeff70;
+$yellow: #ffc4005d;
+$green: #2bd87954;
+$pink: #db6aa354;
+$light-blue: #00aeff50;
 $grey: #ccc5c5a2;
 $yellowglow: #ffc400;
 $greenglow: #2bd879;
@@ -23,16 +23,14 @@ body {
     width: 100vw;
 }
 
-/*
 canvas {
       position: fixed;
       margin: 0;
       top: 0;
       left: 0;
-      background-color: #050505;
+      background-color: #000000;
       z-index: -1;
 }
-*/
 
 b {
     font-weight: 800;
@@ -66,7 +64,7 @@ h1 {
 
 #nav {
     position: relative;
-    top: 0vw;
+    top: 9vw;
     height: 6vw;
     left: 28vw;
     width: 25vw;
@@ -76,7 +74,7 @@ h1 {
 #container {
     position: relative;
     height: 15vw;
-    top: -1vw;
+    top: 8vw;
     left: 37vw;
     width: 60vw;
    /* transform: skew(0deg, 2deg); */
@@ -150,11 +148,11 @@ ul li {
 
     &.current {
         color: $pinkglow;
-        text-shadow: 0.05vw 0.05vw 0px darken($pink, 30%),
-            0.1vw 0.1vw 0px darken($pink, 30%),
-            0.15vw 0.15vw 0px darken($pink, 30%),
-            0.2vw .2vw 0vw darken($pink, 30%),
-            0.25vw 0.25vw 0px darken($pink, 30%);
+        text-shadow: 0.05vw 0.05vw 0px darken($pinkglow, 30%),
+            0.1vw 0.1vw 0px darken($pinkglow, 30%),
+            0.15vw 0.15vw 0px darken($pinkglow, 30%),
+            0.2vw .2vw 0vw darken($pinkglow, 30%),
+            0.25vw 0.25vw 0px darken($pinkglow, 30%);
     }
 }
 

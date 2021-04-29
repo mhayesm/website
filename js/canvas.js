@@ -84,12 +84,12 @@ var c = canvas.getContext('2d');
 
         circleArray = [];
         
-         for (var c = 0; c < (innerWidth / 4); c++) {
+         for (var c = 0; c < (innerWidth / 13); c++) {
             var radius = Math.random() * (innerWidth / innerWidth * 0.1) + 1;
             var x = Math.random() * (innerWidth - radius) + radius;
             var y = Math.random() * (innerHeight - radius) + radius;
-            var dx = (Math.random() - 0.5) * (innerWidth / 3000);
-            var dy = (Math.random() - 0.5) * (innerWidth / 3000);
+            var dx = (Math.random() - 0.8) * (innerWidth / 7500);
+            var dy = (Math.random() - 0.5) * (innerWidth / 7500);
             circleArray.push(new Circle(x, y, dx, dy, radius));
     }
 
