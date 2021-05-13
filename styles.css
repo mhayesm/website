@@ -1,8 +1,8 @@
 /* sass --watch styles.scss:styles.css */
 body {
-  background-color: #000000;
-  font-family: "Fira Code";
-  color: #ccc5c5a2;
+  background-color: #d81919;
+  font-family: "IBM Plex Mono";
+  color: #ccc5c5cb;
   overflow-y: hidden;
   overflow-x: hidden;
   height: 100vh;
@@ -17,6 +17,9 @@ canvas {
   background-color: #000000;
   z-index: -1;
 }
+canvas .dark-mode {
+  background-color: beige;
+}
 
 b {
   font-weight: 800;
@@ -29,27 +32,24 @@ a {
 p {
   font-size: 2vw;
   font-weight: 500;
-  font-family: "Fira Sans";
+  font-family: "IBM Plex Mono";
 }
 
 h1 {
-  color: #2bd87954;
+  color: #2bd879ab;
   padding: 0;
   margin: 0;
-  font-family: "Fira Code";
   font-size: 2.5vw;
   font-weight: 300;
   line-height: 7vw;
-  text-shadow: 0.05vw 0.05vw 0px rgba(16, 90, 49, 0.3294117647), 0.1vw 0.1vw 0px rgba(16, 90, 49, 0.3294117647), 0.15vw 0.15vw 0px rgba(16, 90, 49, 0.3294117647), 0.2vw 0.2vw 0vw rgba(16, 90, 49, 0.3294117647), 0.25vw 0.25vw 0px rgba(16, 90, 49, 0.3294117647);
 }
 
 #nav {
   position: relative;
-  top: 9vw;
+  top: 10vw;
   height: 6vw;
   left: 28vw;
   width: 25vw;
-  transform: skew(0deg, -8deg);
 }
 
 #container {
@@ -58,7 +58,6 @@ h1 {
   top: 8vw;
   left: 37vw;
   width: 60vw;
-  /* transform: skew(0deg, 2deg); */
 }
 
 ul {
@@ -73,16 +72,14 @@ ul {
 
 #linkText {
   position: relative;
-  font-family: "Fira Code";
   text-shadow: none;
 }
 
 ul a {
   position: relative;
   z-index: 1;
-  color: #2bd87954;
+  color: #2bd879ab;
   font-weight: 350;
-  text-decoration: none;
   border-radius: 0.6vw 0.6vw 0.6vw 0.6vw;
   padding-right: 1vw;
 }
@@ -93,23 +90,23 @@ ul li {
 }
 
 #indexNav {
-  color: #2bd87954;
+  color: #2bd879ab;
 }
 #indexNav:hover {
   color: #2bd879;
-  text-shadow: 0.05vw 0.05vw 0px rgba(16, 90, 49, 0.3294117647), 0.1vw 0.1vw 0px rgba(16, 90, 49, 0.3294117647), 0.15vw 0.15vw 0px rgba(16, 90, 49, 0.3294117647), 0.2vw 0.2vw 0vw rgba(16, 90, 49, 0.3294117647), 0.25vw 0.25vw 0vw rgba(16, 90, 49, 0.3294117647);
+  text-shadow: 0.05vw 0.05vw 0px rgba(16, 90, 49, 0.6705882353), 0.1vw 0.1vw 0px rgba(16, 90, 49, 0.6705882353), 0.15vw 0.15vw 0px rgba(16, 90, 49, 0.6705882353), 0.2vw 0.2vw 0vw rgba(16, 90, 49, 0.6705882353), 0.25vw 0.25vw 0vw rgba(16, 90, 49, 0.6705882353);
 }
 #indexNav.current {
   color: #2bd879;
-  text-shadow: 0.05vw 0.05vw 0px rgba(16, 90, 49, 0.3294117647), 0.1vw 0.1vw 0px rgba(16, 90, 49, 0.3294117647), 0.15vw 0.15vw 0px rgba(16, 90, 49, 0.3294117647), 0.2vw 0.2vw 0vw rgba(16, 90, 49, 0.3294117647), 0.25vw 0.25vw 0px rgba(16, 90, 49, 0.3294117647);
+  text-shadow: 0.05vw 0.05vw 0px rgba(16, 90, 49, 0.6705882353), 0.1vw 0.1vw 0px rgba(16, 90, 49, 0.6705882353), 0.15vw 0.15vw 0px rgba(16, 90, 49, 0.6705882353), 0.2vw 0.2vw 0vw rgba(16, 90, 49, 0.6705882353), 0.25vw 0.25vw 0px rgba(16, 90, 49, 0.6705882353);
 }
 
 #blogNav {
-  color: #db6aa354;
+  color: #db6aa3b7;
 }
 #blogNav:hover:not(.current) {
   color: #db6aa3;
-  text-shadow: 0.05vw 0.05vw 0px rgba(139, 33, 86, 0.3294117647), 0.1vw 0.1vw 0px rgba(139, 33, 86, 0.3294117647), 0.15vw 0.15vw 0px rgba(139, 33, 86, 0.3294117647), 0.2vw 0.2vw 0vw rgba(139, 33, 86, 0.3294117647), 0.25vw 0.25vw 0px rgba(139, 33, 86, 0.3294117647);
+  text-shadow: 0.05vw 0.05vw 0px rgba(139, 33, 86, 0.7176470588), 0.1vw 0.1vw 0px rgba(139, 33, 86, 0.7176470588), 0.15vw 0.15vw 0px rgba(139, 33, 86, 0.7176470588), 0.2vw 0.2vw 0vw rgba(139, 33, 86, 0.7176470588), 0.25vw 0.25vw 0px rgba(139, 33, 86, 0.7176470588);
 }
 #blogNav.current {
   color: #db6aa3;
@@ -117,37 +114,37 @@ ul li {
 }
 
 #accountsNav {
-  color: #ffc4005d;
+  color: #ffc400be;
 }
 #accountsNav:hover:not(.current) {
   color: #ffc400;
-  text-shadow: 0.05vw 0.05vw 0px rgba(102, 78, 0, 0.3647058824), 0.1vw 0.1vw 0px rgba(102, 78, 0, 0.3647058824), 0.15vw 0.15vw 0px rgba(102, 78, 0, 0.3647058824), 0.2vw 0.2vw 0vw rgba(102, 78, 0, 0.3647058824), 0.25vw 0.25vw 0px rgba(102, 78, 0, 0.3647058824);
+  text-shadow: 0.05vw 0.05vw 0px rgba(102, 78, 0, 0.7450980392), 0.1vw 0.1vw 0px rgba(102, 78, 0, 0.7450980392), 0.15vw 0.15vw 0px rgba(102, 78, 0, 0.7450980392), 0.2vw 0.2vw 0vw rgba(102, 78, 0, 0.7450980392), 0.25vw 0.25vw 0px rgba(102, 78, 0, 0.7450980392);
 }
 #accountsNav.current {
   color: #ffc400;
-  text-shadow: 0.05vw 0.05vw 0px rgba(102, 78, 0, 0.3647058824), 0.1vw 0.1vw 0px rgba(102, 78, 0, 0.3647058824), 0.15vw 0.15vw 0px rgba(102, 78, 0, 0.3647058824), 0.2vw 0.2vw 0vw rgba(102, 78, 0, 0.3647058824), 0.25vw 0.25vw 0px rgba(102, 78, 0, 0.3647058824);
+  text-shadow: 0.05vw 0.05vw 0px rgba(102, 78, 0, 0.7450980392), 0.1vw 0.1vw 0px rgba(102, 78, 0, 0.7450980392), 0.15vw 0.15vw 0px rgba(102, 78, 0, 0.7450980392), 0.2vw 0.2vw 0vw rgba(102, 78, 0, 0.7450980392), 0.25vw 0.25vw 0px rgba(102, 78, 0, 0.7450980392);
 }
 
 #contactNav {
-  color: #db6aa354;
+  color: #db6aa3b7;
 }
 #contactNav:hover:not(.current) {
-  text-shadow: 0.05vw 0.05vw 0px rgba(102, 78, 0, 0.3647058824), 0.1vw 0.1vw 0px rgba(102, 78, 0, 0.3647058824), 0.15vw 0.15vw 0px rgba(102, 78, 0, 0.3647058824), 0.2vw 0.2vw 0vw rgba(102, 78, 0, 0.3647058824), 0.25vw 0.25vw 0px rgba(102, 78, 0, 0.3647058824);
+  text-shadow: 0.05vw 0.05vw 0px rgba(102, 78, 0, 0.7450980392), 0.1vw 0.1vw 0px rgba(102, 78, 0, 0.7450980392), 0.15vw 0.15vw 0px rgba(102, 78, 0, 0.7450980392), 0.2vw 0.2vw 0vw rgba(102, 78, 0, 0.7450980392), 0.25vw 0.25vw 0px rgba(102, 78, 0, 0.7450980392);
 }
 #contactNav.current {
-  text-shadow: 0.05vw 0.05vw 0px rgba(102, 78, 0, 0.3647058824), 0.1vw 0.1vw 0px rgba(102, 78, 0, 0.3647058824), 0.15vw 0.15vw 0px rgba(102, 78, 0, 0.3647058824), 0.2vw 0.2vw 0vw rgba(102, 78, 0, 0.3647058824), 0.25vw 0.25vw 0px rgba(102, 78, 0, 0.3647058824);
+  text-shadow: 0.05vw 0.05vw 0px rgba(102, 78, 0, 0.7450980392), 0.1vw 0.1vw 0px rgba(102, 78, 0, 0.7450980392), 0.15vw 0.15vw 0px rgba(102, 78, 0, 0.7450980392), 0.2vw 0.2vw 0vw rgba(102, 78, 0, 0.7450980392), 0.25vw 0.25vw 0px rgba(102, 78, 0, 0.7450980392);
 }
 
 #projectsNav {
-  color: #00aeff50;
+  color: #00aeffa6;
 }
 #projectsNav:hover:not(.current) {
   color: #00aeff;
-  text-shadow: 0.05vw 0.05vw 0px rgba(0, 70, 102, 0.3137254902), 0.1vw 0.1vw 0px rgba(0, 70, 102, 0.3137254902), 0.15vw 0.15vw 0px rgba(0, 70, 102, 0.3137254902), 0.2vw 0.2vw 0vw rgba(0, 70, 102, 0.3137254902), 0.25vw 0.25vw 0px rgba(0, 70, 102, 0.3137254902);
+  text-shadow: 0.05vw 0.05vw 0px rgba(0, 70, 102, 0.6509803922), 0.1vw 0.1vw 0px rgba(0, 70, 102, 0.6509803922), 0.15vw 0.15vw 0px rgba(0, 70, 102, 0.6509803922), 0.2vw 0.2vw 0vw rgba(0, 70, 102, 0.6509803922), 0.25vw 0.25vw 0px rgba(0, 70, 102, 0.6509803922);
 }
 #projectsNav.current {
   color: #00aeff;
-  text-shadow: 0.05vw 0.05vw 0px rgba(0, 70, 102, 0.3137254902), 0.1vw 0.1vw 0px rgba(0, 70, 102, 0.3137254902), 0.15vw 0.15vw 0px rgba(0, 70, 102, 0.3137254902), 0.2vw 0.2vw 0vw rgba(0, 70, 102, 0.3137254902), 0.25vw 0.25vw 0px rgba(0, 70, 102, 0.3137254902);
+  text-shadow: 0.05vw 0.05vw 0px rgba(0, 70, 102, 0.6509803922), 0.1vw 0.1vw 0px rgba(0, 70, 102, 0.6509803922), 0.15vw 0.15vw 0px rgba(0, 70, 102, 0.6509803922), 0.2vw 0.2vw 0vw rgba(0, 70, 102, 0.6509803922), 0.25vw 0.25vw 0px rgba(0, 70, 102, 0.6509803922);
 }
 
 #nameH1 {
@@ -169,11 +166,12 @@ ul li {
   font-weight: bold;
 }
 #mainText a {
-  color: #2bd87954;
+  color: #2bd879ab;
+  border-bottom: 3px dashed #2bd879ab;
 }
 #mainText a:hover {
   color: #2bd879;
-  text-shadow: -0.05vw 0.05vw 0px rgba(16, 90, 49, 0.3294117647), -0.1vw 0.1vw 0px rgba(16, 90, 49, 0.3294117647), -0.15vw 0.15vw 0px rgba(16, 90, 49, 0.3294117647), -0.2vw 0.2vw 0vw rgba(16, 90, 49, 0.3294117647);
+  background-color: #1a1a1a;
 }
 
 #mainText2 {
@@ -183,7 +181,6 @@ ul li {
   width: 38vw;
   font-size: 1vw;
   transform: skew(0deg, 0deg);
-  font-family: "Fira Code";
 }
 
 #accountsText,
@@ -194,14 +191,15 @@ ul li {
 }
 #accountsText a,
 #accountsText2 a {
-  color: #ffc4005d;
+  color: #ffc400be;
   font-size: 1.4vw;
   font-weight: bold;
+  border-bottom: 3px dashed #ffc400be;
 }
 #accountsText a:hover,
 #accountsText2 a:hover {
   color: #ffc400;
-  text-shadow: -0.05vw 0.05vw 0px rgba(102, 78, 0, 0.3647058824), -0.1vw 0.1vw 0px rgba(102, 78, 0, 0.3647058824), -0.15vw 0.15vw 0px rgba(102, 78, 0, 0.3647058824), -0.2vw 0.2vw 0vw rgba(102, 78, 0, 0.3647058824);
+  background-color: #1a1a1a;
 }
 
 #accountsText {
@@ -229,27 +227,32 @@ ul li {
   transform: skew(0deg, 0deg);
 }
 #contactText a {
-  color: #db6aa354;
+  color: #db6aa3b7;
+  border-bottom: 5px dashed #db6aa3b7;
 }
 #contactText a:hover {
   color: #093158;
-  background-color: #db6aa354;
+  background-color: #db6aa3b7;
 }
 
-#projectsText, #projectsText2 {
+#projectsText,
+#projectsText2 {
   position: relative;
   line-height: 2.7vw;
   font-size: 1.2vw;
   width: 32vw;
 }
-#projectsText a, #projectsText2 a {
-  color: #00aeff50;
+#projectsText a,
+#projectsText2 a {
+  color: #00aeffa6;
   font-size: 1.4vw;
   font-weight: bold;
+  border-bottom: 3px dashed #00aeffa6;
 }
-#projectsText a:hover, #projectsText2 a:hover {
+#projectsText a:hover,
+#projectsText2 a:hover {
   color: #00aeff;
-  text-shadow: -0.05vw 0.05vw 0px rgba(0, 70, 102, 0.3137254902), -0.1vw 0.1vw 0px rgba(0, 70, 102, 0.3137254902), -0.15vw 0.15vw 0px rgba(0, 70, 102, 0.3137254902), -0.2vw 0.2vw 0vw rgba(0, 70, 102, 0.3137254902);
+  background-color: #1a1a1a;
 }
 
 #projectsText {
@@ -292,36 +295,39 @@ ul li {
   width: 30vw;
 }
 #websiteText a {
-  color: #00aeff50;
+  color: #00aeffa6;
 }
 #websiteText a:hover {
   color: #093158;
-  background-color: #00aeff50;
+  background-color: #00aeffa6;
 }
 
 #errorH1 {
   position: relative;
-  left: 36vw;
-  top: 5vw;
+  left: 0vw;
+  top: 0vw;
 }
 
 .picture {
   position: relative;
-  box-shadow: -0.05vw 0.05vw 0px rgba(105, 92, 92, 0.6352941176), -0.1vw 0.1vw 0px rgba(105, 92, 92, 0.6352941176), -0.15vw 0.15vw 0px rgba(105, 92, 92, 0.6352941176), -0.2vw 0.2vw 0px rgba(105, 92, 92, 0.6352941176), -0.25vw 0.25vw 0px rgba(105, 92, 92, 0.6352941176);
 }
 
 #mac {
-  top: 8vw;
-  transform: skew(10deg, -4deg);
+  top: 0vw;
   width: 13vw;
-  left: 38vw;
+  left: 0vw;
 }
 
 #errorText {
   position: relative;
-  color: #ccc5c5a2;
-  top: 5.5vw;
-  left: 39.5vw;
+  color: #ccc5c5cb;
+  top: 0vw;
+  left: 0vw;
+}
+
+.dark-mode {
+  color: white;
+  background-color: white;
 }
 
 @media only screen and (max-width: 600px) {
@@ -370,7 +376,7 @@ ul li {
   }
 
   p {
-    text-shadow: -0.1vw 0.1vw 0px rgba(132, 116, 116, 0.6352941176), -0.2vw 0.2vw 0px rgba(132, 116, 116, 0.6352941176), -0.3vw 0.3vw 0px rgba(132, 116, 116, 0.6352941176), -0.4vw 0.4vw 0vw rgba(132, 116, 116, 0.6352941176);
+    text-shadow: -0.1vw 0.1vw 0px rgba(132, 116, 116, 0.7960784314), -0.2vw 0.2vw 0px rgba(132, 116, 116, 0.7960784314), -0.3vw 0.3vw 0px rgba(132, 116, 116, 0.7960784314), -0.4vw 0.4vw 0vw rgba(132, 116, 116, 0.7960784314);
   }
 
   ul {
@@ -451,12 +457,11 @@ ul li {
     width: 40vw;
     height: 40vw;
     top: 57vw;
-    transform: skew(2deg, 0deg);
     left: 14vw;
   }
 
   #errorText {
-    color: #ccc5c5a2;
+    color: #ccc5c5cb;
     top: 57vw;
     left: 15vw;
     font-size: 5.8vw;

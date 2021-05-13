@@ -26,16 +26,16 @@ body {
 
 
 canvas {
-    position: fixed;
-    margin: 0;
-    top: 0;
-    left: 0;
-    background-color: $background;
-    z-index: -1;
+      position: fixed;
+      margin: 0;
+      top: 0;
+      left: 0;
+      background-color: $background;
+      z-index: -1;
 
-    & .dark-mode {
+      & .dark-mode {
         background-color: beige;
-    }
+      }
 }
 
 b {
@@ -95,12 +95,12 @@ ul {
 }
 
 ul a {
-    position: relative;
-    z-index: 1;
-    color: $green;
-    font-weight: 350;
-    border-radius: .6vw .6vw .6vw .6vw;
-    padding-right: 1vw;
+     position: relative;
+     z-index: 1;
+     color: $green;
+     font-weight: 350;
+     border-radius: .6vw .6vw .6vw .6vw;
+     padding-right: 1vw;
 }
 
 ul li {
@@ -112,17 +112,16 @@ ul li {
     color: $green;
 
     &:hover {
-        color: $greenglow;
-        text-shadow: 0.05vw 0.05vw 0px darken($green, 30%),
+            color: $greenglow;
+            text-shadow: 0.05vw 0.05vw 0px darken($green, 30%),
             0.1vw 0.1vw 0px darken($green, 30%),
             0.15vw 0.15vw 0px darken($green, 30%),
             0.2vw .2vw 0vw darken($green, 30%),
             0.25vw .25vw 0vw darken($green, 30%),
-    }
-
+        }
     &.current {
-        color: $greenglow;
-        text-shadow: 0.05vw 0.05vw 0px darken($green, 30%),
+            color: $greenglow;
+            text-shadow: 0.05vw 0.05vw 0px darken($green, 30%),
             0.1vw 0.1vw 0px darken($green, 30%),
             0.15vw 0.15vw 0px darken($green, 30%),
             0.2vw .2vw 0vw darken($green, 30%),
@@ -157,46 +156,46 @@ ul li {
 #accountsNav {
     color: $yellow;
 
-    &:hover {
-        &:not(.current) {
-            color: $yellowglow;
-            text-shadow: 0.05vw 0.05vw 0px darken($yellow, 30%),
-                0.1vw 0.1vw 0px darken($yellow, 30%),
-                0.15vw 0.15vw 0px darken($yellow, 30%),
-                0.2vw .2vw 0vw darken($yellow, 30%),
-                0.25vw 0.25vw 0px darken($yellow, 30%);
-        }
-    }
+ &:hover {
+     &:not(.current) {
+         color: $yellowglow;
+         text-shadow: 0.05vw 0.05vw 0px darken($yellow, 30%),
+             0.1vw 0.1vw 0px darken($yellow, 30%),
+             0.15vw 0.15vw 0px darken($yellow, 30%),
+             0.2vw .2vw 0vw darken($yellow, 30%),
+             0.25vw 0.25vw 0px darken($yellow, 30%);
+     }
+ }
 
-    &.current {
-        color: $yellowglow;
-        text-shadow: 0.05vw 0.05vw 0px darken($yellow, 30%),
-            0.1vw 0.1vw 0px darken($yellow, 30%),
-            0.15vw 0.15vw 0px darken($yellow, 30%),
-            0.2vw .2vw 0vw darken($yellow, 30%),
-            0.25vw 0.25vw 0px darken($yellow, 30%);
-    }
-}
+ &.current {
+     color: $yellowglow;
+     text-shadow: 0.05vw 0.05vw 0px darken($yellow, 30%),
+         0.1vw 0.1vw 0px darken($yellow, 30%),
+         0.15vw 0.15vw 0px darken($yellow, 30%),
+         0.2vw .2vw 0vw darken($yellow, 30%),
+         0.25vw 0.25vw 0px darken($yellow, 30%);
+ }
+ }
 
 #contactNav {
     color: $pink;
 
-    &:hover {
-        &:not(.current) {
-            text-shadow: 0.05vw 0.05vw 0px darken($yellow, 30%),
-                0.1vw 0.1vw 0px darken($yellow, 30%),
-                0.15vw 0.15vw 0px darken($yellow, 30%),
-                0.2vw .2vw 0vw darken($yellow, 30%),
-                0.25vw 0.25vw 0px darken($yellow, 30%);
-        }
-    }
+ &:hover {
+     &:not(.current) {
+         text-shadow: 0.05vw 0.05vw 0px darken($yellow, 30%),
+             0.1vw 0.1vw 0px darken($yellow, 30%),
+             0.15vw 0.15vw 0px darken($yellow, 30%),
+             0.2vw .2vw 0vw darken($yellow, 30%),
+             0.25vw 0.25vw 0px darken($yellow, 30%);
+     }
+ }
 
     &.current {
         text-shadow: 0.05vw 0.05vw 0px darken($yellow, 30%),
-            0.1vw 0.1vw 0px darken($yellow, 30%),
-            0.15vw 0.15vw 0px darken($yellow, 30%),
-            0.2vw .2vw 0vw darken($yellow, 30%),
-            0.25vw 0.25vw 0px darken($yellow, 30%);
+        0.1vw 0.1vw 0px darken($yellow, 30%),
+        0.15vw 0.15vw 0px darken($yellow, 30%),
+        0.2vw .2vw 0vw darken($yellow, 30%),
+        0.25vw 0.25vw 0px darken($yellow, 30%);
     }
 }
 
@@ -208,20 +207,20 @@ ul li {
         &:not(.current) {
             color: $light-blueglow;
             text-shadow: 0.05vw 0.05vw 0px darken($light-blue, 30%),
-                0.1vw 0.1vw 0px darken($light-blue, 30%),
-                0.15vw 0.15vw 0px darken($light-blue, 30%),
-                0.2vw .2vw 0vw darken($light-blue, 30%),
-                0.25vw 0.25vw 0px darken($light-blue, 30%);
+            0.1vw 0.1vw 0px darken($light-blue, 30%),
+            0.15vw 0.15vw 0px darken($light-blue, 30%),
+            0.2vw .2vw 0vw darken($light-blue, 30%),
+            0.25vw 0.25vw 0px darken($light-blue, 30%);
         }
     }
 
     &.current {
         color: $light-blueglow;
-        text-shadow: 0.05vw 0.05vw 0px darken($light-blue, 30%),
-            0.1vw 0.1vw 0px darken($light-blue, 30%),
-            0.15vw 0.15vw 0px darken($light-blue, 30%),
-            0.2vw .2vw 0vw darken($light-blue, 30%),
-            0.25vw 0.25vw 0px darken($light-blue, 30%);
+       text-shadow: 0.05vw 0.05vw 0px darken($light-blue, 30%),
+       0.1vw 0.1vw 0px darken($light-blue, 30%),
+       0.15vw 0.15vw 0px darken($light-blue, 30%),
+       0.2vw .2vw 0vw darken($light-blue, 30%),
+       0.25vw 0.25vw 0px darken($light-blue, 30%);
     }
 }
 
@@ -265,21 +264,21 @@ ul li {
 
 #accountsText,
 #accountsText2 {
-    position: relative;
-    font-size: 1.2vw;
-    line-height: 2.7vw;
+        position: relative;
+        font-size: 1.2vw;
+        line-height: 2.7vw;
 
-    & a {
-        color: $yellow;
-        font-size: 1.4vw;
-        font-weight: bold;
-        border-bottom: 3px dashed $yellow;
-    }
+        & a {
+            color: $yellow;
+            font-size: 1.4vw;
+            font-weight: bold;
+            border-bottom: 3px dashed $yellow;
+        }
 
-    & a:hover {
-        color: $yellowglow;
-        background-color: lighten($background, 10%);
-    }
+        & a:hover {
+            color: $yellowglow;
+            background-color: lighten($background, 10%);
+        }
 }
 
 #accountsText {
@@ -305,10 +304,9 @@ ul li {
     width: 25vw;
     line-height: 2.7vw;
     transform: skew(0deg, 0deg);
-
     & a {
         color: $pink;
-        border-bottom: 5px dashed $pink;
+         border-bottom: 5px dashed $pink;
     }
 
     & a:hover {
@@ -317,29 +315,27 @@ ul li {
     }
 }
 
-#projectsText,
-#projectsText2 {
-    position: relative;
-    line-height: 2.7vw;
-    font-size: 1.2vw;
-    width: 32vw;
+#projectsText, #projectsText2 {
+  position: relative;
+  line-height: 2.7vw;
+  font-size: 1.2vw;
+  width: 32vw;
+        & a {
+            color: $light-blue;
+            font-size: 1.4vw;
+            font-weight: bold;
+            border-bottom: 3px dashed $light-blue;
+        }
 
-    & a {
-        color: $light-blue;
-        font-size: 1.4vw;
-        font-weight: bold;
-        border-bottom: 3px dashed $light-blue;
-    }
-
-    & a:hover {
-        color: $light-blueglow;
-        background-color: lighten($background, 10%);
-    }
+        & a:hover {
+            color: $light-blueglow;
+            background-color: lighten($background, 10%);
+        }
 }
 
 #projectsText {
     top: 0vw;
-    left: 0vw;
+    left: 0vw; 
     float: left;
 }
 
@@ -360,12 +356,12 @@ ul li {
 }
 
 #websiteH1 {
-    padding: 0.2vw;
-    position: relative;
-    top: -8vw;
-    left: 0vw;
-    line-height: 0;
-    transform: skew(0deg, 0deg);
+        padding: 0.2vw;
+        position: relative;
+        top: -8vw;
+        left: 0vw;
+        line-height: 0;
+        transform: skew(0deg, 0deg);
 }
 
 #websiteText {
@@ -389,26 +385,32 @@ ul li {
 
 #errorH1 {
     position: relative;
-    left: 0vw;
-    top: 0vw;
+    left: 36vw;
+    top: 5vw;
 
 }
 
 .picture {
     position: relative;
+      box-shadow: -0.05vw 0.05vw 0px darken($grey, 40%),
+      -0.1vw 0.1vw 0px darken($grey, 40%),
+      -0.15vw 0.15vw 0px darken($grey, 40%),
+      -0.2vw 0.2vw 0px darken($grey, 40%),
+      -0.25vw 0.25vw 0px darken($grey, 40%);
 }
 
 #mac {
-    top: 0vw;
-    width: 13vw;
-    left: 0vw;
+   top: 8vw;
+    transform: skew(10deg, -4deg);
+   width: 13vw;
+   left: 38vw;
 }
 
 #errorText {
     position: relative;
     color: $grey;
-    top: 0vw;
-    left: 0vw;
+    top: 5.5vw;
+    left: 39.5vw;
 }
 
 .dark-mode {
@@ -465,10 +467,10 @@ ul li {
     }
 
     p {
-        text-shadow: -0.1vw 0.1vw 0px darken($grey, 30%),
-            -0.2vw 0.2vw 0px darken($grey, 30%),
-            -0.3vw 0.3vw 0px darken($grey, 30%),
-            -0.4vw .4vw 0vw darken($grey, 30%);
+                text-shadow: -0.1vw 0.1vw 0px darken($grey, 30%),
+                -0.2vw 0.2vw 0px darken($grey, 30%),
+                -0.3vw 0.3vw 0px darken($grey, 30%),
+                -0.4vw .4vw 0vw darken($grey, 30%);
     }
 
     ul {
@@ -480,16 +482,20 @@ ul li {
 
     ul li {
         display: inline;
-
+    
     }
 
     ul a {
         padding: 0.4vw;
     }
 
-    #linkText {}
+    #linkText {
 
-    .current {}
+    }
+
+    .current {
+
+    }
 
     #nameH1 {
         width: 60vw;
@@ -546,7 +552,9 @@ ul li {
         font-size: 4vw;
     }
 
-    #projectsText2 {}
+    #projectsText2 {
+            
+        }
 
     #errorH1 {
         left: 10vw;
@@ -557,9 +565,9 @@ ul li {
         width: 40vw;
         height: 40vw;
         top: 57vw;
+        transform: skew(2deg, 0deg);
         left: 14vw;
     }
-
     #errorText {
         color: $grey;
         top: 57vw;
@@ -572,7 +580,8 @@ ul li {
 
 /* Medium devices (landscape tablets, 768px and up) */
 
-@media only screen and (max-width: 800px) {}
+@media only screen and (max-width: 800px) {
+}
 
 
 /* Large devices (laptops/desktops, 992px and up) */
